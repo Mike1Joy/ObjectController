@@ -25,7 +25,7 @@ This software is to be used with **buildingEXODUS** to represent the movement of
 
 
 ## Config
-You can edit the initial settings in the OC by editing **init.csv**. This includes defining new types of object (`<ADD_PREFAB_22>`, `<ADD_VERTEX_3>`, `<ADD_EXT_ATT_POINT_12>`, `<ADD_INT_ATT_POINT_8>`), changing the calibration settings for velocity obstacle generation (`<OPTION_14>`), turning logs on or off (`<MODE_5>`) and changing the run mode (`<MODE_5>`). The most important thing to note is that by default OC runs with TCP on and OpenGL on. If you would like to switch them off, change the corresponding column in the `<MODE_5>` command to 0. At least one of TCP or OpenGL must be active, otherwise there is no way to control the OC.
+You can edit the initial settings in the OC by editing **init.csv**. This includes defining new types of object (`ADD_PREFAB_22`, `ADD_VERTEX_3`, `ADD_EXT_ATT_POINT_12`, `ADD_INT_ATT_POINT_8`), changing the calibration settings for velocity obstacle generation (`OPTION_14`), turning logs on or off (`MODE_5`) and changing the run mode (`MODE_5`). The most important thing to note is that by default OC runs with TCP on and OpenGL on. If you would like to switch them off, change the corresponding column in the `MODE_5` command to 0. At least one of TCP or OpenGL must be active, otherwise there is no way to control the OC.
 
 
 ## Contributors
