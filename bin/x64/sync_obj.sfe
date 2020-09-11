@@ -1,0 +1,10 @@
+serverEXODUS heptad 9002
+serverEXODUS logger on
+serverEXODUS send geometry
+serverEXODUS send nodes
+serverEXODUS send transit
+serverEXODUS send Arcs
+serverEXODUS send People
+serverEXODUS send Objects
+ServerEXODUS SyncObjects on
+ServerEXODUS SyncObjectsTimeout 2000
