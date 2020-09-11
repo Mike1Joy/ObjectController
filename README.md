@@ -28,5 +28,9 @@ This software is to be used with **buildingEXODUS** to represent the movement of
 You can edit the initial settings in the OC by editing **init.csv**. This includes defining new types of object, changing the calibration settings for velocity obstacle generation, turning logs on or off and changing the run mode (TCP link to EXODUS / stand-alone application).
 
 
+## Contributors
+Thanks to Peter Lawrence for supervising my PhD and for creating the version of EXODUS (with others at FSEG) that works with the OC.
+
+
 ## Contact
 For more information, contact **mike1joy1@gmail.com**.
