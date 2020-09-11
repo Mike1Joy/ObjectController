@@ -1,0 +1,40 @@
+GEOMETRY
+a       toggle between edit and add
+1       add/edit nodes
+2       add/edit arcs
+3       add/edit boundary
+4		add/edit stairs
+5		add/edit stair_arcs (connect stairs to nodes)
+1,1     (if add) add nodes with autoconnect
+g       change grid spacing
+c       generate C-Space
+s       save geometry to geometry.csv
+l       load geometry from geometry.csv
+r       clear geometry
+d       print details of selected entity
+<DEL>   delete selected entity
+o       change orientation
+p       change prefab
+
+OBJECT
+o       add object / change orientation
+p       change prefab
+f       generate freespace
+F       fill objects with people
+s       add / remove person
+
+SIMULATE
+c       toggle speed control
+g       select goals
+p       play / pause simulation
+P       step simulation forward
+O       change object
+o       change orientation
+l       save state
+L       retrieve state
+R       remove object once tasks are complete
+
+ALL
+m       move to next mode
+<PGUP>  move up one floor
+<PGDN>  move down one floor

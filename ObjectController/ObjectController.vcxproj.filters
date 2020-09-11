@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="OpenGL">
+      <UniqueIdentifier>{99c6a651-c487-4e90-a4e0-0049f2956fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerDLL">
+      <UniqueIdentifier>{ea706b99-33fd-436e-b14c-26a56796c3d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerDLL_h">
+      <UniqueIdentifier>{bda2ccaa-9db9-49cf-89e2-29faddc3172a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OC_h">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="OC">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CNode.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileIO.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GenObject.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectPrefab.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ObjectSpace.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl.cpp">
+      <Filter>OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\ClientMessageContainer.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\Endianness.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\Lock.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\MessageClientComposer.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\MessageClientParser.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerComposer.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerDistributer.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerParser.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientConnection.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientHandler.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientMessageDistributer.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkMessage.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerClient.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerConnection.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerHandler.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerInterface.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerListener.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerSenderInterface.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\Str.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\AbstractThread.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\serverEXODUSDLL\AttributeUpdate.cpp">
+      <Filter>ServerDLL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>OC</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\FileIO.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GenObject.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ObjectPrefab.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ObjectSpace.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl_const.h">
+      <Filter>OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CSNode.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\BinaryList.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\ClientMessageContainer.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\ConcurrentLinkedQueue.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\Defines.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\Endianness.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\IComparable.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\Lock.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\MessageClientComposer.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\MessageClientParser.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerComposer.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerDistributer.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerParser.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientConnection.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientHandler.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientMessageDistributer.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkMessage.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerClient.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerConnection.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerHandler.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerInterface.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerListener.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerSenderInterface.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\Str.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\AbstractThread.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\ArrayList.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\AttributeUpdate.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TCP_main_loop.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Log.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CMD.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DataStructs.h">
+      <Filter>OC_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\exodus.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\serverEXODUSDLL\exodusclient.h">
+      <Filter>ServerDLL_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="geo.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="init.csv">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sync_obj.sfe">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\OpenGL_Stuff\opengl_controls.txt">
+      <Filter>OpenGL</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

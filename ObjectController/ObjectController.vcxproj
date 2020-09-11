@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EBBDE528-5D57-445A-81C9-67FCA7683493}</ProjectGuid>
+    <RootNamespace>ObjectController</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(SolutionDir)bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\</IntDir>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;..\serverEXODUSDLL;..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\include;..\OpenGL_Stuff\Glew and Glut\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\lib\Win32;..\OpenGL_Stuff\Glew and Glut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntermediateOutputPath)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;..\serverEXODUSDLL;..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\include;..\OpenGL_Stuff\Glew and Glut\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\lib\x64;..\OpenGL_Stuff\Glew and Glut\freeglut\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntermediateOutputPath)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;..\serverEXODUSDLL;..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\include;..\OpenGL_Stuff\Glew and Glut\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\lib\Win32;..\OpenGL_Stuff\Glew and Glut\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntermediateOutputPath)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>src;..\serverEXODUSDLL;..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\include;..\OpenGL_Stuff\Glew and Glut\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\OpenGL_Stuff\Glew and Glut\glew-1.11.0\lib\x64;..\OpenGL_Stuff\Glew and Glut\freeglut\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>$(IntermediateOutputPath)$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(IntermediateOutputPath)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\serverEXODUSDLL\AbstractThread.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\AttributeUpdate.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\ClientMessageContainer.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\Endianness.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\Lock.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\MessageClientComposer.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\MessageClientParser.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerComposer.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerDistributer.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\MessageServerParser.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientConnection.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientHandler.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkClientMessageDistributer.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkMessage.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerClient.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerConnection.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerHandler.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerInterface.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerListener.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\NetworkServerSenderInterface.cpp" />
+    <ClCompile Include="..\serverEXODUSDLL\Str.cpp" />
+    <ClCompile Include="src\CNode.cpp" />
+    <ClCompile Include="src\GenObject.cpp" />
+    <ClCompile Include="src\Log.cpp" />
+    <ClCompile Include="src\ObjectSpace.cpp" />
+    <ClCompile Include="src\ObjectPrefab.cpp" />
+    <ClCompile Include="src\opengl.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\FileIO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\serverEXODUSDLL\AbstractThread.h" />
+    <ClInclude Include="..\serverEXODUSDLL\ArrayList.h" />
+    <ClInclude Include="..\serverEXODUSDLL\AttributeUpdate.h" />
+    <ClInclude Include="..\serverEXODUSDLL\BinaryList.h" />
+    <ClInclude Include="..\serverEXODUSDLL\ClientMessageContainer.h" />
+    <ClInclude Include="..\serverEXODUSDLL\ConcurrentLinkedQueue.h" />
+    <ClInclude Include="..\serverEXODUSDLL\Defines.h" />
+    <ClInclude Include="..\serverEXODUSDLL\Endianness.h" />
+    <ClInclude Include="..\serverEXODUSDLL\exodus.h" />
+    <ClInclude Include="..\serverEXODUSDLL\exodusclient.h" />
+    <ClInclude Include="..\serverEXODUSDLL\IComparable.h" />
+    <ClInclude Include="..\serverEXODUSDLL\Lock.h" />
+    <ClInclude Include="..\serverEXODUSDLL\MessageClientComposer.h" />
+    <ClInclude Include="..\serverEXODUSDLL\MessageClientParser.h" />
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerComposer.h" />
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerDistributer.h" />
+    <ClInclude Include="..\serverEXODUSDLL\MessageServerParser.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientConnection.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientHandler.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkClientMessageDistributer.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkMessage.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerClient.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerConnection.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerHandler.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerInterface.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerListener.h" />
+    <ClInclude Include="..\serverEXODUSDLL\NetworkServerSenderInterface.h" />
+    <ClInclude Include="..\serverEXODUSDLL\Str.h" />
+    <ClInclude Include="src\CMD.h" />
+    <ClInclude Include="src\CSNode.h" />
+    <ClInclude Include="src\GenObject.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\TCP_main_loop.h" />
+    <ClInclude Include="src\DataStructs.h" />
+    <ClInclude Include="src\ObjectSpace.h" />
+    <ClInclude Include="src\ObjectPrefab.h" />
+    <ClInclude Include="src\opengl_const.h" />
+    <ClInclude Include="src\FileIO.h" />
+    <ClInclude Include="src\opengl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\OpenGL_Stuff\opengl_controls.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="geo.csv" />
+    <None Include="init.csv" />
+    <None Include="sync_obj.sfe" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

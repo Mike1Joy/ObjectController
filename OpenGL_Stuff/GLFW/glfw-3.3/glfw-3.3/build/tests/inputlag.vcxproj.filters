@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\tests\inputlag.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\deps\getopt.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\deps\glad_gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\deps\getopt.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\deps\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\mj4126n\OneDrive - University of Greenwich\PhD\OPENGL_STUFF\glfw-3.3\glfw-3.3\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B6F38A21-BB70-3556-A5B6-78AD5912055F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CC4C4EB6-0EE6-3D97-8D17-46A8A5C1C10A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
