@@ -260,6 +260,7 @@
     <Text Include="..\OpenGL_Stuff\opengl_controls.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\README.md" />
     <None Include="geo.csv" />
     <None Include="init.csv" />
     <None Include="sync_obj.sfe" />

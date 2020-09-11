@@ -241,6 +241,9 @@
     <None Include="sync_obj.sfe">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="..\README.md">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\OpenGL_Stuff\opengl_controls.txt">
