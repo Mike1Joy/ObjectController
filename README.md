@@ -6,23 +6,22 @@ This application was built on top of the HEPTAD software developed by Michael Jo
 
 
 ## Use cases
-This software is to be used with **buildingEXODUS** to represent the movement of "generic objects" such as wheelchairs, hospital beds, stretchers and luggage. Put simply, the OC is designed to represent any moveable object that doesn't fit well with the grid-like node structure of EXODUS due to its size or kinematic constraints. The software can also be used as a stand-alone application to simulate the movement of objects through geometries (with no people). To use with EXODUS a TCP link can be established. To use as a stand-alone application, an OpenGL window can be used as a simple editor (see **opengl_controls.txt** for a list of controls).
-
+This software is to be used with **buildingEXODUS** to represent the movement of "generic objects" such as wheelchairs, hospital beds, stretchers and luggage. Put simply, the OC is designed to represent any moveable object that doesn't fit well with the grid-like node structure of EXODUS due to its size or kinematic constraints. The software can also be used as a stand-alone application to simulate the movement of objects through geometries (with no people). To use with EXODUS a TCP link can be established. To use as a stand-alone application, an OpenGL window can be used as a simple editor (see **[opengl_controls.txt](/OpenGL_Stuff/opengl_controls.txt)** for a list of controls).
 
 ## How to use
-Insure **init.csv** is in the same folder as the exe
+1. Insure **init.csv** is in the same folder as the exe
 
-If you would like to show the OpenGL window (option can be toggled on/off in **init.csv**), ensure **freeglut.dll** and **glew32.dll** are in the same folder as the exe
+1. If you would like to show the OpenGL window (option can be toggled on/off in **init.csv**), ensure **freeglut.dll** and **glew32.dll** are in the same folder as the exe
 
-Run **ObjectController.exe** and run a version of buildingEXODUS that works with the OC.
+1. Run **ObjectController.exe** and run a version of buildingEXODUS that works with the OC.
 
-Load the desired geometry and scenario (with objects) into EXODUS.
+1. Load the desired geometry and scenario (with objects) into EXODUS.
 
-Drag and drop **sync_obj.sfe** into EXODUS to initiate TCP link and sync the geometry, people and objects.
+1. Drag and drop **sync_obj.sfe** into EXODUS to initiate TCP link and sync the geometry, people and objects.
 
-Wait until the OC says “OC ready for simulation!!”
+1. Wait until the OC says “OC ready for simulation!!”
 
-Run the simulation in EXODUS
+1. Run the simulation in EXODUS
 
 
 ## Config
