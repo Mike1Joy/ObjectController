@@ -2894,7 +2894,13 @@ namespace ObjCont
 		}
 		void replace(std::set<task>::iterator it)
 		{
-			priority = it->priority, type = it->type, cnodes = it->cnodes, delay = it->delay, started = it->started, STOP = false;
+			priority = it->priority;
+			type = it->type;
+			cnodes = it->cnodes;
+			delay = it->delay;
+			started = it->started;
+			STOP = false;
+
 		}
 
 		bool operator< (const task& other) const

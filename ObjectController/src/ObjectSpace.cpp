@@ -3755,13 +3755,17 @@ bool ObjectSpace::manage_tasks(int object_id)
 
 	// check if current_task is completed if so, replace with next
 	bool replace = false;
+	bool task_changed = false;
 	switch (t->type)
 	{
 	case GO_TO:
 		if (t->STOP)
 		{
 			if (obj->wait <= 0.0f)
+			{
 				replace = true;
+				task_changed = true;
+			}
 		}
 		else
 		{
@@ -3770,18 +3774,25 @@ bool ObjectSpace::manage_tasks(int object_id)
 				if (obj->get_cnode_id() == *it)
 				{
 					t->STOP = true;
+					replace = true;
+					task_changed = true;
 					break;
 				}
 			}
 		}
 		break;
 	case WAIT:
-		if (t->STOP) replace = true;
+		if (t->STOP)
+		{
+			replace = true;
+			task_changed = true;
+		}
 		else
 		{
 			if (obj->wait <= 0.0f)
 			{
 				replace = true;
+				task_changed = true;
 			}
 		}
 		break;
@@ -3799,13 +3810,17 @@ bool ObjectSpace::manage_tasks(int object_id)
 		if (obj->itinerary.empty())
 		{
 			t->make_empty();
-			return true;
 		}
-		t->replace(obj->itinerary.begin());
-		obj->itinerary.erase(obj->itinerary.begin());
+		else
+		{
+			t->replace(obj->itinerary.begin());
+			obj->itinerary.erase(obj->itinerary.begin());
+		}
 	}
 
-	return replace;
+	if (task_changed) log_main.print("Task change msg will send");
+
+	return task_changed;
 }
 std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<potential_move>& moves, GenObject* obj)
 {
