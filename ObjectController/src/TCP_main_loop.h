@@ -41,6 +41,7 @@ constexpr UINT EXMS_WAITING_FOR_OBJECT_DATA = 10550; // EX has finished its turn
 /// simulation send
 constexpr UINT EXMS_UNDEREXTERNALCONTROL = 10527; // <objectID><1 or 0> (1 = OC controlling it, 0 gives control to EXODUS)
 constexpr UINT EXMS_MOVEOBJECT = 10520; // <iObjectId><iObjectType><iLevel><fxpos><fypos><fzpos><frotation><fspeed><iTaskStatus>
+// iTaskStatus = 0 (only moved), 1 (only completed task), 2 (both moved and completed task)
 constexpr UINT EXMS_VELOCITYOBSTACLE = 10526; // <uPersonID><uNodeCount>(<uNodeID1><fCost1>,...)
 constexpr UINT EXMS_END_OF_OBJECT_DATA = 10552; // OC has finished its turn
 constexpr UINT EXMS_NODEOBJECT = 10524; // <uObjectID><uNodeCount>(<uNodeID1>,...)

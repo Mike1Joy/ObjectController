@@ -3785,14 +3785,12 @@ bool ObjectSpace::manage_tasks(int object_id)
 		if (t->STOP)
 		{
 			replace = true;
-			task_changed = true;
 		}
 		else
 		{
 			if (obj->wait <= 0.0f)
 			{
 				replace = true;
-				task_changed = true;
 			}
 		}
 		break;
@@ -3817,8 +3815,6 @@ bool ObjectSpace::manage_tasks(int object_id)
 			obj->itinerary.erase(obj->itinerary.begin());
 		}
 	}
-
-	if (task_changed) log_main.print("Task change msg will send");
 
 	return task_changed;
 }
