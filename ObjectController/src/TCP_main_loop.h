@@ -27,7 +27,6 @@ constexpr UINT EXMS_SEND_TRANSIT = 10053; // < iNodeID > <iNodeType><fLenght><fA
 constexpr UINT EXMS_SEND_OBJECT = 10055; // <iObjectId><iType><iLevel><fAngle><sX><sY><sZ>
 constexpr UINT EXMS_ADD_HEPTAD = 10111; // <iPersonId><aPET><NodeID><aDrive><anAgility><ObjectID><AttachmentPoint>
 constexpr UINT EXMS_STAIR_NODE = 10056; // <iNodeID><iStairID><iLane><iStep> 
-// TODO: check stair node number
 /// simulation receive
 constexpr UINT EXMS_TIME = 10100; // < fTime >
 constexpr UINT EXMS_DELETE = 10103; // < iPersonId >
