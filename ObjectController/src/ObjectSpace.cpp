@@ -3697,7 +3697,7 @@ void ObjectSpace::remove_object_task(int object_id)
 		log_main.print("Object remove failed: object id %d not found", object_id);
 		return;
 	}
-	obj->itinerary.insert(task(obj->itinerary.size()));
+	obj->itinerary.insert(task(obj->itinerary.size() + 99));
 }
 
 // action
