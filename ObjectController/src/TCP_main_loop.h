@@ -453,17 +453,22 @@ CNetworkMessage* create_empty_message(int type)
 	msg->Set(type, 0);
 	return msg;
 }
+static int msg_counter = 0;
 void create_and_send_message(int type, const std::vector<msg_element>& content)
 {
 	CNetworkMessage* msg = create_message(type, content);
 	//print_sent(msg);
 	CNetworkServerHandler::SendMessage(client_id, msg);
+	msg_counter++;
+	log_TCP.print("message counter: %d", msg_counter);
 }
 void create_and_send_empty_message(int type)
 {
 	CNetworkMessage* msg = create_empty_message(type);
 	//print_sent(msg);
 	CNetworkServerHandler::SendMessage(client_id, msg);
+	msg_counter++;
+	log_TCP.print("message counter: %d", msg_counter);
 }
 void send_example() // example of how to send message
 {
