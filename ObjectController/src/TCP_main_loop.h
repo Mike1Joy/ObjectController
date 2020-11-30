@@ -457,7 +457,9 @@ static int msg_counter = 0;
 void create_and_send_message(int type, const std::vector<msg_element>& content)
 {
 	CNetworkMessage* msg = create_message(type, content);
+
 	//print_sent(msg);
+
 	CNetworkServerHandler::SendMessage(client_id, msg);
 	msg_counter++;
 	log_TCP.print("message counter: %d", msg_counter);
@@ -495,7 +497,6 @@ void send_example() // example of how to send message
 void send_object_config(const data_for_TCP::object_config& oc)
 {
 	UINT code = oc.deleted ? EXMS_REMOVEOBJECT : EXMS_MOVEOBJECT;
-	print_content(oc.get_content());
 	create_and_send_message(code, oc.get_content());
 }
 void send_occupied_node(const data_for_TCP::occupied_nodes& on)
@@ -527,7 +528,6 @@ void send_done()
 }
 void send_stair_node(const data_for_TCP::stair_node& sn)
 {
-	print_content(sn.get_content());
 	create_and_send_message(EXMS_STAIR_NODE, sn.get_content());
 }
 void init_sync_objects()

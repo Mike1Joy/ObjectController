@@ -3282,7 +3282,7 @@ namespace data_for_TCP
 			std::vector<msg_element> content = { person_id, (int)node_obj_cost.size() };
 			for (auto& noc : node_obj_cost)
 			{
-				content.push_back(noc.first);
+				content.push_back((int)noc.first);
 
 				float cost = 0.0f;
 				for (auto& oc : noc.second)

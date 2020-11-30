@@ -3248,7 +3248,7 @@ void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, floa
 		}
 	}
 
-	// clear vos for moved objects or objects that have just stopped
+	//// clear vos for moved objects or objects that have just stopped
 	std::vector<int> moved_objs;
 
 	// clear vos from moved objects
@@ -3302,6 +3302,7 @@ void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, floa
 		}
 	}
 
+	//// Calculate VOs and PVOs
 	for (auto this_obj = m_objects.begin(); this_obj != m_objects.end(); ++this_obj) // go through all objects
 	{
 
@@ -4485,10 +4486,14 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 		float speed = per.second.velocity.magnitude();
 		if (speed < per.second.default_speed) speed = per.second.default_speed;
 		
-		std::vector<int> nodes = current_node->tnodes;
+		std::vector<int> nodes = current_node->tnodes; // all nodes connected to current node
 		nodes.push_back(per.second.node_id);
 		REMOVE_DUPLICATES(nodes);
 
+
+		// TODO: add "proximity to object" cost to nodes within some radius of object
+		// OR calculate VOs based on where the object wants to go next
+		//    Add a desired velocity calculated after every move. Use this instead of current velocity for VO calc
 		for (int& next_id : nodes)
 		{
 			vector2 next_pos = get_tnode_pnt(next_id)->position;
