@@ -804,6 +804,7 @@ class ObjectSpace // singleton!
 	std::pair<std::map<int, bool>, std::map<int, bool>> action_all_tasks(float); // first = task completed, second = object deleted
 	std::vector<int> rnd_get_task_order();
 	float calc_blocking_dist(vector2 velocity, std::vector<x_y<float>> verts, int floor, int stair_id);
+	vector2 get_desired_vel(GenObject* obj, CSNode* new_node);
 
 	// Constructors
 	ObjectSpace();
@@ -1013,6 +1014,7 @@ public:
 	bool data_cnode_arc_info;
 	bool data_tnode_arc_info;
 	bool data_object_info;
+	bool vo_des_vel;
 };
 
 // singleton

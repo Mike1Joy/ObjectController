@@ -1335,19 +1335,21 @@ void drawBezier(bezier& bez)
 		drawXYTheta(c.x, c.y, c.theta, TOP_LAYER - 0.01, 0.05f, 0.02, 0.0f, 0.75f, 0.0f);
 	}
 }
-void drawVO(const velocity_obstacle& vo, x_y<float> pos, vector2 velocity)
+void drawVO(const velocity_obstacle& vo, x_y<float> pos, vector2 velocity, vector2 des_vel)
 {
 	glTranslatef(pos.x, pos.y, 0.0f);
-		// vo left line
+		// vo left line (blue)
 		drawLine(TOP_LAYER, vo.left_line.start.x, vo.left_line.start.y, vo.left_line.end.x, vo.left_line.end.y, 2.0f, 0.0f, 0.0f, 1.0f); 
 		drawRegPoly(vo.left_line.start.x, vo.left_line.start.y, TOP_LAYER, 0.1f, 8, 0.0f, 0.0f, 1.0f);
-		// vo right line
+		// vo right line (red)
 		drawLine(TOP_LAYER, vo.right_line.start.x, vo.right_line.start.y, vo.right_line.end.x, vo.right_line.end.y, 2.0f, 1.0f, 0.0f, 0.0f); 
 		drawRegPoly(vo.right_line.start.x, vo.right_line.start.y, TOP_LAYER, 0.1f, 8, 1.0f, 0.0f, 0.0f);
 		// min velocity to not care
 		drawRegPoly_nofill(0.0f, 0.0f, TOP_LAYER, sqrt(vo.ok_mag_sq), 16, 0.5f, 0.5f, 0.5f, 2.0f); 
 		// velocity (red if in vo, black if not)
-		drawLine(TOP_LAYER, 0.0f, 0.0f, velocity.x, velocity.y, 2.0f, vo.velocity_in_vo(velocity) ? 1.0f : 0.0f, 0.0f, 0.0f); 
+		drawLine(TOP_LAYER, 0.0f, 0.0f, velocity.x, velocity.y, 2.0f, vo.velocity_in_vo(velocity) ? 1.0f : 0.0f, 0.0f, 0.0f);
+		// desired velocity (blue)
+		drawLine(TOP_LAYER, 0.0f, 0.0f, des_vel.x, des_vel.y, 2.0f, 0.0f, 0.0f, 1.0f);
 	glTranslatef(-pos.x, -pos.y, 0.0f);
 }
 
@@ -1807,7 +1809,7 @@ void drawConfig(GenObject& obj)
 	{
 		for (const velocity_obstacle& vo : obj.get_vos())
 		{
-			drawVO(vo, obj._position, obj.velocity_current.first);
+			drawVO(vo, obj._position, obj.velocity_current.first, obj.velocity_desired);
 		}
 	}
 
