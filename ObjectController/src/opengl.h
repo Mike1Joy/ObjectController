@@ -263,7 +263,7 @@ void drawCell(float xsize, float ysize, float x, float y, int rain, bool empty);
 void drawRegPoly_nofill(float xpos, float ypos, float zpos, float radius, float edges, float red, float green, float blue, float width);
 void drawXYTheta(float x, float y, float theta, float layer, float length, float radius, float r, float g, float b);
 void drawBezier(bezier& bez);
-void drawVO(const velocity_obstacle& vo, x_y<float> pos, vector2 velocity);
+void drawVO(const velocity_obstacle& vo, x_y<float> pos, vector2 velocity, vector2 des_vel);
 
 // Draw (vector)
 void drawNodeVector();

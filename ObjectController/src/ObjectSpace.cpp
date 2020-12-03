@@ -3172,6 +3172,8 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 	obj->remove_vo(per->id, false);
 
 	std::vector<x_y<float>> other_occ = { get_tnode_xypos(per->node_id) };
+	
+	x_y<float> obj_vel = vo_des_vel ? obj->velocity_desired : obj->velocity_current.first;
 
 	velocity_obstacle pvo;
 	velocity_obstacle ovo(
@@ -3180,7 +3182,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		obj->get_attachment_point_pos(), { per->position },
 		radius,
 		(x_y<float>)obj->_position, (x_y<float>)per->position,
-		(x_y<float>)obj->velocity_current.first, (x_y<float>)per->velocity,
+		obj_vel, (x_y<float>)per->velocity,
 		obj->moved_backwards, false,
 		obj->get_max_acceleration(),1.0f,
 		obj->get_max_linear_speed(NOT_STAIR_ARC,-1),per->default_speed,
@@ -3211,6 +3213,10 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		other_occ.push_back({ get_tnode_xypos(id) });
 	}
 
+	x_y<float> this_obj_vel = vo_des_vel ? this_obj->velocity_desired : this_obj->velocity_current.first;
+	x_y<float> other_obj_vel = vo_des_vel ? other_obj->velocity_desired : other_obj->velocity_current.first;
+
+	// TODO: change velocity_current.first to velocity_desired
 	velocity_obstacle other_vo;
 	velocity_obstacle this_vo(
 		this_obj->get_object_id(), other_obj->get_object_id(), true,
@@ -3218,7 +3224,7 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		this_obj->get_attachment_point_pos(), other_obj->get_attachment_point_pos(),
 		radius,
 		this_obj->_position, other_obj->_position,
-		this_obj->velocity_current.first, other_obj->velocity_current.first,
+		this_obj_vel, other_obj_vel,
 		this_obj->moved_backwards, other_obj->moved_backwards,
 		this_obj->get_max_acceleration(), other_obj->get_max_acceleration(),
 		this_obj->get_max_linear_speed(NOT_STAIR_ARC, -1), other_obj->get_max_linear_speed(NOT_STAIR_ARC, -1),
@@ -4043,9 +4049,9 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		}
 		else // object can move
 		{
-			CSNode* n = get_node(move.node);
+			CSNode* new_node = get_node(move.node);
 			
-			obj->move(move.node, *n->get_tnode_ids()->begin(), move.wait, move.velocity, move.new_position, n->_attachment_point_validity[prefab_id], interpolate, n->get_floor_num(), n->_stair_ids[prefab_id], old_pot < move.potential, seconds);
+			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node));
 
 			set_occupation_halo_obj(occ, *obj, seconds);
 			
@@ -4074,6 +4080,7 @@ void ObjectSpace::delay_obj(int object_id)
 	obj->moved = false;
 	obj->not_move_cost = 0.0f;
 	obj->match_cnodes();
+	obj->velocity_desired = { 0.0f,0.0f };
 	if (!obj->stopped)
 	{
 		obj->just_stopped = true;
@@ -4232,6 +4239,76 @@ float ObjectSpace::calc_blocking_dist(vector2 velocity, std::vector<x_y<float>> 
 
 	return MAX(smallest_pos, smallest_neg);
 }
+vector2 ObjectSpace::get_desired_vel(GenObject* obj, CSNode* n)
+{
+	int prefab_id = obj->get_object_prefab_id();
+	int object_id = obj->get_object_id();
+
+	float max_lin_speed = obj->get_max_linear_speed(NOT_STAIR_ARC, -1);
+	float max_ang_speed = obj->get_max_angular_speed();
+
+	x_y<float> pos = n->get_position();
+
+	float lowest_pot = INFINITY;
+	vector2 des_vel = { 0.0f,0.0f };
+
+	for (CSArc& arc : n->_arcs)
+	{
+		if (arc.turn_on_spot && !obj->can_turn_on_spot()) continue;
+
+		float holo = obj->get_holonomicity(arc.holo);
+		if (holo == 0.0f || !obj->can_take_stair(arc.stair_dir, n->_stair_ids[prefab_id])) continue;
+
+		cnode_pos this_vec_pos = arc.cnode_to_vec_pos;
+		CSNode* this_node = get_node(this_vec_pos);
+		if (!this_node || !this_node->is_valid(prefab_id)) continue;
+
+		float this_pot = this_node->get_potential(object_id);
+		if (this_pot < 0.0f) continue;
+
+		float weight = 0.0f;
+
+		if (!arc.turn_on_spot) // trans
+		{
+			float t_t = arc.length / (max_lin_speed);
+			if (!arc.same_layer)
+			{
+				// trans and rot
+				float t_a = fLAYER_GAP / max_ang_speed;
+				weight = sqrt(t_t * t_t + t_a * t_a);
+			}
+			else
+			{
+				// trans and !rot
+				weight = t_t;
+			}
+		}
+		else if (!arc.same_layer) // rot
+		{
+			// !trans and rot
+			weight = fLAYER_GAP / max_ang_speed;
+		}
+		else
+		{
+			// !trans and !rot
+			continue;
+		}
+
+		weight /= holo;
+		
+		this_pot += weight;
+
+		if (this_pot < lowest_pot)
+		{
+			lowest_pot = this_pot;
+
+			des_vel = this_node->get_position() - pos;
+			des_vel /= weight;
+		}
+	}
+
+	return des_vel;
+}
 
 // save state
 void ObjectSpace::save_state()
@@ -4289,6 +4366,7 @@ ObjectSpace::ObjectSpace()
 	data_cnode_arc_info = true;
 	data_tnode_arc_info = true;
 	data_object_info = true;
+	vo_des_vel = false;
 }
 ObjectSpace::~ObjectSpace(){}
 
@@ -4491,9 +4569,6 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 		REMOVE_DUPLICATES(nodes);
 
 
-		// TODO: add "proximity to object" cost to nodes within some radius of object
-		// OR calculate VOs based on where the object wants to go next
-		//    Add a desired velocity calculated after every move. Use this instead of current velocity for VO calc
 		for (int& next_id : nodes)
 		{
 			vector2 next_pos = get_tnode_pnt(next_id)->position;

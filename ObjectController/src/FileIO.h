@@ -318,6 +318,7 @@ public:
 			BOOL,
 			BOOL,
 			BOOL,
+			BOOL,
 			BOOL
 		};
 
@@ -335,6 +336,7 @@ public:
 		bool data_cnode_arc_info;
 		bool data_tnode_arc_info;
 		bool data_object_info;
+		bool vo_des_vel;
 
 		bool fill_values()
 		{
@@ -356,6 +358,7 @@ public:
 			if (fill_if<bool>(data_cnode_arc_info, content[11])) return false;
 			if (fill_if<bool>(data_tnode_arc_info, content[12])) return false;
 			if (fill_if<bool>(data_object_info, content[13])) return false;
+			if (fill_if<bool>(vo_des_vel, content[14])) return false;
 
 			return true;
 		}

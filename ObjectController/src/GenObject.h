@@ -53,6 +53,7 @@ public:
 
 	float wait;
 	std::pair<vector2, float> velocity_current; // vector2 linear vel, float angular vel
+	vector2 velocity_desired;
 	bool active;
 	vector2 _position;
 	vector2 _next_position;
@@ -75,7 +76,7 @@ public:
 
 	// action
 	bool can_move();
-	void move(cnode_pos, int, float, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds);
+	void move(cnode_pos, int, float, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds, vector2 new_des_vel);
 	void dont_move(float seconds);
 	void idle();
 	void match_cnodes();

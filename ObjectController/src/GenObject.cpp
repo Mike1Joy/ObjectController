@@ -278,6 +278,7 @@ void GenObject::idle()
 	moved_backwards = false;
 	m_last_cnode = m_current_cnode;
 	just_moved = false;
+	velocity_desired = 0.0f;
 
 	if (!stopped)
 	{
@@ -293,7 +294,7 @@ void GenObject::match_cnodes()
 {
 	m_last_cnode = m_current_cnode;
 }
-void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds)
+void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel)
 {
 	if (new_pos == m_current_cnode) // don't move
 	{
@@ -305,6 +306,7 @@ void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, ve
 	moved_backwards = backwards;
 	velocity_current.first = (pos - _position) / wait;
 	velocity_current.second = orient_to_angle(new_pos.orientation).minus(_orientation) / wait;
+	velocity_desired = new_des_vel;
 	match_cnodes();
 	m_current_cnode = new_pos;
 	m_tnode_id = tnode;
@@ -493,6 +495,7 @@ GenObject::GenObject(std::vector<ObjectPrefab>::iterator prefab, ObjCont::object
 	_next_orientation(orient_to_angle(instance.start_orientation)),
 	stopped(true),
 	velocity_current(0.0f, 0.0f),
+	velocity_desired(0.0f),
 	moved_backwards(false),
 	not_move_cost(0.0f),
 	m_width(prefab->get_width()),
