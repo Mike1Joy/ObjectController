@@ -4613,3 +4613,5 @@ void ObjectSpace::correct_tarc_pos()
 		a.position.end = TCP_get_node_from_id(a.tnode_ids.end)->position;
 	}
 }
+
+// test
