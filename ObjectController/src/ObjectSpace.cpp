@@ -3173,7 +3173,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 
 	std::vector<x_y<float>> other_occ = { get_tnode_xypos(per->node_id) };
 	
-	x_y<float> obj_vel = vo_des_vel ? obj->velocity_desired : obj->velocity_current.first;
+	x_y<float> obj_vel = obj->velocity_desired * vo_des_vel_f + obj->velocity_current.first * (1.0f - vo_des_vel_f);
 
 	velocity_obstacle pvo;
 	velocity_obstacle ovo(
@@ -3213,8 +3213,8 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		other_occ.push_back({ get_tnode_xypos(id) });
 	}
 
-	x_y<float> this_obj_vel = vo_des_vel ? this_obj->velocity_desired : this_obj->velocity_current.first;
-	x_y<float> other_obj_vel = vo_des_vel ? other_obj->velocity_desired : other_obj->velocity_current.first;
+	x_y<float> this_obj_vel = this_obj->velocity_desired * vo_des_vel_f + this_obj->velocity_current.first * (1.0f - vo_des_vel_f);
+	x_y<float> other_obj_vel = other_obj->velocity_desired * vo_des_vel_f + other_obj->velocity_current.first * (1.0f - vo_des_vel_f);
 
 	// TODO: change velocity_current.first to velocity_desired
 	velocity_obstacle other_vo;
@@ -4366,7 +4366,7 @@ ObjectSpace::ObjectSpace()
 	data_cnode_arc_info = true;
 	data_tnode_arc_info = true;
 	data_object_info = true;
-	vo_des_vel = false;
+	vo_des_vel_f = 0.5f;
 }
 ObjectSpace::~ObjectSpace(){}
 
@@ -4688,5 +4688,3 @@ void ObjectSpace::correct_tarc_pos()
 		a.position.end = TCP_get_node_from_id(a.tnode_ids.end)->position;
 	}
 }
-
-// test

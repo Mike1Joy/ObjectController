@@ -167,6 +167,23 @@ public:
 			if (fill_if<bool>(landing_inside, content[20])) return false;
 			if (fill_if<float>(integral_drive, content[21])) return false;
 
+			cap<int>(0, prefab_id);
+			cap<float>(0.0f, max_linear_speed);
+			cap<float>(0.0f, max_angular_speed);
+			cap<float>(0.0f, max_stair_dec_speed);
+			cap<float>(0.0f, max_stair_acc_speed);
+			cap<float>(0.0f, max_acceleration);
+			cap<float>(0.0f, holo0, 1.0f);
+			cap<float>(0.0f, holo1, 1.0f);
+			cap<float>(0.0f, holo2, 1.0f);
+			cap<float>(0.0f, holo3, 1.0f);
+			cap<float>(0.0f, holo4, 1.0f);
+			cap<float>(0.0f, holo5, 1.0f);
+			cap<float>(0.0f, holo6, 1.0f);
+			cap<float>(0.0f, holo7, 1.0f);
+			cap<float>(0.0f, holo8, 1.0f);
+			cap<float>(0.0f, integral_drive);
+
 			return true;
 		}
 	};
@@ -194,6 +211,8 @@ public:
 			if (fill_if<int>(prefab_id, content[0])) return false;
 			if (fill_if<float>(x, content[1])) return false;
 			if (fill_if<float>(y, content[2])) return false;
+
+			cap<int>(0, prefab_id);
 
 			return true;
 		}
@@ -250,6 +269,14 @@ public:
 			if (fill_if<int>(required_attendants, content[10])) return false;
 			if (fill_if<bool>(is_driver, content[11])) return false;
 
+			cap<int>(0, prefab_id);
+			cap<int>(0, point_id);
+			cap<int>(1, num_points);
+			cap<float>(0.0f, radius);
+			cap<int>(0, default_occ);
+			cap<float>(0.0f, attachment_time);
+			cap<int>(0, required_attendants);
+
 			return true;
 		}
 
@@ -294,6 +321,12 @@ public:
 			if (fill_if<int>(required_attendants, content[6])) return false;
 			if (fill_if<bool>(is_driver, content[7])) return false;
 
+			cap<int>(0, prefab_id);
+			cap<int>(0, point_id);
+			cap<float>(0.0f, radius);
+			cap<float>(0.0f, attachment_time);
+			cap<int>(0, required_attendants);
+
 			return true;
 		}
 	};
@@ -319,7 +352,7 @@ public:
 			BOOL,
 			BOOL,
 			BOOL,
-			BOOL
+			FLOAT
 		};
 
 		bool vo_hybrid;
@@ -336,7 +369,7 @@ public:
 		bool data_cnode_arc_info;
 		bool data_tnode_arc_info;
 		bool data_object_info;
-		bool vo_des_vel;
+		float vo_des_vel_f;
 
 		bool fill_values()
 		{
@@ -358,7 +391,12 @@ public:
 			if (fill_if<bool>(data_cnode_arc_info, content[11])) return false;
 			if (fill_if<bool>(data_tnode_arc_info, content[12])) return false;
 			if (fill_if<bool>(data_object_info, content[13])) return false;
-			if (fill_if<bool>(vo_des_vel, content[14])) return false;
+
+			if (fill_if<float>(vo_des_vel_f, content[14])) return false;
+
+			cap<float>(0.0f, time_to_collision);
+			cap<int>(1, num_runs_per_sim);
+			cap<float>(0.0f, vo_des_vel_f, 1.0f);
 
 			return true;
 		}

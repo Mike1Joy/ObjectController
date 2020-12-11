@@ -467,6 +467,22 @@ namespace ObjCont
 		return true;
 	}
 
+	template<typename T> void cap(T&& min, T& var, T&& max)
+	{
+		if (var < min) var = min;
+		else if (var > max) var = max;
+	}
+
+	template<typename T> void cap(T& var, T&& max)
+	{
+		if (var > max) var = max;
+	}
+
+	template<typename T> void cap(T&& min, T& var)
+	{
+		if (var < min) var = min;
+	}
+
 	template<typename T>
 		static bool in_vector(const std::vector<T>& vec, T member)
 	{

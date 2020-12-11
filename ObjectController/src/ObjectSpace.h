@@ -1014,7 +1014,7 @@ public:
 	bool data_cnode_arc_info;
 	bool data_tnode_arc_info;
 	bool data_object_info;
-	bool vo_des_vel;
+	float vo_des_vel_f;
 };
 
 // singleton

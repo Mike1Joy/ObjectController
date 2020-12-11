@@ -164,7 +164,7 @@ bool get_init()
 		s_object_space.data_cnode_arc_info = init.options.data_cnode_arc_info;
 		s_object_space.data_tnode_arc_info = init.options.data_tnode_arc_info;
 		s_object_space.data_object_info = init.options.data_object_info;
-		s_object_space.vo_des_vel = init.options.vo_des_vel;
+		s_object_space.vo_des_vel_f = init.options.vo_des_vel_f;
 	}
 	else
 	{
