@@ -2136,6 +2136,11 @@ void delayed_update(int update_freq_ms)
 	}
 }
 
+// SIM
+int GLSIM_step = 0;
+DWORD GLSIM_comptime_start = 0;
+float GLSIM_simtime = 0.0f;
+
 // RENDER
 int render_print = 0;
 const int render_print_freq = 10000;
@@ -2235,12 +2240,25 @@ void render()
 			{
 				delayed(iSIM_STEP_MSEC);
 			}
+			if (first)
+			{
+				GLSIM_step = 0;
+				GLSIM_comptime_start = GetTickCount();
+				GLSIM_simtime = 0.0f;
+			}
+
 			gl_sim_data = s_object_space.main_sim_step_ALL(fSIM_STEP_SEC, first);
 			log_opengl.print("Simulation stepped forward");
 			log_opengl.print(2, "%d configs", (int)gl_sim_data.configs.size());
 			log_opengl.print(2, "%d occ_nodes", (int)gl_sim_data.occ_nodes.size());
 			log_opengl.print(2, "%d vos", (int)gl_sim_data.vos.size());
+
+			s_object_space.output_sim_data("data_sim.csv", GLSIM_step, 0, (GetTickCount() - GLSIM_comptime_start), GLSIM_simtime, first);
+			
 			first = false;
+
+			GLSIM_step++;
+			GLSIM_simtime += fSIM_STEP_SEC;
 		}
 	}
 
