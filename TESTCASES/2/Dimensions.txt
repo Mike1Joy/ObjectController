@@ -1,0 +1,26 @@
+Vertices:
+(-0.25, 1.32)
+(0.25, 1.32)
+(0.375, 0.5)
+(0.375, 0)
+(0.25, -0.5)
+(-0.25, -0.5)
+(-0.375, 0)
+(-0.375, 0.5)
+
+Attend:
+(-0.2, 1.51)
+(0.2, 1.51)
+r=0.2
+
+Area without attendants:
+1.2
+
+Area with attendants:
+1.46370394 +-0.000000093
+
+Area without attendants (Minkowski):
+2.26360808 +- 0.00000018
+
+Area with attendants (Minkowski):
+2.7388404 +- 0.00000033
