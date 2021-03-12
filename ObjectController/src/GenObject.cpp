@@ -294,7 +294,7 @@ void GenObject::match_cnodes()
 {
 	m_last_cnode = m_current_cnode;
 }
-void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel)
+void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel)
 {
 	if (new_pos == m_current_cnode) // don't move
 	{
@@ -302,10 +302,10 @@ void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, ve
 		return;
 	}
 
-	wait += weight;
+	wait += _wait;
 	moved_backwards = backwards;
-	velocity_current.first = (pos - _position) / wait;
-	velocity_current.second = orient_to_angle(new_pos.orientation).minus(_orientation) / wait;
+	velocity_current.first = (pos - _position) / move_time;
+	velocity_current.second = orient_to_angle(new_pos.orientation).minus(_orientation) / move_time;
 	velocity_desired = new_des_vel;
 	match_cnodes();
 	m_current_cnode = new_pos;
@@ -337,14 +337,14 @@ void GenObject::move(cnode_pos new_pos, int tnode, float weight, vector2 vel, ve
 
 	moved = true;
 }
-std::pair<float, vector2> GenObject::calc_wait_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, bool& oscillate, cnode_pos new_pos)
+std::pair<std::pair<float,float>, vector2> GenObject::calc_waits_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, bool& oscillate, cnode_pos new_pos)
 {
-	std::pair<float, vector2> output(not_move_cost, 0.0f);
+	std::pair<std::pair<float, float>, vector2> out_wait_vel({ not_move_cost,0.0f }, 0.0f);
 
 	// didn't move
 	if (!translated && !rotated)
 	{
-		return output;
+		return out_wait_vel;
 	}
 
 	// if this move takes the object back to where it just was
@@ -353,8 +353,9 @@ std::pair<float, vector2> GenObject::calc_wait_and_vel(vector2 from, vector2 to,
 	// just rotated
 	if (rotated && !translated)
 	{
-		output.first = fLAYER_GAP / (m_max_speeds.get_angular());
-		return output;
+		out_wait_vel.first.first = fLAYER_GAP / (m_max_speeds.get_angular());
+		out_wait_vel.first.second = out_wait_vel.first.first;
+		return out_wait_vel;
 	}
 
 	// translated
@@ -409,11 +410,14 @@ std::pair<float, vector2> GenObject::calc_wait_and_vel(vector2 from, vector2 to,
 	new_speed *= holo;
 
 	float t_l = 0.0f;
+	float t_l_wait = 0.0f; // wait time uses average speed rather than new speed
 	float t_r = 0.0f;
 
 	if (translated && new_speed > 0.0f)
 	{
+		float avg_speed = 0.5f * (new_speed + sqrt(cur_speed_sq));
 		t_l = dist / new_speed;
+		t_l_wait = dist / avg_speed;
 	}
 
 	if (rotated)
@@ -421,9 +425,10 @@ std::pair<float, vector2> GenObject::calc_wait_and_vel(vector2 from, vector2 to,
 		t_r = fLAYER_GAP / m_max_speeds.get_angular();
 	}
 
-	output.first = sqrt(t_l*t_l + t_r*t_r);
-	output.second = displacement / output.first;
-	return output;
+	out_wait_vel.first.first = sqrt(t_l_wait * t_l_wait + t_r * t_r);
+	out_wait_vel.first.second = sqrt(t_l * t_l + t_r * t_r);
+	out_wait_vel.second = displacement / out_wait_vel.first.second;
+	return out_wait_vel;
 }
 void GenObject::set_position_orient(vector2 pos, Angle a)
 {

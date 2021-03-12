@@ -3848,8 +3848,9 @@ std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<
 	for (potential_move& move : moves)
 	{
 		bool oscillate = false;
-		auto wait_vel = obj->calc_wait_and_vel(move.old_position, move.new_position, move.holo, move.rot, move.trans, move.stair_dir, oscillate, move.node);
-		move.wait = wait_vel.first;
+		auto wait_vel = obj->calc_waits_and_vel(move.old_position, move.new_position, move.holo, move.rot, move.trans, move.stair_dir, oscillate, move.node);
+		move.wait = wait_vel.first.first;
+		move.move_time = wait_vel.first.second;
 		move.velocity = wait_vel.second;
 		move.set_VO_cost(obj->get_vos(), min_drive_scale);
 		if (move.not_move)
@@ -4051,7 +4052,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		{
 			CSNode* new_node = get_node(move.node);
 			
-			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node));
+			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node));
 
 			set_occupation_halo_obj(occ, *obj, seconds);
 			

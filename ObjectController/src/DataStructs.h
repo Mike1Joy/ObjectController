@@ -2971,6 +2971,7 @@ namespace ObjCont
 		float potential;
 		float weight;
 		float wait;
+		float move_time;
 		float VO_cost;
 		float add_cost;
 		bool in_VO;
@@ -3074,13 +3075,14 @@ namespace ObjCont
 		}
 
 		// constructor
-		potential_move() : node(0,0), new_position(0.0f), displacement(0.0f), velocity(0.0f), trans(false), rot(false), potential(0.0f), weight(0.0f), holo(0.0f), stair_dir(NOT_STAIR_ARC), not_move(false), valid(false) {}
+		potential_move() : node(0,0), new_position(0.0f), displacement(0.0f), velocity(0.0f), trans(false), rot(false), potential(0.0f), weight(0.0f), holo(0.0f), stair_dir(NOT_STAIR_ARC), not_move(false), valid(false), move_time(0.0f) {}
 
 		potential_move(cnode_pos node, vector2 new_position, float displacement, vector2 old_position, bool trans, bool rot, bool not_move, float potential, float old_potential, float holo, unsigned char stair_dir, float max_lin_vel, float max_ang_vel, float max_acel, float seconds)
 			: node(node), new_position(new_position), displacement(displacement), old_position(old_position), trans(trans), rot(rot), potential(potential), max_lin_vel(max_lin_vel), holo(holo), stair_dir(stair_dir), not_move(not_move), max_acel(max_acel), VO_cost(0.0f), add_cost(0.0f)
 		{
 			set_weight(max_lin_vel*holo, max_ang_vel, seconds);
 			wait = weight;
+			move_time = weight;
 
 			towards_goal = potential < old_potential;
 
