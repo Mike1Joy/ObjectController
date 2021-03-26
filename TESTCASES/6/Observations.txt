@@ -1,0 +1,19 @@
+Set all stair rules (up, down, side) to true (1,1,1). Test each with true and false.
+
+UP TEST: place object at bottom of stairs, set target at top. See if it moves or cancels task saying it is unreachable.
+
+DOWN TEST: place object at top of stairs, set target at bottom. See if it moves or cancels task saying it is unreachable.
+
+SIDE TEST: place object at top of stairs (to one side), set target at bottom (to same side). Let object start moving. when object is on stairs, add person to block current lane. See if object stops or moves to avoid person.
+
+UP
+1,0,0 - Object moves up stairs and reaches target. Object moves to one side of stairs (not middle)
+0,0,0 - Object did not move at all
+
+DOWN
+0,1,0 - Object moves down stairs and reaches target (middle)
+0,0,0 - Object did not move at all
+
+SIDE
+0,1,1 - Object moves down and changes lane when obstacle is added
+0,1,0 - Object moves down and stops when it incounters the obstacle
