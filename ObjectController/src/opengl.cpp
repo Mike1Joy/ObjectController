@@ -429,7 +429,7 @@ void mouseButton(int button, int state, int x, int y)
 	}
 	else if (mode == SIMULATE)
 	{
-		if (!potential_generating && !object_generating && !selecting_goals)
+		if (!potential_generating && !object_generating && !selecting_goals && !adding_person)
 		{
 			if (button == GLUT_LEFT_BUTTON) {
 				// when the button is released
@@ -462,6 +462,10 @@ void mouseButton(int button, int state, int x, int y)
 					log_opengl.print("Goal selected: node = %d", *select.node);
 					s_object_space.go_to_target(cur_obj, *select.node);
 				}
+			}
+			else if (adding_person)
+			{
+				add_person(x * scale + view_left, view_top - y * scale, floor_num);
 			}
 		}
 	}
@@ -655,6 +659,11 @@ void processNormalKeys(unsigned char key, int x, int y)
 			++rain_colour;
 			if (rain_colour == 2)
 				rain_colour = 0;
+			break;
+		case 's':
+			adding_person = !adding_person;
+			adding_person ? log_opengl.print("adding people...") : log_opengl.print("stopped adding people...");
+			object_generating = false;
 			break;
 		}
 		break;
