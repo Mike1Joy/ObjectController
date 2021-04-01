@@ -1,0 +1,9 @@
+tNode IDs go from top left to bottom right along rows (like text):
+
+ 1  2  3
+ 4  5  6
+ 7  8  9
+
+cNode IDs are not in this order as they are generated differently.
+
+Results for TC8 are also in this folder

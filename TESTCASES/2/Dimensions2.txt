@@ -24,3 +24,5 @@ Area without attendants (Minkowski):
 
 Area with attendants (Minkowski):
 2.7388404 +- 0.00000033
+
+Areas calculated in Rhino. Minkowski done with offset, trim and join.
