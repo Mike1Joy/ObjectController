@@ -1,0 +1,21 @@
+For rectangle of width w and length l (w <= l), min width of corridor = min((w + (l/2))/Sqrt(2), max(l,w))
+
+Available corridor widths from files (m):
+1.00
+1.25
+1.50
+1.75
+2.00
+
+l and w will be at least 0.5 as this is the diameter of a person and will increase in increments of 0.5. l and w will be chosen so the analytical solution lies between 1 and 2, so I can use the available files. This leaves 15 possible objects.
+
+Each object will be a rectangle of length l and width w with CoR in centre and all attachment points inside. Full holonomicity (all 1) and turn on spot enabled.
+
+
+----------------------
+
+Observations:
+
+When the object is square, such as L1 W1 C1.25, the object is able to get around the corner without rotating. This happens when both l and w are less than cor width.
+
+Discretisation is the reason for the error. For example L2 W0.5 C1.25 fails, but I tried another case that was slightly less wide L2 W0.46 C1.25 and this worked!
