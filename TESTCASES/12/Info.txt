@@ -1,6 +1,5 @@
 All objects were EC with different stair rules:
 
-(EC was 0.35 from inside by default)
 Object 1 - inside lane (0.45 from inside)
 Object 2 - outside lane (0.45 from outside)
 Object 3 - middle lane (0.7 from inside)
