@@ -865,7 +865,7 @@ public:
 	void TCP_move_person(int person_id, int new_node_id, float speed, float drive, float fitness, int object_id, int point_id);
 
 	// Generate
-	void generate_cspace();
+	void generate_cspace(bool auto_landings);
 	void generate_freespace();
 	bool cspace_ready;
 	bool freespace_ready;

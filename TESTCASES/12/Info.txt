@@ -1,0 +1,17 @@
+All objects were EC with different stair rules:
+
+(EC was 0.35 from inside by default)
+Object 1 - inside lane (0.45 from inside)
+Object 2 - outside lane (0.45 from outside)
+Object 3 - middle lane (0.7 from inside)
+
+
+Geometry is based on Hunt2016 Figure 6-13 (* not based on Hunt):
+
+Stair width = 1.4
+Stair length = 3.6*
+Stair height = 3*
+Riser num = 15*
+Lanes (nodes across) = 3*
+Landing depth = 1.4
+Landing width = 3.4 (it is 3.3 in Hunt2016, but 3.4 is much easier to make in OC)

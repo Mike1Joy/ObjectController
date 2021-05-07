@@ -474,7 +474,7 @@ void ObjectSpace::TCP_add_object_EX(int iObjectId, int iType, int iLevel, float 
 
 	if (!cspace_ready)
 	{
-		generate_cspace();
+		generate_cspace(true);
 	}
 
 	Orient orient = EX_ang_to_orient(fAngle);
@@ -773,7 +773,7 @@ void ObjectSpace::TCP_move_person(int person_id, int new_node_id, float speed, f
 //// Generating cspace and objects
 
 // Cspace
-void ObjectSpace::generate_cspace()
+void ObjectSpace::generate_cspace(bool auto_landings)
 {
 	if (m_EX_nodes.empty() || m_EX_arcs.empty())
 	{
@@ -789,7 +789,8 @@ void ObjectSpace::generate_cspace()
 	m_bounds = m_EX_bounds;
 
 	// set up landings
-	s_object_space.auto_gen_landings();
+	if (auto_landings)
+		s_object_space.auto_gen_landings();
 	set_all_arc_landing_ids();
 
 	// populate first layer of cnodes

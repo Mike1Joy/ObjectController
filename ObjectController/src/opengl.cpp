@@ -952,11 +952,11 @@ void add_bound(float start_x, float start_y, float end_x, float end_y, int id)
 void add_stair(float x, float y)
 {
 	float direction = fLAYER_GAP * (int)orientation;
-	s_object_space.TCP_add_stair(stair(s_object_space.get_next_stair_id(), x, y, direction, 3, 15, 3.5f, 1.5f, 3.0f, floor_num), true);
+	s_object_space.TCP_add_stair(stair(s_object_space.get_next_stair_id(), x, y, direction, 3, 15, 3.6f, 1.4f, 3.0f, floor_num), true);
 	++num_stairs;
 
 #if 1
-	// landing test
+	// auto add landings between stairs 1 & 2, 3 & 4, 5 & 6, ...
 	if (num_stairs % 2 == 0)
 	{
 		int id = s_object_space.get_next_landing_id();
@@ -964,7 +964,7 @@ void add_stair(float x, float y)
 		stair* s2 = s_object_space.get_stairpt_from_id(num_stairs - 1);
 		if (!s1 || !s2) return;
 
-		landing land(id, s1, s2, 2.0f);
+		landing land(id, s1, s2, 1.4f);
 
 		s_object_space.TCP_add_landing(land);
 
@@ -2201,7 +2201,7 @@ void render()
 	//generate cspace
 	if (cspace_generating)
 	{
-		s_object_space.generate_cspace();
+		s_object_space.generate_cspace(false);
 
 		cspace_generating = false;
 		cspace_generated = true;
