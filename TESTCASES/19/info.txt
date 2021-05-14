@@ -1,0 +1,16 @@
+SETUP
+
+Test 1:
+2 attendants of object 1 (left) drive of 20. 2 attendants of object 2 (right) drive of 1. Objects integral drive of 2.
+
+Test 2:
+2 attendants of object 1 (left) drive of 10. 2 attendants of object 2 (right) drive of 10. Objects integral drive of 2.
+
+
+OBSERVATIONS
+
+Test 1:
+Object 2 slows and moves down and out of the way of object 1. Object 1 carries on as if nothing happened.
+
+Test 2:
+When all drives were 10, identical result to Test 1. With left drives at 10 and right drives at 11, objects both slowed down and gave way.

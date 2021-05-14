@@ -1306,14 +1306,15 @@ NO2_dose:114000
 CH2CHO_dose:270000
 HCHO_dose:1.35e+06
 Iother_dose:0
-Drive:20
+Drive:1
 Gene:0
 Response:0
 Patience:1000
 PersonType:0
-NodeOccupied:121
-MyLocation:31.4997 9.4999 0
-Target:1
+NodeOccupied:118
+MyLocation:30.9997 9.4999 0
+Itinerary: 1
+Task: 115 10 0 0 0 0 0 
 
 Person
 Label:2
@@ -1356,7 +1357,7 @@ NO2_dose:114000
 CH2CHO_dose:270000
 HCHO_dose:1.35e+06
 Iother_dose:0
-Drive:1
+Drive:20
 Gene:0
 Response:0
 Patience:1000
@@ -1408,7 +1409,7 @@ NO2_dose:114000
 CH2CHO_dose:270000
 HCHO_dose:1.35e+06
 Iother_dose:0
-Drive:1
+Drive:20
 Gene:0
 Response:0
 Patience:1000
@@ -1417,50 +1418,1159 @@ NodeOccupied:7
 MyLocation:12.4999 9.4999 0
 Itinerary: 1
 Task: 10 10 0 0 0 0 0 
+
+Person
+Label:4
+Gender:Male
+Age:25
+Weight:80
+Width:0.474965
+Height:1.8
+Mobility:1
+Agility:5
+RunRate:1.5
+WalkRate:1.35
+CrawlRate:0.3
+LeapRate:1.2
+StUpRate:0.67
+StDownRate:1.01
+UpEscalatorRate:0.71
+DownEscalatorRate:0.82
+RebarRate:0.78
+DeckingAcrossRate:0.8
+DeckingAlongRate:0.73
+PID:30
+RestRMV:8.5
+WalkRMV:25
+RunRMV:50
+FICCIIFValue:4.5
+HCL_Conc:200
+HBr_Conc:200
+HF_Conc:200
+SO2_Conc:24
+NO2_Conc:70
+CH2CHO_Conc:4
+HCHO_Conc:6
+Iother_Conc:0
+HCL_dose:6.84e+06
+HBr_dose:6.84e+06
+HF_dose:5.22e+06
+SO2_dose:720000
+NO2_dose:114000
+CH2CHO_dose:270000
+HCHO_dose:1.35e+06
+Iother_dose:0
+Drive:1
+Gene:0
+Response:0
+Patience:1000
+PersonType:0
+NodeOccupied:105
+MyLocation:28.9997 8.99991 0
+Itinerary: 2
+Task: 106 10 0 0 0 0 0 
+Task: 1 11 0 0 0 0 0 
 LiftsCount:0
 DistributionCurves:0
+PopulationGroups:1
+APopulation:1
+Name:UserDefault
+PopulationSize: 117
+Colour:0
+NumberOfSubPanels:6
+PanelName:Males17-29
+NoPeople:10
+Percentage:8
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:3
+AgilityMax:7
+DriveMin:5
+DriveMax:15
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:47.5
+RunRMVMax:52.5
+WalkRMVMin:23.75
+WalkRMVMax:26.25
+RestRMVMin:8.075
+RestRMVMax:8.925
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:17
+AgeMax:29
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:0
+StrUpRateMin:0.67
+StrUpRateMax:0.67
+StrDownRateMin:1.01
+StrDownRateMax:1.01
+EscUpRateMin:0.32
+EscUpRateMax:1.51
+EscDownRateMin:0.38
+EscDownRateMax:1.67
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
+PanelName:Males30-50
+NoPeople:35
+Percentage:30
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:3
+AgilityMax:7
+DriveMin:5
+DriveMax:15
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:47.5
+RunRMVMax:52.5
+WalkRMVMin:23.75
+WalkRMVMax:26.25
+RestRMVMin:8.075
+RestRMVMax:8.925
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:30
+AgeMax:50
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:0
+StrUpRateMin:0.63
+StrUpRateMax:0.63
+StrDownRateMin:0.86
+StrDownRateMax:0.86
+EscUpRateMin:0.32
+EscUpRateMax:1.51
+EscDownRateMin:0.38
+EscDownRateMax:1.67
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
+PanelName:Males51-80
+NoPeople:26
+Percentage:22
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:3
+AgilityMax:7
+DriveMin:5
+DriveMax:15
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:47.5
+RunRMVMax:52.5
+WalkRMVMin:23.75
+WalkRMVMax:26.25
+RestRMVMin:8.075
+RestRMVMax:8.925
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:51
+AgeMax:80
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:0
+StrUpRateMin:0.51
+StrUpRateMax:0.51
+StrDownRateMin:0.67
+StrDownRateMax:0.67
+EscUpRateMin:0.32
+EscUpRateMax:1.51
+EscDownRateMin:0.38
+EscDownRateMax:1.67
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
+PanelName:Females17-29
+NoPeople:8
+Percentage:7
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:2
+AgilityMax:5
+DriveMin:1
+DriveMax:10
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:42.25
+RunRMVMax:47.25
+WalkRMVMin:21.38
+WalkRMVMax:23.63
+RestRMVMin:7.268
+RestRMVMax:8.033
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:17
+AgeMax:29
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:1
+StrUpRateMin:0.635
+StrUpRateMax:0.635
+StrDownRateMin:0.755
+StrDownRateMax:0.755
+EscUpRateMin:0.41
+EscUpRateMax:1.02
+EscDownRateMin:0.4
+EscDownRateMax:1.44
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
+PanelName:Females30-50
+NoPeople:23
+Percentage:20
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:2
+AgilityMax:5
+DriveMin:1
+DriveMax:10
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:42.25
+RunRMVMax:47.25
+WalkRMVMin:21.38
+WalkRMVMax:23.63
+RestRMVMin:7.268
+RestRMVMax:8.033
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:30
+AgeMax:50
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:1
+StrUpRateMin:0.59
+StrUpRateMax:0.59
+StrDownRateMin:0.665
+StrDownRateMax:0.665
+EscUpRateMin:0.41
+EscUpRateMax:1.02
+EscDownRateMin:0.4
+EscDownRateMax:1.44
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
+PanelName:Females51-80
+NoPeople:15
+Percentage:13
+Mobility:1
+RunUpper:1.5
+RunLower:1.2
+WalkPercent:90
+CrawlPercent:20
+LeapPercent:80
+RspTimesMin:0
+RspTimesMax:30
+AgilityMin:2
+AgilityMax:5
+DriveMin:1
+DriveMax:10
+PatienceMin:1
+PatienceMax:5
+PIDMin:5
+PIDMax:45
+PIDCurveType1
+RunRMVMin:42.25
+RunRMVMax:47.25
+WalkRMVMin:21.38
+WalkRMVMax:23.63
+RestRMVMin:7.268
+RestRMVMax:8.033
+FatalityValue:4.5
+IrritantConcModel:2
+IrritantDoseModel:1
+MultiplyDoseFactor:1
+HCLConc:60 400
+HBrConc:60 400
+HFConc:60 400
+SO2Conc:7.2 48
+NO2Conc:21 140
+CH2CHOConc:1.2 8
+HCHOConc:1.8 12
+IotherConc:0 0
+HCLDose:114000 114000
+HBrDose:114000 114000
+HFDose:87000 87000
+SO2Dose:12000 12000
+NO2Dose:1900 1900
+CH2CHODose:4500 4500
+HCHODose:22500 22500
+IotherDose:0 0
+DataHCLConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHBrConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataHFConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:60 150 0.15
+RCEntryMMP:150 250 0.7
+RCEntryMMP:250 400 0.15
+CurveEnd:
+EndDataCurve
+DataSO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:7.2 18 0.15
+RCEntryMMP:18 30 0.7
+RCEntryMMP:30 48 0.15
+CurveEnd:
+EndDataCurve
+DataNO2ConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:21 52.5 0.15
+RCEntryMMP:52.5 87.5 0.7
+RCEntryMMP:87.5 140 0.15
+CurveEnd:
+EndDataCurve
+DataCH2CHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.2 3 0.15
+RCEntryMMP:3 5 0.7
+RCEntryMMP:5 8 0.15
+CurveEnd:
+EndDataCurve
+DataHCHOConcCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:1.8 4.5 0.15
+RCEntryMMP:4.5 7.5 0.7
+RCEntryMMP:7.5 12 0.15
+CurveEnd:
+EndDataCurve
+DataHCLDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHBrDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHFDoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataSO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataNO2DoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataCH2CHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataHCHODoseCurve
+RCTitle: DataCurve
+CurveType:0
+CurveEnd:
+EndDataCurve
+DataIotherDoseCurve
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:5 10 0.01
+RCEntryMMP:10 15 0.02
+RCEntryMMP:15 20 0.05
+RCEntryMMP:20 25 0.13
+RCEntryMMP:25 30 0.3
+RCEntryMMP:30 35 0.28
+RCEntryMMP:35 40 0.17
+RCEntryMMP:40 45 0.04
+CurveEnd:
+EndDataCurve
+AgeMin:51
+AgeMax:80
+WeightMin:40
+WeightMax:90
+HeightMin:1.5
+HeightMax:2
+Gender:1
+StrUpRateMin:0.485
+StrUpRateMax:0.485
+StrDownRateMin:0.595
+StrDownRateMax:0.595
+EscUpRateMin:0.41
+EscUpRateMax:1.02
+EscDownRateMin:0.4
+EscDownRateMax:1.44
+PersonColour:0
+GeneMin:0
+GeneMax:0
+RebarFactorMin:0.78
+RebarFactorMax:0.78
+DeckingAlongFactorMin:0.73
+DeckingAlongFactorMax:0.73
+DeckingAcrossFactorMin:0.8
+DeckingAcrossFactorMax:0.8
+DoglegStairsDownSpeedMin:0.7
+DoglegStairsDownSpeedMax:0.7
+DoglegStairsUpSpeedMin:0.63
+DoglegStairsUpSpeedMax:0.63
+ParallelStairsDownSpeedMin:0.64
+ParallelStairsDownSpeedMax:0.64
+ParallelStairsUpSpeedMin:0.5
+ParallelStairsUpSpeedMax:0.5
 BufferNodes:0
-GenericObjectTemplates: 1
-GenericObjectTemplate: Stretcher-2Person
-TemplatePolygon: 4
-PVertex:1 0
-PVertex:1 0.4
-PVertex:0 0.4
-PVertex:0 0
-TemplateAttachmentPoints: 2
-AVertex:0 0.2
-AVertex:1 0.2
-AbsorbAgents: 1
-FrontLocation: 0 0.2
-RotationPoint: 0.5 0.2
-RenderMeshName: CollisionMeshName:
-PreparationTime: 0 0
-PreparationStaff: 2
-SingleDoorTowardsTime: 7 7
-DoubleDoorTowardsTime: 7 7
-SingleDoorAwayTime: 5 4
-DoubleDoorAwayTime: 5 4
-VertStoppingFreq: 2 4.5
-VertStoppingDist: 70.75 30.52
-VertStoppingTime: 30 30
-VertStoppingDensity: 3 3
-StoppingStairLanes: 3 3
-HozVelocity: 1.09 0.99
-StraightLineSpeed: 1.3 1.29
-CornerSpeed: 1.03 0.75
-VertVelocity: 0.67 0.52
-StairLanes: 2 2
-StairPreference: 1 1
-EndGenericObjectTemplate
-EndGenericObjectTemplates
-GenericObjects: 1
-GenericObject: Stretcher-2Person
-ObjectType: 1
-Rotation: 180
-Location: 0 13.245 9.29443
-RotationPoint: 0.5 0.2
-EndGenericObject
-EndGenericObjects
 LiftUsageData:
 ConsiderLift: 0
 ConsiderLiftValue: 100
