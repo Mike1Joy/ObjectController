@@ -1,0 +1,26 @@
+SETUP
+
+Test 1:
+2 attendants drive of 1. Single person drive of 20. Object integral drive of 2.
+Object drive = 2*avg(1,1) = 2
+
+Test 2:
+2 attendants drive of 20. Single person drive of 1. Object integral drive of 2.
+Object drive = 2*avg(20,20) = 40
+
+Test 3:
+2 attendants drive of 10. Single person drive 10. Object integral drive of 2.
+Object drive = 2*avg(10,10) = 20
+
+
+OBSERVATIONS
+
+Test 1:
+Object gives way imidiately, person keeps moving in straight line as if nothing else was there.
+
+Test 2:
+Person oscilates up and down a little before settling on either above or below object (Ran 5 times: 2 above, 3 below). This oscilation is due to them being perfectly aligned.
+Object moved in straight line as if no one was there.
+
+Test 3:
+Person started oscilating up and down a little (later than in Test 2). Object moved down while person was oscilating. This left a gap for person to move above object.

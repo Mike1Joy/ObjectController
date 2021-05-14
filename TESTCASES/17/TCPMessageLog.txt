@@ -1,0 +1,1901 @@
+EXODUS Log file TCPMessageLog.txt
+
+sent Seq 1 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 3 
+sent Seq 2 Connx 0 :size 44 code 10050 (EXMS_SEND_WALL) , 2 , 1 , 11.799900 , 3.000000 , 10.267800 , 31.699699 , 3.000000 , 10.267800 , 0.000000 
+sent Seq 3 Connx 0 :size 44 code 10050 (EXMS_SEND_WALL) , 3 , 1 , 11.799900 , 3.000000 , 8.718390 , 31.699699 , 3.000000 , 8.718390 , 0.000000 
+sent Seq 4 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 4 
+sent Seq 5 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 1 , 100 , 0 , 1 , 10.221300 , 0.000000 , 9.655050 , 0.000000 
+sent Seq 6 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 2 , 100 , 0 , 1 , 33.417500 , 0.000000 , 9.562920 , 0.000000 
+sent Seq 7 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 3 , 0 , 0 , 1 , 11.999900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 8 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 4 , 0 , 0 , 1 , 11.999900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 9 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 5 , 0 , 0 , 1 , 11.999900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 10 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 6 , 0 , 0 , 1 , 12.499900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 11 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 7 , 0 , 0 , 1 , 12.499900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 12 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 8 , 0 , 0 , 1 , 12.499900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 13 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 9 , 0 , 0 , 1 , 12.999900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 14 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 10 , 0 , 0 , 1 , 12.999900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 15 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 11 , 0 , 0 , 1 , 12.999900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 16 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 12 , 0 , 0 , 1 , 13.499900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 17 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 13 , 0 , 0 , 1 , 13.499900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 18 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 14 , 0 , 0 , 1 , 13.499900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 19 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 15 , 0 , 0 , 1 , 13.999900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 20 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 16 , 0 , 0 , 1 , 13.999900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 21 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 17 , 0 , 0 , 1 , 13.999900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 22 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 18 , 0 , 0 , 1 , 14.499900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 23 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 19 , 0 , 0 , 1 , 14.499900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 24 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 20 , 0 , 0 , 1 , 14.499900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 25 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 21 , 0 , 0 , 1 , 14.999900 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 26 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 22 , 0 , 0 , 1 , 14.999900 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 27 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 23 , 0 , 0 , 1 , 14.999900 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 28 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 24 , 0 , 0 , 1 , 15.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 29 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 25 , 0 , 0 , 1 , 15.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 30 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 26 , 0 , 0 , 1 , 15.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 31 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 27 , 0 , 0 , 1 , 15.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 32 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 28 , 0 , 0 , 1 , 15.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 33 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 29 , 0 , 0 , 1 , 15.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 34 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 30 , 0 , 0 , 1 , 16.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 35 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 31 , 0 , 0 , 1 , 16.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 36 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 32 , 0 , 0 , 1 , 16.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 37 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 33 , 0 , 0 , 1 , 16.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 38 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 34 , 0 , 0 , 1 , 16.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 39 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 35 , 0 , 0 , 1 , 16.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 40 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 36 , 0 , 0 , 1 , 17.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 41 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 37 , 0 , 0 , 1 , 17.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 42 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 38 , 0 , 0 , 1 , 17.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 43 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 39 , 0 , 0 , 1 , 17.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 44 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 40 , 0 , 0 , 1 , 17.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 45 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 41 , 0 , 0 , 1 , 17.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 46 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 42 , 0 , 0 , 1 , 18.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 47 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 43 , 0 , 0 , 1 , 18.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 48 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 44 , 0 , 0 , 1 , 18.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 49 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 45 , 0 , 0 , 1 , 18.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 50 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 46 , 0 , 0 , 1 , 18.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 51 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 47 , 0 , 0 , 1 , 18.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 52 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 48 , 0 , 0 , 1 , 19.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 53 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 49 , 0 , 0 , 1 , 19.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 54 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 50 , 0 , 0 , 1 , 19.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 55 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 51 , 0 , 0 , 1 , 19.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 56 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 52 , 0 , 0 , 1 , 19.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 57 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 53 , 0 , 0 , 1 , 19.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 58 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 54 , 0 , 0 , 1 , 20.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 59 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 55 , 0 , 0 , 1 , 20.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 60 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 56 , 0 , 0 , 1 , 20.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 61 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 57 , 0 , 0 , 1 , 20.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 62 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 58 , 0 , 0 , 1 , 20.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 63 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 59 , 0 , 0 , 1 , 20.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 64 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 60 , 0 , 0 , 1 , 21.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 65 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 61 , 0 , 0 , 1 , 21.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 66 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 62 , 0 , 0 , 1 , 21.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 67 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 63 , 0 , 0 , 1 , 21.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 68 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 64 , 0 , 0 , 1 , 21.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 69 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 65 , 0 , 0 , 1 , 21.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 70 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 66 , 0 , 0 , 1 , 22.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 71 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 67 , 0 , 0 , 1 , 22.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 72 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 68 , 0 , 0 , 1 , 22.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 73 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 69 , 0 , 0 , 1 , 22.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 74 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 70 , 0 , 0 , 1 , 22.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 75 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 71 , 0 , 0 , 1 , 22.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 76 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 72 , 0 , 0 , 1 , 23.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 77 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 73 , 0 , 0 , 1 , 23.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 78 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 74 , 0 , 0 , 1 , 23.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 79 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 75 , 0 , 0 , 1 , 23.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 80 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 76 , 0 , 0 , 1 , 23.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 81 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 77 , 0 , 0 , 1 , 23.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 82 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 78 , 0 , 0 , 1 , 24.499800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 83 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 79 , 0 , 0 , 1 , 24.499800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 84 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 80 , 0 , 0 , 1 , 24.499800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 85 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 81 , 0 , 0 , 1 , 24.999800 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 86 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 82 , 0 , 0 , 1 , 24.999800 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 87 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 83 , 0 , 0 , 1 , 24.999800 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 88 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 84 , 0 , 0 , 1 , 25.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 89 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 85 , 0 , 0 , 1 , 25.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 90 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 86 , 0 , 0 , 1 , 25.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 91 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 87 , 0 , 0 , 1 , 25.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 92 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 88 , 0 , 0 , 1 , 25.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 93 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 89 , 0 , 0 , 1 , 25.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 94 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 90 , 0 , 0 , 1 , 26.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 95 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 91 , 0 , 0 , 1 , 26.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 96 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 92 , 0 , 0 , 1 , 26.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 97 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 93 , 0 , 0 , 1 , 26.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 98 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 94 , 0 , 0 , 1 , 26.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 99 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 95 , 0 , 0 , 1 , 26.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 100 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 96 , 0 , 0 , 1 , 27.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 101 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 97 , 0 , 0 , 1 , 27.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 102 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 98 , 0 , 0 , 1 , 27.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 103 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 99 , 0 , 0 , 1 , 27.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 104 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 100 , 0 , 0 , 1 , 27.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 105 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 101 , 0 , 0 , 1 , 27.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 106 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 102 , 0 , 0 , 1 , 28.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 107 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 103 , 0 , 0 , 1 , 28.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 108 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 104 , 0 , 0 , 1 , 28.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 109 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 105 , 0 , 0 , 1 , 28.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 110 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 106 , 0 , 0 , 1 , 28.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 111 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 107 , 0 , 0 , 1 , 28.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 112 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 108 , 0 , 0 , 1 , 29.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 113 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 109 , 0 , 0 , 1 , 29.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 114 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 110 , 0 , 0 , 1 , 29.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 115 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 111 , 0 , 0 , 1 , 29.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 116 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 112 , 0 , 0 , 1 , 29.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 117 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 113 , 0 , 0 , 1 , 29.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 118 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 114 , 0 , 0 , 1 , 30.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 119 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 115 , 0 , 0 , 1 , 30.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 120 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 116 , 0 , 0 , 1 , 30.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 121 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 117 , 0 , 0 , 1 , 30.999701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 122 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 118 , 0 , 0 , 1 , 30.999701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 123 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 119 , 0 , 0 , 1 , 30.999701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 124 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 120 , 0 , 0 , 1 , 31.499701 , 0.000000 , 8.999910 , 0.000000 
+sent Seq 125 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 121 , 0 , 0 , 1 , 31.499701 , 0.000000 , 9.499900 , 0.000000 
+sent Seq 126 Connx 0 :size 40 code 10051 (EXMS_SEND_NODE) , 122 , 0 , 0 , 1 , 31.499701 , 0.000000 , 9.999900 , 0.000000 
+sent Seq 127 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 5 
+sent Seq 128 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 6 
+sent Seq 129 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 3 , 1 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 130 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 4 , 3 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 131 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 4 , 1 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 132 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 5 , 4 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 133 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 5 , 1 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 134 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 6 , 3 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 135 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 6 , 4 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 136 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 7 , 3 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 137 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 7 , 4 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 138 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 7 , 5 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 139 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 7 , 6 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 140 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 8 , 4 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 141 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 8 , 5 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 142 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 8 , 7 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 143 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 9 , 6 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 144 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 9 , 7 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 145 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 10 , 6 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 146 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 10 , 7 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 147 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 10 , 8 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 148 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 10 , 9 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 149 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 11 , 7 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 150 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 11 , 8 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 151 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 11 , 10 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 152 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 12 , 9 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 153 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 12 , 10 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 154 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 13 , 9 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 155 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 13 , 10 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 156 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 13 , 11 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 157 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 13 , 12 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 158 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 14 , 10 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 159 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 14 , 11 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 160 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 14 , 13 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 161 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 15 , 12 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 162 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 15 , 13 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 163 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 16 , 12 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 164 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 16 , 13 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 165 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 16 , 14 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 166 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 16 , 15 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 167 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 17 , 13 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 168 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 17 , 14 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 169 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 17 , 16 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 170 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 18 , 15 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 171 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 18 , 16 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 172 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 19 , 15 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 173 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 19 , 16 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 174 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 19 , 17 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 175 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 19 , 18 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 176 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 20 , 16 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 177 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 20 , 17 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 178 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 20 , 19 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 179 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 21 , 18 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 180 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 21 , 19 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 181 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 22 , 18 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 182 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 22 , 19 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 183 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 22 , 20 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 184 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 22 , 21 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 185 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 23 , 19 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 186 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 23 , 20 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 187 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 23 , 22 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 188 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 24 , 21 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 189 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 24 , 22 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 190 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 25 , 21 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 191 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 25 , 22 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 192 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 25 , 23 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 193 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 25 , 24 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 194 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 26 , 22 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 195 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 26 , 23 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 196 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 26 , 25 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 197 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 27 , 24 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 198 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 27 , 25 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 199 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 28 , 24 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 200 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 28 , 25 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 201 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 28 , 26 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 202 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 28 , 27 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 203 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 29 , 25 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 204 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 29 , 26 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 205 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 29 , 28 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 206 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 30 , 27 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 207 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 30 , 28 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 208 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 31 , 27 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 209 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 31 , 28 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 210 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 31 , 29 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 211 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 31 , 30 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 212 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 32 , 28 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 213 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 32 , 29 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 214 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 32 , 31 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 215 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 33 , 30 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 216 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 33 , 31 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 217 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 34 , 30 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 218 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 34 , 31 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 219 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 34 , 32 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 220 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 34 , 33 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 221 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 35 , 31 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 222 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 35 , 32 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 223 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 35 , 34 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 224 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 36 , 33 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 225 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 36 , 34 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 226 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 37 , 33 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 227 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 37 , 34 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 228 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 37 , 35 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 229 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 37 , 36 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 230 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 38 , 34 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 231 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 38 , 35 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 232 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 38 , 37 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 233 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 39 , 36 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 234 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 39 , 37 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 235 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 40 , 36 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 236 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 40 , 37 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 237 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 40 , 38 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 238 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 40 , 39 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 239 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 41 , 37 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 240 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 41 , 38 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 241 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 41 , 40 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 242 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 42 , 39 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 243 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 42 , 40 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 244 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 43 , 39 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 245 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 43 , 40 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 246 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 43 , 41 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 247 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 43 , 42 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 248 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 44 , 40 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 249 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 44 , 41 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 250 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 44 , 43 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 251 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 45 , 42 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 252 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 45 , 43 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 253 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 46 , 42 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 254 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 46 , 43 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 255 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 46 , 44 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 256 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 46 , 45 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 257 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 47 , 43 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 258 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 47 , 44 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 259 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 47 , 46 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 260 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 48 , 45 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 261 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 48 , 46 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 262 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 49 , 45 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 263 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 49 , 46 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 264 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 49 , 47 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 265 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 49 , 48 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 266 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 50 , 46 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 267 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 50 , 47 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 268 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 50 , 49 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 269 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 51 , 48 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 270 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 51 , 49 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 271 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 52 , 48 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 272 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 52 , 49 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 273 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 52 , 50 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 274 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 52 , 51 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 275 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 53 , 49 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 276 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 53 , 50 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 277 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 53 , 52 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 278 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 54 , 51 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 279 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 54 , 52 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 280 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 55 , 51 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 281 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 55 , 52 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 282 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 55 , 53 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 283 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 55 , 54 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 284 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 56 , 52 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 285 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 56 , 53 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 286 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 56 , 55 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 287 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 57 , 54 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 288 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 57 , 55 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 289 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 58 , 54 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 290 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 58 , 55 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 291 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 58 , 56 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 292 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 58 , 57 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 293 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 59 , 55 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 294 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 59 , 56 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 295 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 59 , 58 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 296 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 60 , 57 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 297 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 60 , 58 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 298 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 61 , 57 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 299 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 61 , 58 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 300 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 61 , 59 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 301 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 61 , 60 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 302 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 62 , 58 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 303 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 62 , 59 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 304 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 62 , 61 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 305 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 63 , 60 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 306 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 63 , 61 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 307 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 64 , 60 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 308 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 64 , 61 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 309 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 64 , 62 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 310 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 64 , 63 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 311 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 65 , 61 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 312 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 65 , 62 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 313 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 65 , 64 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 314 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 66 , 63 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 315 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 66 , 64 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 316 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 67 , 63 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 317 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 67 , 64 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 318 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 67 , 65 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 319 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 67 , 66 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 320 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 68 , 64 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 321 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 68 , 65 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 322 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 68 , 67 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 323 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 69 , 66 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 324 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 69 , 67 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 325 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 70 , 66 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 326 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 70 , 67 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 327 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 70 , 68 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 328 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 70 , 69 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 329 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 71 , 67 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 330 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 71 , 68 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 331 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 71 , 70 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 332 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 72 , 69 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 333 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 72 , 70 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 334 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 73 , 69 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 335 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 73 , 70 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 336 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 73 , 71 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 337 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 73 , 72 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 338 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 74 , 70 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 339 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 74 , 71 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 340 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 74 , 73 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 341 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 75 , 72 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 342 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 75 , 73 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 343 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 76 , 72 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 344 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 76 , 73 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 345 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 76 , 74 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 346 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 76 , 75 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 347 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 77 , 73 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 348 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 77 , 74 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 349 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 77 , 76 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 350 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 78 , 75 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 351 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 78 , 76 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 352 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 79 , 75 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 353 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 79 , 76 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 354 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 79 , 77 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 355 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 79 , 78 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 356 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 80 , 76 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 357 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 80 , 77 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 358 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 80 , 79 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 359 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 81 , 78 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 360 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 81 , 79 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 361 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 82 , 78 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 362 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 82 , 79 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 363 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 82 , 80 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 364 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 82 , 81 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 365 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 83 , 79 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 366 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 83 , 80 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 367 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 83 , 82 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 368 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 84 , 81 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 369 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 84 , 82 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 370 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 85 , 81 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 371 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 85 , 82 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 372 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 85 , 83 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 373 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 85 , 84 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 374 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 86 , 82 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 375 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 86 , 83 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 376 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 86 , 85 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 377 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 87 , 84 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 378 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 87 , 85 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 379 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 88 , 84 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 380 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 88 , 85 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 381 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 88 , 86 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 382 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 88 , 87 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 383 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 89 , 85 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 384 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 89 , 86 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 385 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 89 , 88 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 386 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 90 , 87 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 387 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 90 , 88 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 388 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 91 , 87 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 389 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 91 , 88 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 390 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 91 , 89 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 391 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 91 , 90 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 392 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 92 , 88 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 393 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 92 , 89 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 394 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 92 , 91 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 395 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 93 , 90 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 396 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 93 , 91 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 397 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 94 , 90 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 398 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 94 , 91 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 399 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 94 , 92 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 400 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 94 , 93 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 401 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 95 , 91 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 402 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 95 , 92 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 403 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 95 , 94 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 404 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 96 , 93 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 405 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 96 , 94 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 406 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 97 , 93 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 407 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 97 , 94 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 408 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 97 , 95 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 409 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 97 , 96 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 410 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 98 , 94 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 411 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 98 , 95 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 412 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 98 , 97 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 413 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 99 , 96 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 414 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 99 , 97 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 415 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 100 , 96 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 416 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 100 , 97 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 417 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 100 , 98 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 418 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 100 , 99 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 419 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 101 , 97 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 420 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 101 , 98 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 421 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 101 , 100 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 422 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 102 , 99 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 423 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 102 , 100 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 424 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 103 , 99 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 425 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 103 , 100 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 426 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 103 , 101 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 427 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 103 , 102 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 428 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 104 , 100 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 429 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 104 , 101 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 430 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 104 , 103 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 431 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 105 , 102 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 432 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 105 , 103 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 433 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 106 , 102 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 434 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 106 , 103 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 435 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 106 , 104 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 436 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 106 , 105 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 437 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 107 , 103 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 438 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 107 , 104 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 439 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 107 , 106 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 440 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 108 , 105 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 441 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 108 , 106 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 442 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 109 , 105 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 443 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 109 , 106 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 444 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 109 , 107 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 445 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 109 , 108 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 446 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 110 , 106 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 447 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 110 , 107 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 448 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 110 , 109 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 449 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 111 , 108 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 450 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 111 , 109 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 451 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 112 , 108 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 452 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 112 , 109 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 453 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 112 , 110 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 454 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 112 , 111 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 455 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 113 , 109 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 456 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 113 , 110 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 457 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 113 , 112 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 458 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 114 , 111 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 459 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 114 , 112 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 460 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 115 , 111 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 461 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 115 , 112 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 462 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 115 , 113 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 463 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 115 , 114 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 464 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 116 , 112 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 465 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 116 , 113 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 466 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 116 , 115 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 467 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 117 , 114 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 468 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 117 , 115 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 469 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 118 , 114 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 470 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 118 , 115 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 471 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 118 , 116 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 472 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 118 , 117 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 473 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 119 , 115 , 0.707099 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 474 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 119 , 116 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 475 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 119 , 118 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 476 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 120 , 117 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 477 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 120 , 118 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 478 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 120 , 2 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 479 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 121 , 117 , 0.707100 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 480 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 121 , 118 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 481 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 121 , 119 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 482 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 121 , 120 , 0.499994 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 483 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 121 , 2 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 484 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 122 , 118 , 0.707101 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 485 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 122 , 119 , 0.499996 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 486 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 122 , 121 , 0.499995 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 487 Connx 0 :size 44 code 10052 (EXMS_SEND_ARC) , 0 , 122 , 2 , 0.000000 , 0.000000 , -1.000000 , 0 , -1.000000 , 0 
+sent Seq 488 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 7 
+sent Seq 489 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 1 , 0.000000 , 121 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 490 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 2 , 0.000000 , 18 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 491 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 3 , 0.000000 , 7 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 492 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 8 
+sent Seq 493 Connx 0 :size 36 code 10055 (EXMS_SEND_OBJECT) , 1 , 1 , 1 , 3.141593 , 13.745000 , 0.000000 , 9.494430 
+sent Seq 494 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 9 
+sent Seq 495 Connx 0 :size 25 code 5502 (EXMS_PARSING_SFE_FILE) , 10 
+sent Seq 496 Connx 0 :size 12 code 5504 (EXMS_EXEC_SFE_COMPLETE) , 0 
+recv Seq 1 Connx 0 :size 16 code 10527 (EXMS_UNDEREXTERNALCONTROL) , 1 , 1 
+recv Seq 2 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 13.749900 , 9.499900 , 0.000000 , 90.000000 , 0.000000 , 0 
+recv Seq 3 Connx 0 :size 24 code 10524 (EXMS_NODEOBJECT) , 1 , 2 , 16 , 13 
+sent Seq 497 Connx 0 :size 12 code 4500 (EXMS_SIMULATION_STARTED) , 0 
+sent Seq 498 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 2 , 0 
+sent Seq 499 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 3 , 1 
+sent Seq 500 Connx 0 :size 36 code 10530 (EXMS_TARGETOBJECT) , 1 , 2 , 0 , 33.417500 , 0.000000 , 9.562920 , 0.083333 
+sent Seq 501 Connx 0 :size 12 code 10522 (EXMS_REMOVEOBJECT) , 1 
+sent Seq 502 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.333331 , 118 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 503 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 2 , 0.083333 , 19 , 1.500000 , 10.000000 , 5.000000 , 1 , 0 
+sent Seq 504 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 3 , 0.083333 , 10 , 1.500000 , 10.000000 , 5.000000 , 1 , 1 
+sent Seq 505 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.083333 
+sent Seq 506 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 4 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 507 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.250000 
+sent Seq 508 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 5 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 509 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.666660 , 115 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 510 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.416667 
+sent Seq 511 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 6 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 512 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.583333 
+sent Seq 513 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 7 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 514 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.999989 , 112 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 515 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.750000 
+sent Seq 516 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 8 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 517 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.916667 
+sent Seq 518 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 9 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 519 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.333320 , 109 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 520 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.083333 
+sent Seq 521 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 10 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 13.999900 , 9.499900 , 0.000000 , 90.000000 , 0.636396 , 0 
+recv Seq 11 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 16 , 19 , 22 , 16 , 13 , 10 
+recv Seq 12 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 522 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.250000 
+sent Seq 523 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 13 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 524 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.666649 , 106 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 525 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.416667 
+sent Seq 526 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 14 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 527 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.583333 
+sent Seq 528 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 15 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 529 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.999980 , 103 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 530 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.750000 
+sent Seq 531 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 16 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 532 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.916667 
+sent Seq 533 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 17 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.249900 , 9.499900 , 0.000000 , 90.000000 , 0.900000 , 0 
+recv Seq 18 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 19 , 22 , 19 , 16 , 13 
+recv Seq 19 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 534 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.333309 , 100 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 535 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.083333 
+sent Seq 536 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 20 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 537 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.250000 
+sent Seq 538 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 21 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.499900 , 9.499900 , 0.000000 , 90.000000 , 1.102270 , 0 
+recv Seq 22 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 19 , 22 , 25 , 19 , 16 , 13 
+recv Seq 23 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 539 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.666639 , 97 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 540 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.416667 
+sent Seq 541 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 24 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.749900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 25 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 22 , 25 , 22 , 19 , 16 
+recv Seq 26 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 542 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.583333 
+sent Seq 543 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 27 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 544 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.999969 , 94 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 545 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.750000 
+sent Seq 546 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 28 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.999900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 29 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 22 , 25 , 28 , 22 , 19 , 16 
+recv Seq 30 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 547 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.916667 
+sent Seq 548 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 31 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.249849 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 32 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 25 , 28 , 25 , 22 , 19 
+recv Seq 33 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 549 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.333299 , 91 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 550 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.083333 
+sent Seq 551 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 34 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 35 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 25 , 28 , 31 , 25 , 22 , 19 
+recv Seq 36 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 552 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.250000 
+sent Seq 553 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 37 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 38 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 28 , 31 , 28 , 25 , 22 
+recv Seq 39 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 554 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.666628 , 88 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 555 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.416667 
+sent Seq 556 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 40 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 557 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.583333 
+sent Seq 558 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 41 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 42 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 28 , 31 , 34 , 28 , 25 , 22 
+recv Seq 43 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 559 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.999959 , 85 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 560 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.750000 
+sent Seq 561 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 44 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 45 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 31 , 34 , 31 , 28 , 25 
+recv Seq 46 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 562 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.916667 
+sent Seq 563 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 47 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 48 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 31 , 34 , 37 , 31 , 28 , 25 
+recv Seq 49 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 564 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.333288 , 82 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 565 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.083333 
+sent Seq 566 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 50 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 51 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 34 , 37 , 34 , 31 , 28 
+recv Seq 52 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 567 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+sent Seq 568 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 0 
+sent Seq 569 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.250000 
+sent Seq 570 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 53 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 571 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.666619 , 79 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 572 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.416667 
+sent Seq 573 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 54 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 55 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 34 , 37 , 40 , 34 , 31 , 28 
+recv Seq 56 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 574 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.583333 
+sent Seq 575 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 57 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 58 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 37 , 40 , 37 , 34 , 31 
+recv Seq 59 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 576 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.999948 , 76 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 577 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.750000 
+sent Seq 578 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 60 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 61 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 37 , 40 , 43 , 37 , 34 , 31 
+recv Seq 62 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.988950 
+recv Seq 63 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 579 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.916667 
+sent Seq 580 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 64 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 65 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 40 , 43 , 40 , 37 , 34 
+recv Seq 66 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.850828 
+recv Seq 67 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 581 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.471347 , 74 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 582 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.083333 
+sent Seq 583 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 68 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.597967 
+recv Seq 69 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 584 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.250000 
+sent Seq 585 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 70 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 71 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 40 , 43 , 46 , 40 , 37 , 34 
+recv Seq 72 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.460889 
+recv Seq 73 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 586 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.416667 
+sent Seq 587 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 74 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 75 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 43 , 46 , 43 , 40 , 37 
+recv Seq 76 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.323910 
+recv Seq 77 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 588 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.942748 , 70 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 589 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.583333 
+sent Seq 590 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 78 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 79 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 43 , 46 , 49 , 43 , 40 , 37 
+recv Seq 80 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.883977 
+recv Seq 81 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 591 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.750000 
+sent Seq 592 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 82 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 83 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 46 , 49 , 46 , 43 , 40 
+recv Seq 84 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.745856 
+recv Seq 85 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 593 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.916667 
+sent Seq 594 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 86 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 87 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 46 , 49 , 52 , 46 , 43 , 40 
+recv Seq 88 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.607734 
+recv Seq 89 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 595 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.414147 , 66 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 596 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.083333 
+sent Seq 597 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 90 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 63 , 1.369641 
+recv Seq 91 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 598 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.250000 
+sent Seq 599 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 92 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 93 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 49 , 52 , 49 , 46 , 43 
+recv Seq 94 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.234447 , 66 , 2.758455 
+recv Seq 95 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 600 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+sent Seq 601 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 0 
+sent Seq 602 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.416667 
+sent Seq 603 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 96 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 97 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 49 , 52 , 55 , 49 , 46 , 43 
+recv Seq 98 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.099764 , 66 , 2.457498 
+recv Seq 99 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 604 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.885547 , 64 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 605 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.583333 
+sent Seq 606 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 100 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 101 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 52 , 55 , 52 , 49 , 46 
+recv Seq 102 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.640884 , 64 , 1.432098 
+recv Seq 103 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 607 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.750000 
+sent Seq 608 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 104 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 105 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 52 , 55 , 58 , 52 , 49 , 46 
+recv Seq 106 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 107 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 609 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.916667 
+sent Seq 610 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 108 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 109 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 611 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.356946 , 60 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 612 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.083333 
+sent Seq 613 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 110 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 111 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 55 , 58 , 55 , 52 , 49 
+recv Seq 112 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 57 , 0.208697 , 58 , 0.209863 , 60 , 0.466348 , 61 , 0.312185 
+recv Seq 113 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 614 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.250000 
+sent Seq 615 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 114 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 115 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 55 , 58 , 61 , 55 , 52 , 49 
+recv Seq 116 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.116308 , 58 , 0.112537 , 60 , 0.259898 , 61 , 0.160702 , 64 , 0.461228 
+recv Seq 117 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 616 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.416667 
+sent Seq 617 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 118 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 119 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 58 , 61 , 58 , 55 , 52 
+recv Seq 120 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.068775 , 58 , 0.062601 , 60 , 0.153682 , 61 , 0.084301 , 64 , 0.216765 
+recv Seq 121 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 618 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.690276 , 57 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 619 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.583333 
+sent Seq 620 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 122 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 123 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 58 , 61 , 64 , 58 , 55 , 52 
+recv Seq 124 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 55 , 0.541777 , 57 , 0.525894 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 125 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 621 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.750000 
+sent Seq 622 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 126 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 55 , 0.541777 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 127 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 623 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.023606 , 54 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 624 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.916667 
+sent Seq 625 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 128 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 129 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 61 , 64 , 61 , 58 , 55 
+recv Seq 130 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 52 , inf , 55 , inf , 58 , 0.337806 
+recv Seq 131 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 626 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+sent Seq 627 Connx 0 :size 12 code 4004 (EXMS_SIMULATION_RESET) , 0 
+sent Seq 628 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 1 
+sent Seq 629 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 2 
+sent Seq 630 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 3 
+sent Seq 631 Connx 0 :size 12 code 4500 (EXMS_SIMULATION_STARTED) , 0 
+sent Seq 632 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 2 , 0 
+sent Seq 633 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 3 , 1 
+sent Seq 634 Connx 0 :size 36 code 10530 (EXMS_TARGETOBJECT) , 1 , 2 , 0 , 33.417500 , 0.000000 , 9.562920 , 0.083333 
+sent Seq 635 Connx 0 :size 12 code 10522 (EXMS_REMOVEOBJECT) , 1 
+sent Seq 636 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 1 , 0.333331 , 118 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 637 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 2 , 0.083333 , 19 , 10.000000 , 5.000000 , 1 , 0 
+sent Seq 638 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 3 , 0.083333 , 10 , 10.000000 , 5.000000 , 1 , 1 
+sent Seq 639 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.083333 
+sent Seq 640 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 132 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 641 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.250000 
+sent Seq 642 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 133 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 643 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.666660 , 115 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 644 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.416667 
+sent Seq 645 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 134 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 646 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.583333 
+sent Seq 647 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 135 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 648 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.999989 , 112 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 649 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.750000 
+sent Seq 650 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 136 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 651 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.916667 
+sent Seq 652 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 137 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 653 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.333320 , 109 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 654 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.083333 
+sent Seq 655 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 138 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 13.999900 , 9.499900 , 0.000000 , 90.000000 , 0.636396 , 0 
+recv Seq 139 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 16 , 19 , 22 , 16 , 13 , 10 
+recv Seq 140 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 656 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.250000 
+sent Seq 657 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 141 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 658 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.666649 , 106 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 659 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.416667 
+sent Seq 660 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 142 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 661 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.583333 
+sent Seq 662 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 143 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 663 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.999980 , 103 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 664 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.750000 
+sent Seq 665 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 144 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 666 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.916667 
+sent Seq 667 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 145 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.249900 , 9.499900 , 0.000000 , 90.000000 , 0.900000 , 0 
+recv Seq 146 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 19 , 22 , 19 , 16 , 13 
+recv Seq 147 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 668 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.333309 , 100 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 669 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.083333 
+sent Seq 670 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 148 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 671 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.250000 
+sent Seq 672 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 149 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.499900 , 9.499900 , 0.000000 , 90.000000 , 1.102270 , 0 
+recv Seq 150 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 19 , 22 , 25 , 19 , 16 , 13 
+recv Seq 151 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 673 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.666639 , 97 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 674 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.416667 
+sent Seq 675 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 152 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.749900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 153 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 22 , 25 , 22 , 19 , 16 
+recv Seq 154 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 676 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.583333 
+sent Seq 677 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 155 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 678 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.999969 , 94 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 679 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.750000 
+sent Seq 680 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 156 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.999900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 157 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 22 , 25 , 28 , 22 , 19 , 16 
+recv Seq 158 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 681 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.916667 
+sent Seq 682 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 159 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.249849 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 160 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 25 , 28 , 25 , 22 , 19 
+recv Seq 161 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 683 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.333299 , 91 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 684 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.083333 
+sent Seq 685 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 162 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 163 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 25 , 28 , 31 , 25 , 22 , 19 
+recv Seq 164 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 686 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.250000 
+sent Seq 687 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 165 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 166 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 28 , 31 , 28 , 25 , 22 
+recv Seq 167 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 688 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.666628 , 88 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 689 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.416667 
+sent Seq 690 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 168 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 691 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.583333 
+sent Seq 692 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 169 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 170 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 28 , 31 , 34 , 28 , 25 , 22 
+recv Seq 171 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 693 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.999959 , 85 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 694 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.750000 
+sent Seq 695 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 172 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 173 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 31 , 34 , 31 , 28 , 25 
+recv Seq 174 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 696 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.916667 
+sent Seq 697 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 175 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 176 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 31 , 34 , 37 , 31 , 28 , 25 
+recv Seq 177 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 698 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.333288 , 82 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 699 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.083333 
+sent Seq 700 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 178 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 179 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 34 , 37 , 34 , 31 , 28 
+recv Seq 180 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 701 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.250000 
+sent Seq 702 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 181 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 703 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.666619 , 79 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 704 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.416667 
+sent Seq 705 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 182 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 183 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 34 , 37 , 40 , 34 , 31 , 28 
+recv Seq 184 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 706 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.583333 
+sent Seq 707 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 185 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 186 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 37 , 40 , 37 , 34 , 31 
+recv Seq 187 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 708 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.999948 , 76 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 709 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.750000 
+sent Seq 710 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 188 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 189 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 37 , 40 , 43 , 37 , 34 , 31 
+recv Seq 190 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.988950 
+recv Seq 191 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 711 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.916667 
+sent Seq 712 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 192 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 193 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 40 , 43 , 40 , 37 , 34 
+recv Seq 194 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.850828 
+recv Seq 195 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 713 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.471347 , 74 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 714 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.083333 
+sent Seq 715 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 196 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.597967 
+recv Seq 197 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 716 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.250000 
+sent Seq 717 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 198 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 199 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 40 , 43 , 46 , 40 , 37 , 34 
+recv Seq 200 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.460889 
+recv Seq 201 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 718 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.416667 
+sent Seq 719 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 202 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 203 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 43 , 46 , 43 , 40 , 37 
+recv Seq 204 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.323910 
+recv Seq 205 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 720 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.942748 , 70 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 721 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.583333 
+sent Seq 722 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 206 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 207 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 43 , 46 , 49 , 43 , 40 , 37 
+recv Seq 208 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.883977 
+recv Seq 209 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 723 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.750000 
+sent Seq 724 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 210 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 211 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 46 , 49 , 46 , 43 , 40 
+recv Seq 212 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.745856 
+recv Seq 213 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 725 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.916667 
+sent Seq 726 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 214 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 215 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 46 , 49 , 52 , 46 , 43 , 40 
+recv Seq 216 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.607734 
+recv Seq 217 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 727 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.414147 , 66 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 728 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.083333 
+sent Seq 729 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 218 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 63 , 1.369641 
+recv Seq 219 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 730 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.250000 
+sent Seq 731 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 220 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 221 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 49 , 52 , 49 , 46 , 43 
+recv Seq 222 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.234447 , 66 , 2.758455 
+recv Seq 223 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 732 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.416667 
+sent Seq 733 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 224 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 225 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 49 , 52 , 55 , 49 , 46 , 43 
+recv Seq 226 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.099764 , 66 , 2.457498 
+recv Seq 227 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 734 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.885547 , 64 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 735 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.583333 
+sent Seq 736 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 228 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 229 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 52 , 55 , 52 , 49 , 46 
+recv Seq 230 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.640884 , 64 , 1.432098 
+recv Seq 231 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 737 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.750000 
+sent Seq 738 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 232 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 233 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 52 , 55 , 58 , 52 , 49 , 46 
+recv Seq 234 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 235 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 739 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.916667 
+sent Seq 740 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 236 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 237 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 741 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.356946 , 60 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 742 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.083333 
+sent Seq 743 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 238 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 239 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 55 , 58 , 55 , 52 , 49 
+recv Seq 240 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 57 , 0.208697 , 58 , 0.209863 , 60 , 0.466348 , 61 , 0.312185 
+recv Seq 241 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 744 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.250000 
+sent Seq 745 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 242 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 243 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 55 , 58 , 61 , 55 , 52 , 49 
+recv Seq 244 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.116308 , 58 , 0.112537 , 60 , 0.259898 , 61 , 0.160702 , 64 , 0.461228 
+recv Seq 245 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 746 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.416667 
+sent Seq 747 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 246 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 247 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 58 , 61 , 58 , 55 , 52 
+recv Seq 248 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.068775 , 58 , 0.062601 , 60 , 0.153682 , 61 , 0.084301 , 64 , 0.216765 
+recv Seq 249 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 748 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.690276 , 57 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 749 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.583333 
+sent Seq 750 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 250 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 251 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 58 , 61 , 64 , 58 , 55 , 52 
+recv Seq 252 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 55 , 0.541777 , 57 , 0.525894 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 253 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 751 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.750000 
+sent Seq 752 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 254 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 55 , 0.541777 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 255 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 753 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.023606 , 54 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 754 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.916667 
+sent Seq 755 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 256 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 257 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 61 , 64 , 61 , 58 , 55 
+recv Seq 258 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 52 , inf , 55 , inf , 58 , 0.337806 
+recv Seq 259 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 756 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.083333 
+sent Seq 757 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 260 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 261 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 61 , 64 , 67 , 61 , 58 , 55 
+recv Seq 262 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 55 , inf , 58 , 0.839865 
+recv Seq 263 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 758 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.356936 , 51 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 759 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.250000 
+sent Seq 760 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 264 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 265 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 64 , 67 , 64 , 61 , 58 
+recv Seq 266 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 55 , 4.380265 
+recv Seq 267 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 761 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.416667 
+sent Seq 762 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 268 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 269 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 64 , 67 , 70 , 64 , 61 , 58 
+recv Seq 270 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 763 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.690265 , 48 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 764 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.583333 
+sent Seq 765 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 271 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 766 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.750000 
+sent Seq 767 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 272 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 273 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 67 , 70 , 67 , 64 , 61 
+recv Seq 274 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 768 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.023596 , 45 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 769 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.916667 
+sent Seq 770 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 275 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 276 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 67 , 70 , 73 , 67 , 64 , 61 
+recv Seq 277 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 771 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.083333 
+sent Seq 772 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 278 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 279 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 70 , 73 , 70 , 67 , 64 
+recv Seq 280 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 773 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.356925 , 42 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 774 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.250000 
+sent Seq 775 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 281 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 282 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 70 , 73 , 76 , 70 , 67 , 64 
+recv Seq 283 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 776 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.416667 
+sent Seq 777 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 284 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 285 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 73 , 76 , 73 , 70 , 67 
+recv Seq 286 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 778 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.690254 , 39 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 779 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.583333 
+sent Seq 780 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 287 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 781 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.750000 
+sent Seq 782 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 288 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 289 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 73 , 76 , 79 , 73 , 70 , 67 
+recv Seq 290 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 783 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.023585 , 36 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 784 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.916667 
+sent Seq 785 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 291 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 292 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 76 , 79 , 76 , 73 , 70 
+recv Seq 293 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 786 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.083333 
+sent Seq 787 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 294 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 295 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 76 , 79 , 82 , 76 , 73 , 70 
+recv Seq 296 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 788 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.356915 , 33 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 789 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.250000 
+sent Seq 790 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 297 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 298 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 79 , 82 , 79 , 76 , 73 
+recv Seq 299 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 791 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.416667 
+sent Seq 792 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 300 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 793 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.690246 , 30 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 794 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.583333 
+sent Seq 795 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 301 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 302 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 79 , 82 , 85 , 79 , 76 , 73 
+recv Seq 303 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 796 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.750000 
+sent Seq 797 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 304 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 305 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 82 , 85 , 82 , 79 , 76 
+recv Seq 306 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 798 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.023575 , 27 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 799 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.916667 
+sent Seq 800 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 307 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 308 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 82 , 85 , 88 , 82 , 79 , 76 
+recv Seq 309 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 801 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.083333 
+sent Seq 802 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 310 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.249750 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 311 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 85 , 88 , 85 , 82 , 79 
+recv Seq 312 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 803 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.356905 , 24 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 804 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.250000 
+sent Seq 805 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 313 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 806 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.416667 
+sent Seq 807 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 314 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.499701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 315 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 85 , 88 , 91 , 85 , 82 , 79 
+recv Seq 316 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 808 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.690234 , 21 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 809 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.583333 
+sent Seq 810 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 317 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.749701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 318 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 88 , 91 , 88 , 85 , 82 
+recv Seq 319 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 811 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.750000 
+sent Seq 812 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 320 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.999701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 321 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 88 , 91 , 94 , 88 , 85 , 82 
+recv Seq 322 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 813 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+sent Seq 814 Connx 0 :size 12 code 4004 (EXMS_SIMULATION_RESET) , 0 
+sent Seq 815 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 1 
+sent Seq 816 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 2 
+sent Seq 817 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 3 
+sent Seq 818 Connx 0 :size 12 code 4500 (EXMS_SIMULATION_STARTED) , 0 
+sent Seq 819 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 2 , 0 
+sent Seq 820 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 3 , 1 
+sent Seq 821 Connx 0 :size 36 code 10530 (EXMS_TARGETOBJECT) , 1 , 2 , 0 , 33.417500 , 0.000000 , 9.562920 , 0.083333 
+sent Seq 822 Connx 0 :size 12 code 10522 (EXMS_REMOVEOBJECT) , 1 
+sent Seq 823 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 1 , 0.333331 , 118 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 824 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 2 , 0.083333 , 19 , 10.000000 , 5.000000 , 1 , 0 
+sent Seq 825 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 3 , 0.083333 , 10 , 10.000000 , 5.000000 , 1 , 1 
+sent Seq 826 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.083333 
+sent Seq 827 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 323 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 828 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.250000 
+sent Seq 829 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 324 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 830 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.666660 , 115 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 831 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.416667 
+sent Seq 832 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 325 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 833 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.583333 
+sent Seq 834 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 326 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 835 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.999989 , 112 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 836 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.750000 
+sent Seq 837 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 327 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 838 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.916667 
+sent Seq 839 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 328 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 840 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.333320 , 109 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 841 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.083333 
+sent Seq 842 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 329 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 13.999900 , 9.499900 , 0.000000 , 90.000000 , 0.636396 , 0 
+recv Seq 330 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 16 , 19 , 22 , 16 , 13 , 10 
+recv Seq 331 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 843 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.250000 
+sent Seq 844 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 332 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 845 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.666649 , 106 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 846 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.416667 
+sent Seq 847 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 333 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 848 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.583333 
+sent Seq 849 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 334 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 850 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.999980 , 103 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 851 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.750000 
+sent Seq 852 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 335 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 853 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.916667 
+sent Seq 854 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 336 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.249900 , 9.499900 , 0.000000 , 90.000000 , 0.900000 , 0 
+recv Seq 337 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 19 , 22 , 19 , 16 , 13 
+recv Seq 338 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 855 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.333309 , 100 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 856 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.083333 
+sent Seq 857 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 339 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 858 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.250000 
+sent Seq 859 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 340 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.499900 , 9.499900 , 0.000000 , 90.000000 , 1.102270 , 0 
+recv Seq 341 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 19 , 22 , 25 , 19 , 16 , 13 
+recv Seq 342 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 860 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.666639 , 97 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 861 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.416667 
+sent Seq 862 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 343 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.749900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 344 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 22 , 25 , 22 , 19 , 16 
+recv Seq 345 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 863 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.583333 
+sent Seq 864 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 346 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 865 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.999969 , 94 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 866 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.750000 
+sent Seq 867 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 347 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.999900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 348 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 22 , 25 , 28 , 22 , 19 , 16 
+recv Seq 349 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 868 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.916667 
+sent Seq 869 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 350 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.249849 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 351 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 25 , 28 , 25 , 22 , 19 
+recv Seq 352 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 870 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.333299 , 91 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 871 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.083333 
+sent Seq 872 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 353 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 354 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 25 , 28 , 31 , 25 , 22 , 19 
+recv Seq 355 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 873 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.250000 
+sent Seq 874 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 356 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 357 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 28 , 31 , 28 , 25 , 22 
+recv Seq 358 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 875 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.666628 , 88 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 876 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.416667 
+sent Seq 877 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 359 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 878 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.583333 
+sent Seq 879 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 360 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 361 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 28 , 31 , 34 , 28 , 25 , 22 
+recv Seq 362 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 880 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.999959 , 85 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 881 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.750000 
+sent Seq 882 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 363 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 364 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 31 , 34 , 31 , 28 , 25 
+recv Seq 365 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 883 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.916667 
+sent Seq 884 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 366 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 367 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 31 , 34 , 37 , 31 , 28 , 25 
+recv Seq 368 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 885 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.333288 , 82 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 886 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.083333 
+sent Seq 887 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 369 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 370 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 34 , 37 , 34 , 31 , 28 
+recv Seq 371 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 888 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.250000 
+sent Seq 889 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 372 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 890 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.666619 , 79 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 891 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.416667 
+sent Seq 892 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 373 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 374 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 34 , 37 , 40 , 34 , 31 , 28 
+recv Seq 375 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 893 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.583333 
+sent Seq 894 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 376 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 377 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 37 , 40 , 37 , 34 , 31 
+recv Seq 378 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 895 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.999948 , 76 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 896 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.750000 
+sent Seq 897 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 379 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 380 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 37 , 40 , 43 , 37 , 34 , 31 
+recv Seq 381 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.988950 
+recv Seq 382 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 898 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.916667 
+sent Seq 899 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 383 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 384 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 40 , 43 , 40 , 37 , 34 
+recv Seq 385 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.850828 
+recv Seq 386 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 900 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.471347 , 74 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 901 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.083333 
+sent Seq 902 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 387 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.597967 
+recv Seq 388 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 903 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.250000 
+sent Seq 904 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 389 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 390 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 40 , 43 , 46 , 40 , 37 , 34 
+recv Seq 391 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.460889 
+recv Seq 392 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 905 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.416667 
+sent Seq 906 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 393 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 394 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 43 , 46 , 43 , 40 , 37 
+recv Seq 395 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.323910 
+recv Seq 396 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 907 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.942748 , 70 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 908 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.583333 
+sent Seq 909 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 397 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 398 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 43 , 46 , 49 , 43 , 40 , 37 
+recv Seq 399 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.883977 
+recv Seq 400 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 910 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.750000 
+sent Seq 911 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 401 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 402 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 46 , 49 , 46 , 43 , 40 
+recv Seq 403 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.745856 
+recv Seq 404 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 912 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.916667 
+sent Seq 913 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 405 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 406 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 46 , 49 , 52 , 46 , 43 , 40 
+recv Seq 407 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.607734 
+recv Seq 408 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 914 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.414147 , 66 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 915 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.083333 
+sent Seq 916 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 409 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 63 , 1.369641 
+recv Seq 410 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 917 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.250000 
+sent Seq 918 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 411 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 412 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 49 , 52 , 49 , 46 , 43 
+recv Seq 413 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.234447 , 66 , 2.758455 
+recv Seq 414 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 919 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.416667 
+sent Seq 920 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 415 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 416 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 49 , 52 , 55 , 49 , 46 , 43 
+recv Seq 417 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.099764 , 66 , 2.457498 
+recv Seq 418 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 921 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.885547 , 64 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 922 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.583333 
+sent Seq 923 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 419 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 420 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 52 , 55 , 52 , 49 , 46 
+recv Seq 421 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.640884 , 64 , 1.432098 
+recv Seq 422 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 924 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.750000 
+sent Seq 925 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 423 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 424 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 52 , 55 , 58 , 52 , 49 , 46 
+recv Seq 425 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 426 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 926 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.916667 
+sent Seq 927 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 427 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 428 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 928 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.356947 , 62 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 929 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.083333 
+sent Seq 930 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 429 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 430 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 55 , 58 , 55 , 52 , 49 
+recv Seq 431 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 58 , 0.209867 , 59 , 0.208702 , 61 , 0.312191 , 62 , 0.466359 
+recv Seq 432 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 931 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.250000 
+sent Seq 932 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 433 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 434 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 55 , 58 , 61 , 55 , 52 , 49 
+recv Seq 435 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 58 , 0.112542 , 59 , 0.116314 , 61 , 0.160709 , 62 , 0.259912 , 64 , 0.461233 
+recv Seq 436 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 933 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.416667 
+sent Seq 934 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 437 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 438 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 58 , 61 , 58 , 55 , 52 
+recv Seq 439 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 58 , 0.062608 , 59 , 0.068782 , 61 , 0.084309 , 62 , 0.153699 , 64 , 0.216780 
+recv Seq 440 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 935 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.690277 , 59 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 936 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.583333 
+sent Seq 937 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 441 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 442 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 58 , 61 , 64 , 58 , 55 , 52 
+recv Seq 443 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 55 , 0.541779 , 58 , 0.383095 , 59 , 0.525925 , 61 , 0.541779 
+recv Seq 444 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 938 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.750000 
+sent Seq 939 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 445 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 55 , 0.541779 , 58 , 0.383095 , 61 , 0.541779 
+recv Seq 446 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 940 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.023607 , 56 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 941 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.916667 
+sent Seq 942 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 447 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 448 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 61 , 64 , 61 , 58 , 55 
+recv Seq 449 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 52 , inf , 55 , inf , 58 , 0.337835 
+recv Seq 450 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 943 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.083333 
+sent Seq 944 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 451 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 452 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 61 , 64 , 67 , 61 , 58 , 55 
+recv Seq 453 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 55 , inf , 58 , 0.839896 
+recv Seq 454 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 945 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.356936 , 53 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 946 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.250000 
+sent Seq 947 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 455 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 456 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 64 , 67 , 64 , 61 , 58 
+recv Seq 457 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 55 , 4.380319 
+recv Seq 458 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 948 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.416667 
+sent Seq 949 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 459 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 460 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 64 , 67 , 70 , 64 , 61 , 58 
+recv Seq 461 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 950 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.690266 , 50 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 951 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.583333 
+sent Seq 952 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 462 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 953 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.750000 
+sent Seq 954 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 463 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 464 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 67 , 70 , 67 , 64 , 61 
+recv Seq 465 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 955 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.023597 , 47 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 956 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.916667 
+sent Seq 957 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 466 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 467 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 67 , 70 , 73 , 67 , 64 , 61 
+recv Seq 468 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 958 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.083333 
+sent Seq 959 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 469 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 470 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 70 , 73 , 70 , 67 , 64 
+recv Seq 471 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 960 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.356926 , 44 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 961 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.250000 
+sent Seq 962 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 472 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 473 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 70 , 73 , 76 , 70 , 67 , 64 
+recv Seq 474 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 963 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.416667 
+sent Seq 964 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 475 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 476 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 73 , 76 , 73 , 70 , 67 
+recv Seq 477 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 965 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.690255 , 41 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 966 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.583333 
+sent Seq 967 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 478 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 968 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.750000 
+sent Seq 969 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 479 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 480 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 73 , 76 , 79 , 73 , 70 , 67 
+recv Seq 481 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 970 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.023586 , 38 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 971 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.916667 
+sent Seq 972 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 482 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 483 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 76 , 79 , 76 , 73 , 70 
+recv Seq 484 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 973 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.083333 
+sent Seq 974 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 485 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 486 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 76 , 79 , 82 , 76 , 73 , 70 
+recv Seq 487 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 975 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.356915 , 35 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 976 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.250000 
+sent Seq 977 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 488 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 489 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 79 , 82 , 79 , 76 , 73 
+recv Seq 490 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 978 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.416667 
+sent Seq 979 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 491 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 980 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.690247 , 32 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 981 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.583333 
+sent Seq 982 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 492 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 493 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 79 , 82 , 85 , 79 , 76 , 73 
+recv Seq 494 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 983 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.750000 
+sent Seq 984 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 495 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 496 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 82 , 85 , 82 , 79 , 76 
+recv Seq 497 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 985 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.023576 , 29 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 986 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.916667 
+sent Seq 987 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 498 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 499 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 82 , 85 , 88 , 82 , 79 , 76 
+recv Seq 500 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 988 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.083333 
+sent Seq 989 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 501 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.249750 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 502 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 85 , 88 , 85 , 82 , 79 
+recv Seq 503 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 990 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.356906 , 26 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 991 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.250000 
+sent Seq 992 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 504 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 993 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.416667 
+sent Seq 994 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 505 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.499701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 506 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 85 , 88 , 91 , 85 , 82 , 79 
+recv Seq 507 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 995 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.690235 , 23 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 996 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.583333 
+sent Seq 997 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 508 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.749701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 509 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 88 , 91 , 88 , 85 , 82 
+recv Seq 510 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 998 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.750000 
+sent Seq 999 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 511 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.999701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 512 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 88 , 91 , 94 , 88 , 85 , 82 
+recv Seq 513 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1000 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 12.023565 , 20 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1001 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.916667 
+sent Seq 1002 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 514 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 26.249701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 515 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 91 , 94 , 91 , 88 , 85 
+recv Seq 516 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1003 Connx 0 :size 12 code 10100 (EXMS_TIME) , 12.083333 
+sent Seq 1004 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 517 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 26.499701 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 518 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 91 , 94 , 97 , 91 , 88 , 85 
+recv Seq 519 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1005 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 12.356895 , 17 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1006 Connx 0 :size 12 code 10100 (EXMS_TIME) , 12.250000 
+sent Seq 1007 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+sent Seq 1008 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+recv Seq 520 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1009 Connx 0 :size 12 code 4004 (EXMS_SIMULATION_RESET) , 0 
+sent Seq 1010 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 1 
+sent Seq 1011 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 2 
+sent Seq 1012 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 3 
+sent Seq 1013 Connx 0 :size 12 code 4500 (EXMS_SIMULATION_STARTED) , 0 
+sent Seq 1014 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 2 , 0 
+sent Seq 1015 Connx 0 :size 20 code 10540 (EXMS_ATTACHOBJECTPERSON) , 1 , 3 , 1 
+sent Seq 1016 Connx 0 :size 36 code 10530 (EXMS_TARGETOBJECT) , 1 , 2 , 0 , 33.417500 , 0.000000 , 9.562920 , 0.083333 
+sent Seq 1017 Connx 0 :size 12 code 10522 (EXMS_REMOVEOBJECT) , 1 
+sent Seq 1018 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 1 , 0.333331 , 118 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1019 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 2 , 0.083333 , 19 , 10.000000 , 5.000000 , 1 , 0 
+sent Seq 1020 Connx 0 :size 36 code 10111 (EXMS_ADD_HEPTAD) , 3 , 0.083333 , 10 , 10.000000 , 5.000000 , 1 , 1 
+sent Seq 1021 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.083333 
+sent Seq 1022 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 521 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1023 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.250000 
+sent Seq 1024 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 522 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1025 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.666660 , 115 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1026 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.416667 
+sent Seq 1027 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 523 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1028 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.583333 
+sent Seq 1029 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 524 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1030 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 0.999989 , 112 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1031 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.750000 
+sent Seq 1032 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 525 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1033 Connx 0 :size 12 code 10100 (EXMS_TIME) , 0.916667 
+sent Seq 1034 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 526 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1035 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.333320 , 109 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1036 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.083333 
+sent Seq 1037 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 527 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 13.999900 , 9.499900 , 0.000000 , 90.000000 , 0.636396 , 0 
+recv Seq 528 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 16 , 19 , 22 , 16 , 13 , 10 
+recv Seq 529 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1038 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.250000 
+sent Seq 1039 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 530 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1040 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.666649 , 106 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1041 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.416667 
+sent Seq 1042 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 531 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1043 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.583333 
+sent Seq 1044 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 532 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1045 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 1.999980 , 103 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1046 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.750000 
+sent Seq 1047 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 533 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1048 Connx 0 :size 12 code 10100 (EXMS_TIME) , 1.916667 
+sent Seq 1049 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 534 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.249900 , 9.499900 , 0.000000 , 90.000000 , 0.900000 , 0 
+recv Seq 535 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 19 , 22 , 19 , 16 , 13 
+recv Seq 536 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1050 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.333309 , 100 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1051 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.083333 
+sent Seq 1052 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 537 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1053 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.250000 
+sent Seq 1054 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 538 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.499900 , 9.499900 , 0.000000 , 90.000000 , 1.102270 , 0 
+recv Seq 539 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 19 , 22 , 25 , 19 , 16 , 13 
+recv Seq 540 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1055 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.666639 , 97 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1056 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.416667 
+sent Seq 1057 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 541 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.749900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 542 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 22 , 25 , 22 , 19 , 16 
+recv Seq 543 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1058 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.583333 
+sent Seq 1059 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 544 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1060 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 2.999969 , 94 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1061 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.750000 
+sent Seq 1062 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 545 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 14.999900 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 546 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 22 , 25 , 28 , 22 , 19 , 16 
+recv Seq 547 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1063 Connx 0 :size 12 code 10100 (EXMS_TIME) , 2.916667 
+sent Seq 1064 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 548 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.249849 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 549 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 25 , 28 , 25 , 22 , 19 
+recv Seq 550 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1065 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.333299 , 91 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1066 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.083333 
+sent Seq 1067 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 551 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 552 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 25 , 28 , 31 , 25 , 22 , 19 
+recv Seq 553 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1068 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.250000 
+sent Seq 1069 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 554 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 555 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 28 , 31 , 28 , 25 , 22 
+recv Seq 556 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1070 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.666628 , 88 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1071 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.416667 
+sent Seq 1072 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 557 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1073 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.583333 
+sent Seq 1074 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 558 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 15.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 559 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 28 , 31 , 34 , 28 , 25 , 22 
+recv Seq 560 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1075 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 3.999959 , 85 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1076 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.750000 
+sent Seq 1077 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 561 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 562 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 31 , 34 , 31 , 28 , 25 
+recv Seq 563 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1078 Connx 0 :size 12 code 10100 (EXMS_TIME) , 3.916667 
+sent Seq 1079 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 564 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 565 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 31 , 34 , 37 , 31 , 28 , 25 
+recv Seq 566 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1080 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.333288 , 82 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1081 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.083333 
+sent Seq 1082 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 567 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 568 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 34 , 37 , 34 , 31 , 28 
+recv Seq 569 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1083 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.250000 
+sent Seq 1084 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 570 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1085 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.666619 , 79 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1086 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.416667 
+sent Seq 1087 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 571 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 16.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 572 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 34 , 37 , 40 , 34 , 31 , 28 
+recv Seq 573 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1088 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.583333 
+sent Seq 1089 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 574 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 575 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 37 , 40 , 37 , 34 , 31 
+recv Seq 576 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1090 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 4.999948 , 76 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1091 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.750000 
+sent Seq 1092 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 577 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 578 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 37 , 40 , 43 , 37 , 34 , 31 
+recv Seq 579 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.988950 
+recv Seq 580 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1093 Connx 0 :size 12 code 10100 (EXMS_TIME) , 4.916667 
+sent Seq 1094 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 581 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 582 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 40 , 43 , 40 , 37 , 34 
+recv Seq 583 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 73 , 2.850828 
+recv Seq 584 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1095 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.471347 , 74 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1096 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.083333 
+sent Seq 1097 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 585 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.597967 
+recv Seq 586 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1098 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.250000 
+sent Seq 1099 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 587 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 17.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 588 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 40 , 43 , 46 , 40 , 37 , 34 
+recv Seq 589 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.460889 
+recv Seq 590 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1100 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.416667 
+sent Seq 1101 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 591 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 592 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 43 , 46 , 43 , 40 , 37 
+recv Seq 593 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 71 , 2.323910 
+recv Seq 594 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1102 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 5.942748 , 70 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1103 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.583333 
+sent Seq 1104 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 595 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 596 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 43 , 46 , 49 , 43 , 40 , 37 
+recv Seq 597 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.883977 
+recv Seq 598 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1105 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.750000 
+sent Seq 1106 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 599 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 600 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 46 , 49 , 46 , 43 , 40 
+recv Seq 601 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.745856 
+recv Seq 602 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1107 Connx 0 :size 12 code 10100 (EXMS_TIME) , 5.916667 
+sent Seq 1108 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 603 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 18.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 604 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 46 , 49 , 52 , 46 , 43 , 40 
+recv Seq 605 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 67 , 1.607734 
+recv Seq 606 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1109 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.414147 , 66 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1110 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.083333 
+sent Seq 1111 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 607 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 63 , 1.369641 
+recv Seq 608 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1112 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.250000 
+sent Seq 1113 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 609 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 610 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 49 , 52 , 49 , 46 , 43 
+recv Seq 611 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.234447 , 66 , 2.758455 
+recv Seq 612 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1114 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.416667 
+sent Seq 1115 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 613 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 614 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 49 , 52 , 55 , 49 , 46 , 43 
+recv Seq 615 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 63 , 1.099764 , 66 , 2.457498 
+recv Seq 616 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1116 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 6.885547 , 64 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1117 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.583333 
+sent Seq 1118 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 617 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 618 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 52 , 55 , 52 , 49 , 46 
+recv Seq 619 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.640884 , 64 , 1.432098 
+recv Seq 620 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1119 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.750000 
+sent Seq 1120 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 621 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 19.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 622 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 52 , 55 , 58 , 52 , 49 , 46 
+recv Seq 623 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 624 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1121 Connx 0 :size 12 code 10100 (EXMS_TIME) , 6.916667 
+sent Seq 1122 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 625 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 61 , 0.502762 , 64 , 1.123456 
+recv Seq 626 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1123 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.356946 , 60 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1124 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.083333 
+sent Seq 1125 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 627 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 628 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 55 , 58 , 55 , 52 , 49 
+recv Seq 629 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 57 , 0.208697 , 58 , 0.209863 , 60 , 0.466348 , 61 , 0.312185 
+recv Seq 630 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1126 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.250000 
+sent Seq 1127 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 631 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 632 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 55 , 58 , 61 , 55 , 52 , 49 
+recv Seq 633 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.116308 , 58 , 0.112537 , 60 , 0.259898 , 61 , 0.160702 , 64 , 0.461228 
+recv Seq 634 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1128 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.416667 
+sent Seq 1129 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 635 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 636 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 58 , 61 , 58 , 55 , 52 
+recv Seq 637 Connx 0 :size 56 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 5 , 57 , 0.068775 , 58 , 0.062601 , 60 , 0.153682 , 61 , 0.084301 , 64 , 0.216765 
+recv Seq 638 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1130 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 7.690276 , 57 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1131 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.583333 
+sent Seq 1132 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 639 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 20.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 640 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 58 , 61 , 64 , 58 , 55 , 52 
+recv Seq 641 Connx 0 :size 48 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 4 , 55 , 0.541777 , 57 , 0.525894 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 642 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1133 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.750000 
+sent Seq 1134 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 643 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 55 , 0.541777 , 58 , 0.383090 , 61 , 0.541777 
+recv Seq 644 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1135 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.023606 , 54 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1136 Connx 0 :size 12 code 10100 (EXMS_TIME) , 7.916667 
+sent Seq 1137 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 645 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 646 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 61 , 64 , 61 , 58 , 55 
+recv Seq 647 Connx 0 :size 40 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 3 , 52 , inf , 55 , inf , 58 , 0.337806 
+recv Seq 648 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1138 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.083333 
+sent Seq 1139 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 649 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 650 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 61 , 64 , 67 , 61 , 58 , 55 
+recv Seq 651 Connx 0 :size 32 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 2 , 55 , inf , 58 , 0.839865 
+recv Seq 652 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1140 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.356936 , 51 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1141 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.250000 
+sent Seq 1142 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 653 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 654 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 64 , 67 , 64 , 61 , 58 
+recv Seq 655 Connx 0 :size 24 code 10526 (EXMS_VELOCITYOBSTACLE) , 1 , 1 , 55 , 4.380265 
+recv Seq 656 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1143 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.416667 
+sent Seq 1144 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 657 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 21.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 658 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 64 , 67 , 70 , 64 , 61 , 58 
+recv Seq 659 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1145 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 8.690265 , 48 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1146 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.583333 
+sent Seq 1147 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 660 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1148 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.750000 
+sent Seq 1149 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 661 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 662 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 67 , 70 , 67 , 64 , 61 
+recv Seq 663 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1150 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.023596 , 45 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1151 Connx 0 :size 12 code 10100 (EXMS_TIME) , 8.916667 
+sent Seq 1152 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 664 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 665 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 67 , 70 , 73 , 67 , 64 , 61 
+recv Seq 666 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1153 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.083333 
+sent Seq 1154 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 667 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 668 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 70 , 73 , 70 , 67 , 64 
+recv Seq 669 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1155 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.356925 , 42 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1156 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.250000 
+sent Seq 1157 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 670 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 22.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 671 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 70 , 73 , 76 , 70 , 67 , 64 
+recv Seq 672 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1158 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.416667 
+sent Seq 1159 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 673 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 674 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 73 , 76 , 73 , 70 , 67 
+recv Seq 675 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1160 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 9.690254 , 39 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1161 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.583333 
+sent Seq 1162 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 676 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1163 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.750000 
+sent Seq 1164 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 677 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 678 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 73 , 76 , 79 , 73 , 70 , 67 
+recv Seq 679 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1165 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.023585 , 36 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1166 Connx 0 :size 12 code 10100 (EXMS_TIME) , 9.916667 
+sent Seq 1167 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 680 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 681 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 76 , 79 , 76 , 73 , 70 
+recv Seq 682 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1168 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.083333 
+sent Seq 1169 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 683 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 23.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 684 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 76 , 79 , 82 , 76 , 73 , 70 
+recv Seq 685 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1170 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.356915 , 33 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1171 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.250000 
+sent Seq 1172 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 686 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.249800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 687 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 79 , 82 , 79 , 76 , 73 
+recv Seq 688 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1173 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.416667 
+sent Seq 1174 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 689 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1175 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 10.690246 , 30 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1176 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.583333 
+sent Seq 1177 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 690 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.499800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 691 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 79 , 82 , 85 , 79 , 76 , 73 
+recv Seq 692 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1178 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.750000 
+sent Seq 1179 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 693 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.749800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 694 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 82 , 85 , 82 , 79 , 76 
+recv Seq 695 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1180 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.023575 , 27 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1181 Connx 0 :size 12 code 10100 (EXMS_TIME) , 10.916667 
+sent Seq 1182 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 696 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 24.999800 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 697 Connx 0 :size 40 code 10524 (EXMS_NODEOBJECT) , 1 , 6 , 82 , 85 , 88 , 82 , 79 , 76 
+recv Seq 698 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1183 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.083333 
+sent Seq 1184 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+recv Seq 699 Connx 0 :size 44 code 10520 (EXMS_MOVEOBJECT) , 1 , 1 , 1 , 25.249750 , 9.499900 , 0.000000 , 90.000000 , 1.215000 , 0 
+recv Seq 700 Connx 0 :size 36 code 10524 (EXMS_NODEOBJECT) , 1 , 5 , 85 , 88 , 85 , 82 , 79 
+recv Seq 701 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1185 Connx 0 :size 40 code 10112 (EXMS_MOVE_HEPTAD) , 1 , 11.356905 , 24 , 1.500000 , 10.000000 , 5.000000 , -1 , -1 
+sent Seq 1186 Connx 0 :size 12 code 10100 (EXMS_TIME) , 11.250000 
+sent Seq 1187 Connx 0 :size 12 code 10550 (EXMS_WAITING_FOR_OBJECT_DATA) 
+sent Seq 1188 Connx 0 :size 12 code 4001 (EXMS_SIMULATION_PAUSE) , 1 
+recv Seq 702 Connx 0 :size 8 code 10552 (EXMS_END_OF_OBJECT_DATA) 
+sent Seq 1189 Connx 0 :size 12 code 4004 (EXMS_SIMULATION_RESET) , 0 
+sent Seq 1190 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 1 
+sent Seq 1191 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 2 
+sent Seq 1192 Connx 0 :size 12 code 10103 (EXMS_DELETE) , 3 
+sent Seq 1193 Connx 0 :size 12 code 8004 (EXMS_DISCONNECTED) , 0 
+
+
+0 warnings
+0 errors
