@@ -1,0 +1,6 @@
+Object (Evac chair) placed on left, goal on right
+Let object move 1 sim step so A* corridor is calculated
+Add people to block the main route
+Watch object move to edge of A* cor, cor is expanded
+
+Also do a run with no people added and see that object moves through initial A* cor without any need to expand
