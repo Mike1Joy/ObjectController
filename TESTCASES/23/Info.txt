@@ -1,0 +1,2 @@
+Object attendants drive = 20
+Person drive = 1

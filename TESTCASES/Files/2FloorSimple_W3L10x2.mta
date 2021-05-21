@@ -1,0 +1,1022 @@
+ZoomFactor:2.31561
+ModelWindow
+WindowID:0
+ZFactor:1
+WinName:Floor_0
+WinFloorHeight:3
+FloorNodeSize:31
+FloorArcSize:89
+DisplayWindow: 0
+ModelWindow
+WindowID:1
+ZFactor:2.31561
+WinName:Floor_1
+WinFloorHeight:3
+FloorNodeSize:30
+FloorArcSize:89
+DisplayWindow: 1
+
+Door
+Label:1
+Title:Door_1
+WinID:0
+PosMetresX:40.1462
+PosMetresY:23.6414
+NodeHeight:0
+Obstacle:0
+adjacentNodes: 30 0 0 31 0 0 32 0 0
+Open:1
+Active:1
+DoorType:0
+DoorDelay:1.33 1.33
+TimeModel:0
+Attractiveness:100
+CatchmentArea:7.5
+Capacity:999999999
+
+Door
+Label:2
+Title:Door_2
+WinID:1
+PosMetresX:22.9998
+PosMetresY:23.4998
+NodeHeight:0
+Obstacle:0
+adjacentNodes: 34 0 0 35 0 0 36 0 0
+Open:1
+Active:1
+DoorType:0
+DoorDelay:1.33 1.33
+TimeModel:0
+Attractiveness:100
+CatchmentArea:7.5
+Capacity:999999999
+
+Node
+Label:3
+WinID:0
+PosMetresX:33.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 4 0.499996 0 6 0.499996 0 7 0.707101 0 33 0.35462 0
+
+Node
+Label:4
+WinID:0
+PosMetresX:33.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 3 0.499996 0 5 0.499994 0 6 0.707101 0 7 0.499996 0 8 0.7071 0 33 0.3337 0
+
+Node
+Label:5
+WinID:0
+PosMetresX:33.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 4 0.499994 0 7 0.7071 0 8 0.499996 0 33 0.35462 0
+
+Node
+Label:6
+WinID:0
+PosMetresX:33.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 3 0.499996 0 4 0.707101 0 7 0.499996 0 9 0.499996 0 10 0.707101 0
+
+Node
+Label:7
+WinID:0
+PosMetresX:33.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 3 0.707101 0 4 0.499996 0 5 0.7071 0 6 0.499996 0 8 0.499994 0 9 0.707101 0 10 0.499996 0 11 0.7071 0
+
+Node
+Label:8
+WinID:0
+PosMetresX:33.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 4 0.7071 0 5 0.499996 0 7 0.499994 0 10 0.7071 0 11 0.499996 0
+
+Node
+Label:9
+WinID:0
+PosMetresX:34.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 6 0.499996 0 7 0.707101 0 10 0.499996 0 12 0.499992 0 13 0.707099 0
+
+Node
+Label:10
+WinID:0
+PosMetresX:34.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 6 0.707101 0 7 0.499996 0 8 0.7071 0 9 0.499996 0 11 0.499994 0 12 0.707099 0 13 0.499992 0 14 0.707097 0
+
+Node
+Label:11
+WinID:0
+PosMetresX:34.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 7 0.7071 0 8 0.499996 0 10 0.499994 0 13 0.707097 0 14 0.499992 0
+
+Node
+Label:12
+WinID:0
+PosMetresX:34.9996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 9 0.499992 0 10 0.707099 0 13 0.499996 0 15 0.499996 0 16 0.707101 0
+
+Node
+Label:13
+WinID:0
+PosMetresX:34.9996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 9 0.707099 0 10 0.499992 0 11 0.707097 0 12 0.499996 0 14 0.499994 0 15 0.707101 0 16 0.499996 0 17 0.7071 0
+
+Node
+Label:14
+WinID:0
+PosMetresX:34.9996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 10 0.707097 0 11 0.499992 0 13 0.499994 0 16 0.7071 0 17 0.499996 0
+
+Node
+Label:15
+WinID:0
+PosMetresX:35.4996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 12 0.499996 0 13 0.707101 0 16 0.499996 0 18 0.499996 0 19 0.707101 0
+
+Node
+Label:16
+WinID:0
+PosMetresX:35.4996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 12 0.707101 0 13 0.499996 0 14 0.7071 0 15 0.499996 0 17 0.499994 0 18 0.707101 0 19 0.499996 0 20 0.7071 0
+
+Node
+Label:17
+WinID:0
+PosMetresX:35.4996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 13 0.7071 0 14 0.499996 0 16 0.499994 0 19 0.7071 0 20 0.499996 0
+
+Node
+Label:18
+WinID:0
+PosMetresX:35.9996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 15 0.499996 0 16 0.707101 0 19 0.499996 0 21 0.499992 0 22 0.707099 0
+
+Node
+Label:19
+WinID:0
+PosMetresX:35.9996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 15 0.707101 0 16 0.499996 0 17 0.7071 0 18 0.499996 0 20 0.499994 0 21 0.707099 0 22 0.499992 0 23 0.707097 0
+
+Node
+Label:20
+WinID:0
+PosMetresX:35.9996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 16 0.7071 0 17 0.499996 0 19 0.499994 0 22 0.707097 0 23 0.499992 0
+
+Node
+Label:21
+WinID:0
+PosMetresX:36.4996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 18 0.499992 0 19 0.707099 0 22 0.499996 0 24 0.499996 0 25 0.707101 0
+
+Node
+Label:22
+WinID:0
+PosMetresX:36.4996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 18 0.707099 0 19 0.499992 0 20 0.707097 0 21 0.499996 0 23 0.499994 0 24 0.707101 0 25 0.499996 0 26 0.7071 0
+
+Node
+Label:23
+WinID:0
+PosMetresX:36.4996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 19 0.707097 0 20 0.499992 0 22 0.499994 0 25 0.7071 0 26 0.499996 0
+
+Node
+Label:24
+WinID:0
+PosMetresX:36.9996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 21 0.499996 0 22 0.707101 0 25 0.499996 0 27 0.499996 0 28 0.707101 0
+
+Node
+Label:25
+WinID:0
+PosMetresX:36.9996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 21 0.707101 0 22 0.499996 0 23 0.7071 0 24 0.499996 0 26 0.499994 0 27 0.707101 0 28 0.499996 0 29 0.7071 0
+
+Node
+Label:26
+WinID:0
+PosMetresX:36.9996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 22 0.7071 0 23 0.499996 0 25 0.499994 0 28 0.7071 0 29 0.499996 0
+
+Node
+Label:27
+WinID:0
+PosMetresX:37.4996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 24 0.499996 0 25 0.707101 0 28 0.499996 0 30 0.499992 0 31 0.707099 0
+
+Node
+Label:28
+WinID:0
+PosMetresX:37.4996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 24 0.707101 0 25 0.499996 0 26 0.7071 0 27 0.499996 0 29 0.499994 0 30 0.707099 0 31 0.499992 0 32 0.707097 0
+
+Node
+Label:29
+WinID:0
+PosMetresX:37.4996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 25 0.7071 0 26 0.499996 0 28 0.499994 0 31 0.707097 0 32 0.499992 0
+
+Node
+Label:30
+WinID:0
+PosMetresX:37.9996
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 27 0.499992 0 28 0.707099 0 1 0 0 31 0.499996 0
+
+Node
+Label:31
+WinID:0
+PosMetresX:37.9996
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 27 0.707099 0 28 0.499992 0 29 0.707097 0 30 0.499996 0 1 0 0 32 0.499994 0
+
+Node
+Label:32
+WinID:0
+PosMetresX:37.9996
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 28 0.707097 0 29 0.499992 0 31 0.499994 0 1 0 0
+
+Node
+Label:33
+WinID:0
+PosMetresX:31.2342
+PosMetresY:23.4897
+NodeHeight:0
+Nodetype:MegaNode
+Obstacle:0
+adjacentNodes: 5 0.35462 0 4 0.3337 0 3 0.35462 0 61 0.35462 0 62 0.3337 0 63 0.35462 0
+
+Node
+Label:34
+WinID:1
+PosMetresX:24.4998
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 2 0 0 35 0.499996 0 37 0.499994 0 38 0.7071 0
+
+Node
+Label:35
+WinID:1
+PosMetresX:24.4998
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 34 0.499996 0 2 0 0 36 0.499994 0 37 0.7071 0 38 0.499994 0 39 0.707099 0
+
+Node
+Label:36
+WinID:1
+PosMetresX:24.4998
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 35 0.499994 0 2 0 0 38 0.707099 0 39 0.499994 0
+
+Node
+Label:37
+WinID:1
+PosMetresX:24.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 34 0.499994 0 35 0.7071 0 38 0.499996 0 40 0.499996 0 41 0.707101 0
+
+Node
+Label:38
+WinID:1
+PosMetresX:24.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 34 0.7071 0 35 0.499994 0 36 0.707099 0 37 0.499996 0 39 0.499994 0 40 0.707101 0 41 0.499996 0 42 0.7071 0
+
+Node
+Label:39
+WinID:1
+PosMetresX:24.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 35 0.707099 0 36 0.499994 0 38 0.499994 0 41 0.7071 0 42 0.499996 0
+
+Node
+Label:40
+WinID:1
+PosMetresX:25.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 37 0.499996 0 38 0.707101 0 41 0.499996 0 43 0.499994 0 44 0.7071 0
+
+Node
+Label:41
+WinID:1
+PosMetresX:25.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 37 0.707101 0 38 0.499996 0 39 0.7071 0 40 0.499996 0 42 0.499994 0 43 0.7071 0 44 0.499994 0 45 0.707099 0
+
+Node
+Label:42
+WinID:1
+PosMetresX:25.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 38 0.7071 0 39 0.499996 0 41 0.499994 0 44 0.707099 0 45 0.499994 0
+
+Node
+Label:43
+WinID:1
+PosMetresX:25.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 40 0.499994 0 41 0.7071 0 44 0.499996 0 46 0.499994 0 47 0.7071 0
+
+Node
+Label:44
+WinID:1
+PosMetresX:25.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 40 0.7071 0 41 0.499994 0 42 0.707099 0 43 0.499996 0 45 0.499994 0 46 0.7071 0 47 0.499994 0 48 0.707099 0
+
+Node
+Label:45
+WinID:1
+PosMetresX:25.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 41 0.707099 0 42 0.499994 0 44 0.499994 0 47 0.707099 0 48 0.499994 0
+
+Node
+Label:46
+WinID:1
+PosMetresX:26.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 43 0.499994 0 44 0.7071 0 47 0.499996 0 49 0.499996 0 50 0.707101 0
+
+Node
+Label:47
+WinID:1
+PosMetresX:26.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 43 0.7071 0 44 0.499994 0 45 0.707099 0 46 0.499996 0 48 0.499994 0 49 0.707101 0 50 0.499996 0 51 0.7071 0
+
+Node
+Label:48
+WinID:1
+PosMetresX:26.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 44 0.707099 0 45 0.499994 0 47 0.499994 0 50 0.7071 0 51 0.499996 0
+
+Node
+Label:49
+WinID:1
+PosMetresX:26.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 46 0.499996 0 47 0.707101 0 50 0.499996 0 52 0.499994 0 53 0.7071 0
+
+Node
+Label:50
+WinID:1
+PosMetresX:26.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 46 0.707101 0 47 0.499996 0 48 0.7071 0 49 0.499996 0 51 0.499994 0 52 0.7071 0 53 0.499994 0 54 0.707099 0
+
+Node
+Label:51
+WinID:1
+PosMetresX:26.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 47 0.7071 0 48 0.499996 0 50 0.499994 0 53 0.707099 0 54 0.499994 0
+
+Node
+Label:52
+WinID:1
+PosMetresX:27.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 49 0.499994 0 50 0.7071 0 53 0.499996 0 55 0.499994 0 56 0.7071 0
+
+Node
+Label:53
+WinID:1
+PosMetresX:27.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 49 0.7071 0 50 0.499994 0 51 0.707099 0 52 0.499996 0 54 0.499994 0 55 0.7071 0 56 0.499994 0 57 0.707099 0
+
+Node
+Label:54
+WinID:1
+PosMetresX:27.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 50 0.707099 0 51 0.499994 0 53 0.499994 0 56 0.707099 0 57 0.499994 0
+
+Node
+Label:55
+WinID:1
+PosMetresX:27.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 52 0.499994 0 53 0.7071 0 56 0.499996 0 58 0.499996 0 59 0.707101 0
+
+Node
+Label:56
+WinID:1
+PosMetresX:27.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 52 0.7071 0 53 0.499994 0 54 0.707099 0 55 0.499996 0 57 0.499994 0 58 0.707101 0 59 0.499996 0 60 0.7071 0
+
+Node
+Label:57
+WinID:1
+PosMetresX:27.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 53 0.707099 0 54 0.499994 0 56 0.499994 0 59 0.7071 0 60 0.499996 0
+
+Node
+Label:58
+WinID:1
+PosMetresX:28.4997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 55 0.499996 0 56 0.707101 0 59 0.499996 0 61 0.499994 0 62 0.7071 0
+
+Node
+Label:59
+WinID:1
+PosMetresX:28.4997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 55 0.707101 0 56 0.499996 0 57 0.7071 0 58 0.499996 0 60 0.499994 0 61 0.7071 0 62 0.499994 0 63 0.707099 0
+
+Node
+Label:60
+WinID:1
+PosMetresX:28.4997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 56 0.7071 0 57 0.499996 0 59 0.499994 0 62 0.707099 0 63 0.499994 0
+
+Node
+Label:61
+WinID:1
+PosMetresX:28.9997
+PosMetresY:22.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 58 0.499994 0 59 0.7071 0 33 0.35462 0 62 0.499996 0
+
+Node
+Label:62
+WinID:1
+PosMetresX:28.9997
+PosMetresY:23.4998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 58 0.7071 0 59 0.499994 0 60 0.707099 0 61 0.499996 0 33 0.3337 0 63 0.499994 0
+
+Node
+Label:63
+WinID:1
+PosMetresX:28.9997
+PosMetresY:23.9998
+NodeHeight:0
+Nodetype:FreeSpace
+Obstacle:0
+adjacentNodes: 59 0.707099 0 60 0.499994 0 62 0.499994 0 33 0.35462 0
+BATExtreme: 0
+BATExtremeColour: 0
+BATFED: 0
+BATFEDPercent: 0.9
+BATFEDColour: 7
+BATSmokeRedirect: 0
+BATSmokeRedirectColour: 5
+BATSmkCoefficient: 0
+BATSmkCoefficientValue: 0.1
+BATSmkCoefficientColour: 8
+BATUrgency: 0
+BATUrgencyColour: 2
+BATCueDose: 0
+BATCueDoseLowColour: 3
+BATCueDoseMidColour: 7
+BATCueDoseUpperColour: 0
+BATCueDoseLowRange: 0.3
+BATCueDoseUpperRange: 0.8
+BATGrouped: 0
+BATGroupedColour: 4
+SimSeed: 0
+
+Person
+Label:1
+Gender:Male
+Age:25
+Weight:80
+Width:0.427778
+Height:1.8
+Mobility:1
+Agility:5
+RunRate:1.5
+WalkRate:1.35
+CrawlRate:0.3
+LeapRate:1.2
+StUpRate:0.67
+StDownRate:1.01
+UpEscalatorRate:0.71
+DownEscalatorRate:0.82
+RebarRate:0.78
+DeckingAcrossRate:0.8
+DeckingAlongRate:0.73
+PID:30
+RestRMV:8.5
+WalkRMV:25
+RunRMV:50
+FICCIIFValue:4.5
+HCL_Conc:200
+HBr_Conc:200
+HF_Conc:200
+SO2_Conc:24
+NO2_Conc:70
+CH2CHO_Conc:4
+HCHO_Conc:6
+Iother_Conc:0
+HCL_dose:6.84e+06
+HBr_dose:6.84e+06
+HF_dose:5.22e+06
+SO2_dose:720000
+NO2_dose:114000
+CH2CHO_dose:270000
+HCHO_dose:1.35e+06
+Iother_dose:0
+Drive:20
+Gene:0
+Response:0
+Patience:1000
+PersonType:0
+NodeOccupied:42
+MyLocation:25.4997 23.9998 1
+Itinerary: 1
+Task: 42 10 0 0 0 0 0 
+
+Person
+Label:2
+Gender:Male
+Age:25
+Weight:80
+Width:0.411118
+Height:1.8
+Mobility:1
+Agility:5
+RunRate:1.5
+WalkRate:1.35
+CrawlRate:0.3
+LeapRate:1.2
+StUpRate:0.67
+StDownRate:1.01
+UpEscalatorRate:0.71
+DownEscalatorRate:0.82
+RebarRate:0.78
+DeckingAcrossRate:0.8
+DeckingAlongRate:0.73
+PID:30
+RestRMV:8.5
+WalkRMV:25
+RunRMV:50
+FICCIIFValue:4.5
+HCL_Conc:200
+HBr_Conc:200
+HF_Conc:200
+SO2_Conc:24
+NO2_Conc:70
+CH2CHO_Conc:4
+HCHO_Conc:6
+Iother_Conc:0
+HCL_dose:6.84e+06
+HBr_dose:6.84e+06
+HF_dose:5.22e+06
+SO2_dose:720000
+NO2_dose:114000
+CH2CHO_dose:270000
+HCHO_dose:1.35e+06
+Iother_dose:0
+Drive:20
+Gene:0
+Response:0
+Patience:1000
+PersonType:0
+NodeOccupied:51
+MyLocation:26.9997 23.9998 1
+Itinerary: 2
+Task: 51 10 0 0 0 0 0 
+Task: 1 11 0 0 0 0 0 
+
+Person
+Label:3
+Gender:Male
+Age:25
+Weight:80
+Width:0.442835
+Height:1.8
+Mobility:1
+Agility:5
+RunRate:0.3
+WalkRate:0.3
+CrawlRate:0.3
+LeapRate:0.3
+StUpRate:0.3
+StDownRate:0.3
+UpEscalatorRate:0.3
+DownEscalatorRate:0.3
+RebarRate:0.3
+DeckingAcrossRate:0.3
+DeckingAlongRate:0.3
+PID:30
+RestRMV:8.5
+WalkRMV:25
+RunRMV:50
+FICCIIFValue:4.5
+HCL_Conc:200
+HBr_Conc:200
+HF_Conc:200
+SO2_Conc:24
+NO2_Conc:70
+CH2CHO_Conc:4
+HCHO_Conc:6
+Iother_Conc:0
+HCL_dose:6.84e+06
+HBr_dose:6.84e+06
+HF_dose:5.22e+06
+SO2_dose:720000
+NO2_dose:114000
+CH2CHO_dose:270000
+HCHO_dose:1.35e+06
+Iother_dose:0
+Drive:1
+Gene:0
+Response:0
+Patience:1000
+PersonType:0
+NodeOccupied:63
+MyLocation:28.9997 23.9998 1
+Target:1
+CoarseNodes:1
+CoarseNodeType:80
+TransitNode:
+Label:1
+WinID:0
+TransitNodeLabel:33
+IconType:1
+Terrain:0
+NumberOfSubUnits:14
+UnitLengthSize:0.333731
+TheDirectionAngle:270
+TheMaxCapacity:28
+LaneMaxCapacity:14
+TheDownMaxCapacity:28
+LaneDownMaxCapacity:14
+UseFlowRatesCal:0
+DefaultRates:1
+TravelTimeMin:0 0 72
+TravelTimeMax:0 0 72
+TravelTimeMin:0 1 72
+TravelTimeMax:0 1 72
+TravelTimeMin:1 0 72
+TravelTimeMax:1 0 72
+TravelTimeMin:1 1 72
+TravelTimeMax:1 1 72
+Length:3.78
+Width:1.52
+NumberOfLanes:2
+TransitNodeAngle:90
+CatchmentArea:7.5
+FlowDirection:2
+Height:2.55
+NosingDepth:0
+EWidth:0
+UseEWidth:0
+HDWSize:0
+UseHDWSize:0
+HozSpeed:0.196133
+LevelRun:1.2
+RiderStag:2
+RiderPacked:1
+WalkerStag:2
+WalkerPacked:2
+SpaceModel:0
+RiderBias:2
+ComplianceProb:100
+MaleWalkerProportionUp:40
+MaleWalkerProportionDown:45
+LeftRiderProportions:0
+RightRiderProportions:1
+CentreRiderProportions:0
+MaleMinEntryDelay:0
+MaleMaxEntryDelay:0
+FemaleMinEntryDelay:0
+FemaleMaxEntryDelay:0
+ArcLanesSize:6 0 0 5 5 0 4 10 0 3 10 13 61 5 13 62 0 13 63 
+TravelDelayType: 0
+EntryDelayType: 0
+LiftsCount:0
+FloorLink:
+WinID:1
+Label:0
+XPos:29.6406
+YPos:23.583
+Text:Link1
+IconDirection:1
+IconStyle:1
+OtherLink:1
+AdjListSize:3 61 62 63 
+ArcList:3 63 33 62 33 61 33 
+FloorLink:
+WinID:0
+Label:1
+XPos:26.2168
+YPos:23.6406
+Text:Link1
+IconDirection:1
+IconStyle:1
+OtherLink:0
+AdjListSize:1 33 
+ArcList:3 63 33 62 33 61 33 
+DistributionCurves:0
+BufferNodes:0
+GenericObjectTemplates: 1
+GenericObjectTemplate: Stretcher-2Person
+TemplatePolygon: 4
+PVertex:1 0
+PVertex:1 0.4
+PVertex:0 0.4
+PVertex:0 0
+TemplateAttachmentPoints: 2
+AVertex:0 0.2
+AVertex:1 0.2
+AbsorbAgents: 1
+FrontLocation: 0 0.2
+RotationPoint: 0.5 0.2
+RenderMeshName: CollisionMeshName:
+PreparationTime: 0 0
+PreparationStaff: 2
+SingleDoorTowardsTime: 7 7
+DoubleDoorTowardsTime: 7 7
+SingleDoorAwayTime: 5 4
+DoubleDoorAwayTime: 5 4
+VertStoppingFreq: 2 4.5
+VertStoppingDist: 70.75 30.52
+VertStoppingTime: 30 30
+VertStoppingDensity: 3 3
+StoppingStairLanes: 3 3
+HozVelocity: 1.09 0.99
+StraightLineSpeed: 1.3 1.29
+CornerSpeed: 1.03 0.75
+VertVelocity: 0.67 0.52
+StairLanes: 2 2
+StairPreference: 1 1
+EndGenericObjectTemplate
+EndGenericObjectTemplates
+GenericObjects: 1
+GenericObject: Stretcher-2Person
+ObjectType: 1
+Rotation: 180
+Location: 1 25.7114 23.4919
+RotationPoint: 0.5 0.2
+EndGenericObject
+EndGenericObjects
+LiftUsageData:
+ConsiderLift: 0
+ConsiderLiftValue: 100
+PercChooseLiftDefType: 0
+ChooseEqMaxFloor: 60
+NumberChooseEqVals: 7
+ChooseEqVariable: 0 0
+ChooseEqVariable: 1 0
+ChooseEqVariable: 2 -44.03
+ChooseEqVariable: 3 32.07
+ChooseEqVariable: 4 1
+ChooseEqVariable: 5 0
+ChooseEqVariable: 6 0
+LiftFloorData: 2
+ProportionLiftUsers: 0 0
+LiftWaitTimeCurve:
+RCTitle: DataCurve
+CurveType:1
+RCEntryMMP:1 0 0
+RCEntryMMP:0.1 900 0.1
+RCEntryMMP:0 0 0
+CurveEnd:
+CongestionThresholdCurve:
+RCTitle: DataCurve
+CurveType:1
+RCEntryMMP:1 0 0
+RCEntryMMP:0.13 1.5 0.1
+RCEntryMMP:0 0 0
+CurveEnd:
+ProportionLiftUsers: 1 0.113
+LiftWaitTimeCurve:
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:0.1 60 0.357
+RCEntryMMP:60.1 300 0.5
+RCEntryMMP:300.1 600 0.071
+RCEntryMMP:600.1 900 0.071
+RCEntryMMP:900.1 1200 0
+RCEntryMMP:1200.1 1500 0
+RCEntryMMP:1500.1 1800 0
+RCEntryMMP:1800.1 2100 0
+RCEntryMMP:2100.1 2400 0
+RCEntryMMP:2400.1 2700 0
+RCEntryMMP:2700.1 3000 0
+RCEntryMMP:3000.1 3300 0
+RCEntryMMP:3300.1 3600 0
+RCEntryMMP:999999 999999 0
+CurveEnd:
+CongestionThresholdCurve:
+RCTitle: DataCurve
+CurveType:0
+RCEntryMMP:0.001 0.13 0.214
+RCEntryMMP:0.14 0.5 0.214
+RCEntryMMP:0.6 1 0.357
+RCEntryMMP:1.1 1.5 0.071
+RCEntryMMP:1.6 2 0
+RCEntryMMP:2.1 2.5 0
+RCEntryMMP:2.6 4 0
+RCEntryMMP:99 99 0.143
+CurveEnd:
+EndLiftUsageData:
