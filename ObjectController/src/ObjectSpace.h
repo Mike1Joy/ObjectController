@@ -824,6 +824,7 @@ public:
 	static bool TCP_arc_id_check;
 	static bool TCP_only_floor_1;
 	void TCP_add_node(node);
+	int GL_autoconnect_nodes(float spacing);
 	void TCP_add_arc(arc);
 	void TCP_add_stair(stair, bool);
 	void TCP_add_landing(landing);

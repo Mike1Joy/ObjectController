@@ -748,6 +748,9 @@ void processNormalKeys(unsigned char key, int x, int y)
 			add = !add;
 			adding = false;
 			break;
+		case 'A':
+			autoconnect_nodes();
+			break;
 		case 'g':
 			if (increment == 10)
 			{
@@ -938,6 +941,10 @@ void add_node(int id, float x_position, float y_position, bool is_landing)
 {
 	s_object_space.TCP_add_node(node(id, x_position, y_position, -1, -1, floor_num));
 	++num_nodes;
+}
+void autoconnect_nodes()
+{
+	num_arcs += s_object_space.GL_autoconnect_nodes(0.5f);
 }
 void add_arc(int start_stair, int end_stair, int start_node_id, int end_node_id, float start_x, float start_y, float end_x, float end_y, int start_floor, int end_floor, int id)
 {

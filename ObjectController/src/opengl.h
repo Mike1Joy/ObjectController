@@ -235,6 +235,7 @@ void pressKey(int, int, int);
 
 // add geometry
 void add_node(int id, float x_position, float y_position, bool is_landing);
+void autoconnect_nodes();
 void add_arc(int start_stair, int end_stair, int start_node_id, int end_node_id, float start_x, float start_y, float end_x, float end_y, int, int, int id);
 void add_bound(float start_x, float start_y, float end_x, float end_y, int id);
 void add_stair(float x, float y);

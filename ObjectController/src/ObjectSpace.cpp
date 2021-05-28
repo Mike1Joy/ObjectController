@@ -34,6 +34,36 @@ void ObjectSpace::TCP_add_node(node n)
 		m_next_node_id = n.id + 1;
 	}
 }
+int ObjectSpace::GL_autoconnect_nodes(float spacing)
+{
+	int new_arcs = 0;
+	for (int ii = 0; ii < m_EX_nodes.size(); ++ii)
+	{
+		float xx = m_EX_nodes[ii].position.x;
+		float yy = m_EX_nodes[ii].position.y;
+		int floor_num = m_EX_nodes[ii].floor_num;
+		int id_ = m_EX_nodes[ii].id;
+
+
+		for (int i = -1; i <= 1; ++i)
+		{
+			for (int j = -1; j <= 1; ++j)
+			{
+				if (i != 0 || j != 0)
+				{
+					const node* n = get_tnode(xx + i * spacing, yy + j * spacing, 0.01f, floor_num);
+					
+					if (n)
+					{
+						TCP_add_arc(arc(-1, n->stair_id, id_, n->id, xx, yy, n->position.x, n->position.y, floor_num, n->floor_num, get_next_arc_id()));
+						new_arcs++;
+					}
+				}
+			}
+		}
+	}
+	return new_arcs;
+}
 void ObjectSpace::TCP_add_arc(arc a)
 {
 	if (TCP_arc_id_check && TCP_arc_exist(a.id))
@@ -1647,7 +1677,7 @@ int ObjectSpace::get_num_people()
 }
 const node* ObjectSpace::get_tnode(float x, float y, float tolarence, int floor)
 {
-	for (int i = m_EX_nodes.size() - 1; i >= 0; --i)
+	for (int i = 0; i < m_EX_nodes.size(); ++i)
 	{
 		if ((m_EX_nodes[i].floor_num == floor || (m_EX_nodes[i].stair_id != -1 && m_EX_nodes[i].floor_num + 1 == floor)) &&
 			m_EX_nodes[i].position.x > x - tolarence &&
