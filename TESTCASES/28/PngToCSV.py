@@ -35,7 +35,7 @@ csv_out.append(["L"])
 csv_out.append(["C"])
 csv_out.append([22.5394,-1.23478,-0.371155])
 
-with open(path + file + '.csv', 'w', newline='') as csvfile:
+with open(path + 'geo.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerows(csv_out)
 

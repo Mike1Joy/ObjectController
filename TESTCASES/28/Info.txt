@@ -2,4 +2,3 @@ Generate Maze:
 - Maze pngs generated with https://keesiemeijer.github.io/maze-generator
 - png converted to geo csv with node locations with my python script
 - csv loaded into OC then nodes autoconnected to neighbours
-
