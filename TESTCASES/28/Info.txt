@@ -2,3 +2,8 @@ Generate Maze:
 - Maze pngs generated with https://keesiemeijer.github.io/maze-generator
 - png converted to geo csv with node locations with my python script
 - csv loaded into OC then nodes autoconnected to neighbours
+
+Resulting maze:
+2 exits (top left and bottom right)
+tnodes:  34,091
+cnodes: 545,456

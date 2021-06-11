@@ -366,9 +366,18 @@ FileIO::Node_construct FileIO::text_to_node(std::string* s)
 	std::optional<float> floatopt;
 	std::optional<bool> boolopt;
 
-	for (int i = 0; i < s->length(); ++i)
+	for (int i = 0; i < s->length()+1; ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
+		
 		if (c == ',')
 		{
 			switch (blocknum)
@@ -421,7 +430,16 @@ FileIO::Arc_construct FileIO::text_to_arc(std::string* s)
 
 	for (int i = 0; i < s->length(); ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
+
 		if (c == ',')
 		{
 			switch (blocknum)
@@ -477,7 +495,15 @@ FileIO::BoundaryLine_construct FileIO::text_to_bound(std::string* s)
 
 	for (int i = 0; i < s->length(); ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
 		if (c == ',')
 		{
 			switch (blocknum)
@@ -530,7 +556,15 @@ FileIO::Stair_construct FileIO::text_to_stair(std::string* s)
 
 	for (int i = 0; i < s->length(); ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
 		if (c == ',')
 		{
 			switch (blocknum)
@@ -595,7 +629,15 @@ FileIO::Landing_construct FileIO::text_to_land(std::string* s)
 
 	for (int i = 0; i < s->length(); ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
 		if (c == ',')
 		{
 			switch (blocknum)
@@ -649,7 +691,15 @@ void FileIO::text_to_camera(std::string* s, float* zoom, float* camerax, float* 
 
 	for (int i = 0; i < s->length(); ++i)
 	{
-		char c = s->at(i);
+		char c;
+		if (i == s->length())
+		{
+			c = ',';
+		}
+		else
+		{
+			c = s->at(i);
+		}
 		if (c == ',')
 		{
 			switch (blocknum)

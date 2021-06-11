@@ -4508,6 +4508,8 @@ std::vector<data_for_TCP::stair_node> ObjectSpace::main_sim_init_stair_node()
 }
 std::vector<data_for_TCP::object_config> ObjectSpace::main_sim_step_1(float time_sec, bool first)
 {
+	// Action current task
+
 	log_main.print("main_sim_step_1");
 	sim_time = time_sec;
 	std::pair<std::map<int, bool>, std::map<int, bool>> completed_deleted = action_all_tasks(time_sec);
@@ -4558,6 +4560,8 @@ std::vector<data_for_TCP::object_config> ObjectSpace::main_sim_step_1(float time
 }
 std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_step_2()
 {
+	// Set new occupied nodes
+
 	log_main.print("main_sim_step_2");
 	using namespace data_for_TCP;
 
@@ -4578,6 +4582,8 @@ std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_step_2()
 }
 std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 {
+	// Calculate new VOs and PVOs for avoidance
+
 	log_main.print("main_sim_step_3");
 	update_all_vos(first, vo_generalised, vo_hybrid, vo_time_to_collision, 0.2f, vo_add_dist_cost);
 
