@@ -1,2 +1,0 @@
-Fix python - at the moment all nodes are landing
-Do tests
