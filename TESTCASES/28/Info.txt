@@ -12,3 +12,7 @@ Corridor area: 1500.75m2 (approx 50%, rest is walls)
 Exits: 2 (top left and bottom right)
 tnodes:  6003
 cnodes: 545456
+
+Observations
+- Route was calculated very quickly (couple of seconds)
+- Route was correct 

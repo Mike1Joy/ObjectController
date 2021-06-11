@@ -1,0 +1,30 @@
+There are 10 different ways objects can pass each other in a cross junction (removing reflections, rotations and matching start locations from the 144 possible combinations of two sets of objects).
+1.  LR+RL
+2.  LR+RB
+3.  LR+BL
+4.  LR+BR
+5.  LR+BT
+6.  LB+RB
+7.  LB+RT
+8.  LB+BL
+9.  LB+BR
+10. LB+TR
+
+Objects: EC (prefab 2), default drives etc
+Start Pos: Alternate between right-middle and left-middle. First object 1 from end, each other object 4 ahead of last
+  o o o o
+  o x o o
+  o o o o
+  o o o o
+  o o o o
+  o o x o
+  o o o o
+  o o o o
+  o o o o
+  o x o o
+  o o o o
+  o o o o
+  o o o o
+  o o x o
+  o o o o
+
