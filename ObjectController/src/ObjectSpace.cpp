@@ -51,7 +51,7 @@ int ObjectSpace::GL_autoconnect_nodes(float spacing)
 			{
 				if (i != 0 || j != 0)
 				{
-					const node* n = get_tnode(xx + i * spacing, yy + j * spacing, 0.01f, floor_num);
+					const node* n = get_tnode(xx + i * spacing, yy + j * spacing, 0.01f, floor_num, ii+1);
 					
 					if (n)
 					{
@@ -1688,6 +1688,22 @@ const node* ObjectSpace::get_tnode(float x, float y, float tolarence, int floor)
 			return &m_EX_nodes[i];
 		}
 		
+	}
+	return nullptr;
+}
+const node* ObjectSpace::get_tnode(float x, float y, float tolarence, int floor, int start_search_pos)
+{
+	for (int i = start_search_pos; i < m_EX_nodes.size(); ++i)
+	{
+		if ((m_EX_nodes[i].floor_num == floor || (m_EX_nodes[i].stair_id != -1 && m_EX_nodes[i].floor_num + 1 == floor)) &&
+			m_EX_nodes[i].position.x > x - tolarence &&
+			m_EX_nodes[i].position.x < x + tolarence &&
+			m_EX_nodes[i].position.y > y - tolarence &&
+			m_EX_nodes[i].position.y < y + tolarence)
+		{
+			return &m_EX_nodes[i];
+		}
+
 	}
 	return nullptr;
 }

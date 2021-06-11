@@ -899,6 +899,7 @@ public:
 	int get_num_obj();
 	int get_num_people();
 	const node* get_tnode(float x, float y, float tolarence, int floor);
+	const node* get_tnode(float x, float y, float tolarence, int floor, int start_search_pos);
 	const int* select_tnode(float x, float y, float tolarence, const int* ignore, int floor);
 	const int* select_tarc(float x, float y, float tolarence, const int* ignore, int floor);
 	const int* select_bound(float x, float y, float tolarence, const int* ignore, int floor);
