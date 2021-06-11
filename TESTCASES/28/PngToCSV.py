@@ -1,11 +1,12 @@
 from PIL import Image
 import csv
+import os.path
 
-path = "C:\\Users\\Andra\\OneDrive - University of Greenwich\\PhD\\Application\\ObjectController\\TESTCASES\\28\\"
+path = R"C:\Users\Andra\OneDrive - University of Greenwich\PhD\Application\ObjectController\TESTCASES\28"
 file = "maze.png"
 spacing = 0.5
 
-img = Image.open(path + file)
+img = Image.open(os.path.join(path,file))
 pixels = img.getdata()
 
 row_length = img.width
@@ -35,7 +36,6 @@ csv_out.append(["L"])
 csv_out.append(["C"])
 csv_out.append([22.5394,-1.23478,-0.371155])
 
-with open(path + 'geo.csv', 'w', newline='') as csvfile:
+with open(os.path.join(path,'geo.csv'), 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=',')
     writer.writerows(csv_out)
-

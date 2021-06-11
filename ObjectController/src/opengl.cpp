@@ -1843,7 +1843,7 @@ void drawObj()
 		drawConfig(obj);
 	}
 
-	if (show_pre_configs)
+	if (show_pre_configs && !previous_configs.empty())
 	{
 		for (auto conf = previous_configs.rbegin(); conf != previous_configs.rend(); ++conf)
 		{
