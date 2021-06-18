@@ -1,6 +1,12 @@
-Objects: EC (prefab 2), default drives etc. EC picked as the non-holonomic wheels make it more difficult to move, this makes it a stronger test (i.e. if it works for non-holonomic, then it will work for holonomic). All drives equal to make the situation worse.
+Model all possible junction interactions between 2 groups of objects. Objects and geometry were picked to make the scenario as difficult as possible.
 
-Start Pos: Alternate between right-middle and left-middle. First object 1 from end, each other object 4 ahead of last. Symetrical patterns picked to try to show the worst case as objects have to choose a side. Like walking down a coridor and awkwardly oscilating with another person.
+Geometry:
+Cross shape to allow for all possible junction configrations without having to remake the geometry. Corridor width was chosen so that two objects can pass each other, but three cannot. This was to model the worst case.
+
+Objects:
+EC (prefab 2) with default options. EC picked as the non-holonomic wheels make it more difficult to move - if there is no space to rotate then the object can only move in a straight line. All drives are also equal this means no one has priority so objects have to work out who goes through first. This all makes it a stronger test (e.g. if it works for non-holonomic, then it will work for holonomic).
+
+Start Pos: Alternate between right-middle and left-middle. First object 1 from end, each other object 4 ahead of last. Symetrical patterns picked to try to show the worst case as objects have to choose a side. Like walking down a coridor and awkwardly oscilating with another person. This is especially hard when identical objects with the same drive approach each other.
 
   o o o o
   o x o o
@@ -23,15 +29,15 @@ There are 10 different ways objects can pass each other in a cross junction (rem
 --------------------------------
 
 Results:
-All 10 scenarios worked. There were a few times where it took a while for the objects to get around each other. This was due to noone having priority as all objects had the same drive. The non-holonomic-ness of the objects also made things difficult as they could not rotate easily to get around each other.
+All 10 scenarios worked with no jams. There were a few times where it took a while for the objects to get around each other. This was due to no one having priority as all objects had the same drive. The non-holonomic-ness of the objects also made things difficult as they could not rotate easily to get around each other.
 
 1.  LR+RL
-2.  LR+RB - Some LR objects had some trouble with the non-holonomic wheels. This could be quite accurate.
-3.  LR+BL - Had a jam as objects couldn't get around each other. Neither side gave way to the other. They worked it out in the end
+2.  LR+RB - Some LR objects had some trouble with the non-holonomic wheels. This could actually be quite accurate for attendants who have never used one of these before.
+3.  LR+BL - Objects struggled to get around each other. Neither side gave way to the other. They worked it out in the end
 4.  LR+BR - Merging group didn't give way, but it worked out in the end.
-5.  LR+BT - Some issues with non-holonomic manouvering around each other.
+5.  LR+BT - Some issues with non-holonomic manouvering around each other. Object has to move forward as it can't rotate without colliding
 6.  LB+RB - Some issues with non-holonomic manouvering around each other. Object has to move forward as it can't rotate without colliding
 7.  LB+RT
-8.  LB+BL - Got into a jam as there were 2 objects side-by-side appoaching from one side and there was not space for 3 to pass. Eventually worked itself out through some random movements.
+8.  LB+BL - Objects took a while to pass as there were 2 objects side-by-side appoaching from one side and there was not space for 3 to pass. Eventually worked itself out through some random movements.
 9.  LB+BR
 10. LB+TR
