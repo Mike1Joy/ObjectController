@@ -602,6 +602,11 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 		log_main.print("person could not be added to object: person already in an object / not active");
 		return -1;
 	}
+	if ((person_pt->position - obj->_position).magnitude_squared() > max_radius * max_radius)
+	{
+		log_main.print("person could not be added to object: person not within max radius of ", max_radius);
+		return -1;
+	}
 
 	float add_wait = 0.0f;
 	int point_id = obj->attach_person_internal(*person_pt, add_wait);
@@ -616,7 +621,7 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 	person_pt->active = true;
 	move_occupation(person_pt->node_id, -1, person_id);
 	person_pt->enter_object(object_id);
-	log_main.print("person added to object");
+	log_main.print("object picked up person");
 	update_occupation_halo(object_id, 0.0f);
 
 	attached_people_store.push_back({ object_id , person_pt->id, point_id }); // for TCP message
