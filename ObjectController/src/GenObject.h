@@ -98,8 +98,10 @@ public:
 
 	// attach / detach
 	bool attach_person(person&, int, float& add_wait);
+	int attach_person_internal(person&, float& add_wait);
 	bool remove_person(int);
 	void update_drive_fit();
+	bool contains_person(int person_id);
 
 	// Occupation
 	void set_occupation_tnodes(std::vector<int>& tnodes);

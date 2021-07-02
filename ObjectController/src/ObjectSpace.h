@@ -847,6 +847,7 @@ public:
 	void TCP_add_object(object_instance);
 	void TCP_add_object_EX(int iObjectId, int iType, int iLevel, float fAngle, float sX, float sZ);
 	bool TCP_add_person_to_object(int, int, int, bool during_sim);
+	int TCP_pickup_person(int object_id, int person_id, float max_radius);
 	void TCP_remove_person_from_object(int object_id, int person_id, int node_id);
 	void TCP_remove_object(int object_id);
 	void TCP_add_person(int, person);
@@ -939,6 +940,7 @@ public:
 	// objects / people
 	GenObject* get_object(int);
 	person* get_person(int);
+	person* get_closest_person(vector2 pos, int floor, bool has_to_be_available);
 
 	// occupation + halo
 	std::pair<potential_move, occ_nodes> get_best_move_occ(std::vector<potential_move>& moves, GenObject* obj);
@@ -974,6 +976,7 @@ public:
 	void wait_for_seconds(int, int, float);
 	void wait_for_seconds(int, float);
 	void remove_object_task(int id);
+	void pick_up_person(int o_id, int p_id);
 
 	// simulation
 	std::vector<occupation_seed> get_occupation_seeds();
@@ -985,6 +988,9 @@ public:
 	std::vector<data_for_TCP::pvo> main_sim_step_3(bool first);
 	data_for_TCP::all_sim_data main_sim_step_ALL(float time_sec, bool first);
 	float sim_time;
+
+	// additional TCP data to send
+	std::vector<data_for_TCP::attach_people> attached_people_store; // used for pick up person
 
 	// save state
 	void save_state();

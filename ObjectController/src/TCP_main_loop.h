@@ -33,7 +33,7 @@ constexpr UINT EXMS_DELETE = 10103; // < iPersonId >
 constexpr UINT EXMS_MOVE_HEPTAD = 10112; // <iPersonId><aPET><NodeID><aTSA><aDrive><anAgility><ObjectID><AttachmentPoint>
 constexpr UINT EXMS_ADDOBJECT = 10521; // <iObjectId><iObjectType><iLevel><fxpos><fypos><fzpos><frotation><fspeed>
 constexpr UINT EXMS_REMOVEOBJECT = 10522; // <iObjectId>
-constexpr UINT EXMS_TARGETOBJECT = 10530; // < iObjectId > <iNodeID><iLevel><fxpos><fypos><fzpos><fSimulationTime>
+constexpr UINT EXMS_TARGETOBJECT = 10530; // < iObjectId > <iNodeID><iLevel><fxpos><fypos><fzpos><fSimulationTime><PersonID>
 constexpr UINT EXMS_ATTACHOBJECTPERSON = 10540; // < iObjectId > <iPersonId><iLocation>
 constexpr UINT EXMS_RELEASEOBJECTPERSON = 10541; // < iObjectId > <iPersonId><iNodeID>
 constexpr UINT EXMS_WAITING_FOR_OBJECT_DATA = 10550; // EX has finished its turn
@@ -339,8 +339,12 @@ void move_person(CNetworkMessage* msg)
 void add_target_to_obj(CNetworkMessage* msg)
 {
 	log_TCP.print("add_target_to_obj");
-	// < iObjectId > <iNodeID><iLevel><fxpos><fypos><fzpos><fSimulationTime>
+	// < iObjectId > <iNodeID><iLevel><fxpos><fypos><fzpos><fSimulationTime><PersonID>
 	s_object_space.go_to_target(msg->GetInt(4),msg->GetInt(8));
+	if (msg->GetInt(32) != -1)
+	{
+		s_object_space.pick_up_person(msg->GetInt(4), msg->GetInt(32));
+	}
 }
 void attach_to_obj(CNetworkMessage* msg)
 {
@@ -510,6 +514,10 @@ void send_pvo(const data_for_TCP::pvo& vo)
 	if (vo.node_obj_cost.empty()) return;
 
 	create_and_send_message(EXMS_VELOCITYOBSTACLE, vo.get_content());
+}
+void send_attached_people(const data_for_TCP::attach_people& ap)
+{
+	create_and_send_message(EXMS_ATTACHOBJECTPERSON, ap.get_content());
 }
 void send_object_control(int object_id, int controlled) // 1 under OC control, 0 underr EXODUS control
 {
@@ -742,6 +750,13 @@ void sim_loop(CNetworkMessage* start_msg)
 		{
 			send_pvo(vo);
 		}
+
+		//// SEND ADDITIONAL DATA
+		for (attach_people& ap : s_object_space.attached_people_store)
+		{
+			send_attached_people(ap);
+		}
+		s_object_space.attached_people_store.clear();
 
 		send_done();
 

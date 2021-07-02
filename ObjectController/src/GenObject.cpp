@@ -79,6 +79,20 @@ bool GenObject::attach_person(person& occupant, int point_id, float& add_wait)
 	}
 	return false;
 }
+int GenObject::attach_person_internal(person& occupant, float& add_wait)
+{
+	for (std::vector<attachment_point>::iterator it = _attachment_points.begin(); it != _attachment_points.end(); ++it)
+	{
+		if (it->inside && it->occupied_circle == -1)
+		{
+			it->attach(occupant);
+			update_drive_fit();
+			add_wait = it->attachment_time;
+			return it->id;
+		}
+	}
+	return -1;
+}
 bool GenObject::remove_person(int person_id)
 {
 	for (std::vector<attachment_point>::iterator it = _attachment_points.begin(); it != _attachment_points.end(); ++it)
@@ -87,6 +101,17 @@ bool GenObject::remove_person(int person_id)
 		{
 			it->detatch();
 			update_drive_fit();
+			return true;
+		}
+	}
+	return false;
+}
+bool GenObject::contains_person(int person_id)
+{
+	for (std::vector<attachment_point>::iterator it = _attachment_points.begin(); it != _attachment_points.end(); ++it)
+	{
+		if (it->occupant.active && it->occupant.id == person_id)
+		{
 			return true;
 		}
 	}

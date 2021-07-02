@@ -574,6 +574,55 @@ bool ObjectSpace::TCP_add_person_to_object(int object_id, int point_id, int pers
 		return false;
 	}
 }
+int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radius)
+{
+	GenObject* obj = get_object(object_id);
+	if (!obj)
+	{
+		log_main.print("person could not be added to object: object not found");
+		return -1;
+	}
+
+	person* person_pt;
+	if (person_id < 0) // pick up closest person
+	{
+		person_pt = get_closest_person(obj->_position, obj->get_floor(), true);
+	}
+	else // pick up person id
+	{
+		person_pt = get_person(person_id);
+	}
+	if (!person_pt)
+	{
+		log_main.print("person could not be added to object: person not found");
+		return -1;
+	}
+	if (person_pt->in_object)
+	{
+		log_main.print("person could not be added to object: person already in an object / not active");
+		return -1;
+	}
+
+	float add_wait = 0.0f;
+	int point_id = obj->attach_person_internal(*person_pt, add_wait);
+	if (point_id == -1)
+	{
+		log_main.print("person could not be added to object: free internal attach point not found");
+		return -1;
+	}
+
+	if (add_wait > 0.083f)
+		wait_for_seconds(object_id, -1, add_wait);
+	person_pt->active = true;
+	move_occupation(person_pt->node_id, -1, person_id);
+	person_pt->enter_object(object_id);
+	log_main.print("person added to object");
+	update_occupation_halo(object_id, 0.0f);
+
+	attached_people_store.push_back({ object_id , person_pt->id, point_id }); // for TCP message
+
+	return point_id;
+}
 void ObjectSpace::TCP_remove_person_from_object(int object_id, int person_id, int node_id)
 {
 	GenObject* obj = get_object(object_id);
@@ -1570,6 +1619,28 @@ person* ObjectSpace::get_person(int person_id)
 	if (m_people.find(person_id) == m_people.end()) return nullptr;
 
 	return &m_people[person_id];
+}
+person* ObjectSpace::get_closest_person(vector2 pos, int floor, bool has_to_be_available)
+{
+	float closest_dist_sq = INFINITY;
+	int closest_person_id = -1;
+
+	for (auto const& p : m_people)
+	{
+		if (!p.second.active || p.second.floor_id != floor || (has_to_be_available && p.second.in_object)) continue;
+
+		float dist_sq = (p.second.position - pos).magnitude_squared();
+
+		if (dist_sq < closest_dist_sq)
+		{
+			closest_dist_sq = dist_sq;
+			closest_person_id = p.second.id;
+		}
+	}
+
+	if (closest_person_id == -1) return nullptr;
+
+	return &m_people[closest_person_id];
 }
 
 // draw nodes / arcs / bound from cspace
@@ -3753,6 +3824,16 @@ void ObjectSpace::remove_object_task(int object_id)
 	}
 	obj->itinerary.insert(task(obj->itinerary.size() + 99));
 }
+void ObjectSpace::pick_up_person(int object_id, int person_id)
+{
+	GenObject* obj = get_object(object_id);
+	if (!obj)
+	{
+		log_main.print("Pick up person failed: object id %d not found", object_id);
+		return;
+	}
+	obj->itinerary.insert(task(obj->itinerary.size(), person_id));
+}
 
 // action
 std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
@@ -3793,6 +3874,9 @@ std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
 	case REMOVE:
 		TCP_remove_object(object_id);
 		return { true,true };
+	case PICKUP:
+		TCP_pickup_person(object_id, t->person_id, 2.0f);
+		break;
 	default:
 		break;
 	}
@@ -3851,6 +3935,12 @@ bool ObjectSpace::manage_tasks(int object_id)
 	case EMPTY:
 		if (!obj->itinerary.empty() && obj->can_move())
 			replace = true;
+		break;
+	case PICKUP:
+		if (obj->contains_person(t->person_id))
+		{
+			replace = true;
+		}
 		break;
 	default:
 		break;

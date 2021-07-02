@@ -2885,12 +2885,15 @@ namespace ObjCont
 		}
 	}
 
-	enum item : unsigned char { EMPTY, GO_TO, WAIT, REMOVE };
+	enum item : unsigned char { EMPTY, GO_TO, WAIT, REMOVE, PICKUP };
 	struct task 
 	{
 		int priority;
 		item type;
+
 		std::vector<cnode_pos> cnodes;
+		int person_id; // if -ve, then pick up closest person. If +ve, then pick up that person id
+
 		bool started;
 		float delay;
 		bool STOP;
@@ -2898,7 +2901,10 @@ namespace ObjCont
 		task(int _priority, std::vector<cnode_pos> _cnodes) : priority(_priority), cnodes(_cnodes), type(GO_TO), started(false), STOP(false) {}
 		task(int _priority, float _delay) : priority(_priority), delay(_delay), type(WAIT), started(false), STOP(false) {}
 		task(int _priority) : priority(_priority), type(REMOVE), started(false), STOP(false) {}
+		task(int _priority, int _person_id) : priority(_priority), person_id(_person_id), type(PICKUP), started(false), STOP(false) {}
+
 		task() : type(EMPTY), STOP(false) {}
+
 		void make_empty()
 		{
 			priority = -1;
@@ -3369,6 +3375,33 @@ namespace data_for_TCP
 			lane(lane),
 			step(step)
 		{}
+	};
+
+	class attach_people
+	{
+		//EXMS_ATTACHOBJECTPERSON(10540)<iObjectId><iPersonId><iLocation>
+
+	public:
+		int object_id;
+		int person_id;
+		int point_id; // aka location
+
+		std::vector<msg_element> get_content() const
+		{
+			return { object_id, person_id, point_id, };
+		}
+
+		attach_people
+		(
+			int object_id,
+			int person_id,
+			int point_id
+		) :
+			object_id(object_id),
+			person_id(person_id),
+			point_id(point_id)
+		{}
+
 	};
 
 	static std::vector<stair_node> get_stair_nodes(const ObjCont::stair& st)
