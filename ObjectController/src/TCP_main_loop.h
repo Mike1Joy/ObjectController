@@ -654,6 +654,8 @@ void sim_loop(CNetworkMessage* start_msg)
 
 	while (EXODUS_run_loop(sim_time, time_step))
 	{
+		log_TCP.print("OC_run_started");
+
 		auto start_timer = timeGetTime();
 
 		++step;
@@ -662,6 +664,7 @@ void sim_loop(CNetworkMessage* start_msg)
 		std::vector<occupied_nodes> occ_nodes;
 		std::vector<pvo> pvos;
 
+		// RUN SIM STEPS
 		for (int r = 0; r < s_object_space.num_runs_per_sim; ++r)
 		{
 			//// STEP 1
@@ -760,8 +763,9 @@ void sim_loop(CNetworkMessage* start_msg)
 
 		send_done();
 
-		log_TCP.print("OC_run_complete");
 		first = false;
+
+		log_TCP.print("OC_run_complete");
 	}
 
 	simulating = false;
