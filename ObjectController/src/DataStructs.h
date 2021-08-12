@@ -2921,6 +2921,7 @@ namespace ObjCont
 			cnodes = it->cnodes;
 			delay = it->delay;
 			started = it->started;
+			person_id = it->person_id;
 			STOP = false;
 
 		}
