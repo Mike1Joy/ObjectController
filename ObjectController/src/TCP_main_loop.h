@@ -58,7 +58,7 @@ constexpr UINT EXMS_NODEOBJECT = 10524; // <uObjectID><uNodeCount>(<uNodeID1>,..
 #define EX_NODE_TRANSIT 80
 #define EX_NODE_EXIT 100
 /// simulation
-constexpr UINT TIME_OUT = 10000; // ms until EXODUS_run_loop will timeout and return false
+constexpr UINT TIME_OUT = 60000; // ms until EXODUS_run_loop will timeout and return false
 
 //// Vars
 constexpr bool TCP_print_only = false;
@@ -453,7 +453,7 @@ CNetworkMessage* create_message(int type, const std::vector<msg_element>& conten
 }
 CNetworkMessage* create_empty_message(int type)
 {
-	CNetworkMessage* msg = new CNetworkMessage(type, 4);
+	CNetworkMessage* msg = new CNetworkMessage(type, 8);
 	msg->Set(type, 0);
 	return msg;
 }

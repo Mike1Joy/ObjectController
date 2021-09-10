@@ -1,0 +1,9 @@
+Attachment time: 40s for PRM, 1s each for attendants
+
+To make this work:
+One attendant has OIL for pick up (next to object), collect person (on node PRM is on), drop off (at exit)
+Other attendant just has OIL for pick up (next to object)
+PRM has OIL to move away from the node they were on and delay for infinity, otherwise object gets stuck trying to move to same node
+
+Observations:
+Everything happened as expected
