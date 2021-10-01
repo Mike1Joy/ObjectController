@@ -1,0 +1,39 @@
+//// Message Types
+/// meta
+constexpr UINT EXMS_SIMULATION_PAUSED = 4001;
+constexpr UINT EXMS_SIMULATION_RESET = 4004;
+constexpr UINT EXMS_SIMULATION_STARTED = 4500;
+constexpr UINT EXMS_SIMULATION_COMPLETED = 4502;
+constexpr UINT EXMS_EXEC_SFE_COMPLETE = 5504; // sends when all commands from sfe file have finished - use this to generate freespace
+constexpr UINT EXMS_DISCONNECTED = 8004;
+/// setup
+constexpr UINT EXMS_ADD_WALL = 10050;
+constexpr UINT EXMS_SEND_NODE = 10051; // <NodeID><iNodeType><iObstacle><iLevel><sX><sY><sZ><floorHeight>
+constexpr UINT EXMS_SEND_ARC = 10052; // <iArc><iNode1><iNode2><Length><fObstacle><fLane1><iPos1><fLane2><iPos2>
+constexpr UINT EXMS_SEND_TRANSIT = 10053; // < iNodeID > <iNodeType><fLenght><fAngle><fHeight><iLanes><iSteps><fRiserHeight><fTreadDepth>
+constexpr UINT EXMS_SEND_OBJECT = 10055; // <iObjectId><iType><iLevel><fAngle><sX><sY><sZ>
+constexpr UINT EXMS_ADD_HEPTAD = 10111; // <iPersonId><aPET><NodeID><aDrive><anAgility><ObjectID><AttachmentPoint>
+constexpr UINT EXMS_STAIR_NODE = 10056; // <iNodeID><iStairID><iLane><iStep> 
+/// simulation receive
+constexpr UINT EXMS_TIME = 10100; // < fTime >
+constexpr UINT EXMS_DELETE = 10103; // < iPersonId >
+constexpr UINT EXMS_MOVE_HEPTAD = 10112; // <iPersonId><aPET><NodeID><aTSA><aDrive><anAgility><ObjectID><AttachmentPoint>
+constexpr UINT EXMS_ADDOBJECT = 10521; // <iObjectId><iObjectType><iLevel><fxpos><fypos><fzpos><frotation><fspeed>
+constexpr UINT EXMS_REMOVEOBJECT = 10522; // <iObjectId>
+constexpr UINT EXMS_TARGETOBJECT = 10530; // < iObjectId > <iNodeID><iLevel><fxpos><fypos><fzpos><fSimulationTime><PersonID>
+constexpr UINT EXMS_ATTACHOBJECTPERSON = 10540; // < iObjectId > <iPersonId><iLocation>
+constexpr UINT EXMS_RELEASEOBJECTPERSON = 10541; // < iObjectId > <iPersonId><iNodeID>
+constexpr UINT EXMS_WAITING_FOR_OBJECT_DATA = 10550; // EX has finished its turn
+/// simulation send
+constexpr UINT EXMS_UNDEREXTERNALCONTROL = 10527; // <objectID><1 or 0> (1 = OC controlling it, 0 gives control to EXODUS)
+constexpr UINT EXMS_MOVEOBJECT = 10520; // <iObjectId><iObjectType><iLevel><fxpos><fypos><fzpos><frotation><fspeed><iTaskStatus>
+// iTaskStatus = 0 (only moved), 1 (only completed task), 2 (both moved and completed task)
+constexpr UINT EXMS_VELOCITYOBSTACLE = 10526; // <uPersonID><uNodeCount>(<uNodeID1><fCost1>,...)
+constexpr UINT EXMS_END_OF_OBJECT_DATA = 10552; // OC has finished its turn
+constexpr UINT EXMS_NODEOBJECT = 10524; // <uObjectID><uNodeCount>(<uNodeID1>,...)
+/// unused
+//constexpr UINT EXMS_ERROR_PARSING_SFE_FILE = 5450; // < iLineNumber >
+//constexpr UINT EXMS_ERROR_FAILED_TO_OPEN_SFE_FILE = 5451;
+//constexpr UINT EXMS_PARSING_SFE_FILE = 5502;
+//constexpr UINT EXMS_END_OF_OBJECT_RUN = 10553;
+//constexpr UINT EXMS_SEND_NODE_NAME = 10054; // < NodiD > <iNodeID><StrLen><String>
