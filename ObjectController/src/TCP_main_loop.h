@@ -467,6 +467,7 @@ void create_and_send_message(int type, const std::vector<msg_element>& content)
 	CNetworkServerHandler::SendMessage(client_id, msg);
 	msg_counter++;
 	log_TCP.print("message counter: %d", msg_counter);
+	log_TCP.print(2, "code: %d", type);
 }
 void create_and_send_empty_message(int type)
 {
@@ -475,6 +476,7 @@ void create_and_send_empty_message(int type)
 	CNetworkServerHandler::SendMessage(client_id, msg);
 	msg_counter++;
 	log_TCP.print("message counter: %d", msg_counter);
+	log_TCP.print(2,"code: %d", type);
 }
 void send_example() // example of how to send message
 {
