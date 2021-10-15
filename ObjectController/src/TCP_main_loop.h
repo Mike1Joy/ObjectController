@@ -464,19 +464,36 @@ void create_and_send_message(int type, const std::vector<msg_element>& content)
 
 	//print_sent(msg);
 
-	CNetworkServerHandler::SendMessage(client_id, msg);
-	msg_counter++;
-	log_TCP.print("message counter: %d", msg_counter);
-	log_TCP.print(2, "code: %d", type);
+	if (CNetworkServerHandler::SendMessage(client_id, msg))
+	{
+		msg_counter++;
+		log_TCP.print("message sent: %d", msg_counter);
+		log_TCP.print(2, "code: %d", type);
+	}
+	else
+	{
+		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter + 1);
+		log_TCP.print(2, "code: %d", type);
+	}
+	
 }
 void create_and_send_empty_message(int type)
 {
 	CNetworkMessage* msg = create_empty_message(type);
+
 	//print_sent(msg);
-	CNetworkServerHandler::SendMessage(client_id, msg);
-	msg_counter++;
-	log_TCP.print("message counter: %d", msg_counter);
-	log_TCP.print(2,"code: %d", type);
+
+	if (CNetworkServerHandler::SendMessage(client_id, msg))
+	{
+		msg_counter++;
+		log_TCP.print("message sent: %d", msg_counter);
+		log_TCP.print(2, "code: %d", type);
+	}
+	else
+	{
+		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter + 1);
+		log_TCP.print(2, "code: %d", type);
+	}
 }
 void send_example() // example of how to send message
 {
