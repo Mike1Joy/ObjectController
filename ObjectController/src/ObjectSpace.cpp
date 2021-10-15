@@ -529,6 +529,7 @@ void ObjectSpace::TCP_add_object_EX(int iObjectId, int iType, int iLevel, float 
 }
 bool ObjectSpace::TCP_add_person_to_object(int object_id, int point_id, int person_id, bool during_sim)
 {
+	log_main.print("id %d: add_person_to_object\n", object_id);
 	person* person_pt = get_person(person_id);
 	if (person_pt)
 	{
@@ -546,40 +547,42 @@ bool ObjectSpace::TCP_add_person_to_object(int object_id, int point_id, int pers
 					person_pt->active = true;
 					move_occupation(person_pt->node_id, -1, person_id);
 					person_pt->enter_object(object_id);
-					log_main.print("person added to object");
+					log_main.print(2,"person added to object");
 					update_occupation_halo(object_id, 0.0f);
 					return true;
 				}
 				else
 				{
-					log_main.print("person could not be added to object: attach point not found");
+					log_main.print(2,"person could not be added to object: attach point not found");
 					return false;
 				}
 			}
 			else
 			{
-				log_main.print("person could not be added to object: object not found");
+				log_main.print(2,"person could not be added to object: object not found");
 				return false;
 			}
 		}
 		else
 		{
-			log_main.print("person could not be added to object: person already in an object / not active");
+			log_main.print(2,"person could not be added to object: person already in an object / not active");
 			return false;
 		}
 	}
 	else
 	{
-		log_main.print("person could not be added to object: person not found");
+		log_main.print(2,"person could not be added to object: person not found");
 		return false;
 	}
 }
 int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radius)
 {
+	log_main.print("id %d: pickup_person\n", object_id);
+
 	GenObject* obj = get_object(object_id);
 	if (!obj)
 	{
-		log_main.print("person could not be added to object: object not found");
+		log_main.print(2,"person could not be added to object: object not found");
 		return -1;
 	}
 
@@ -594,17 +597,17 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 	}
 	if (!person_pt)
 	{
-		log_main.print("person could not be added to object: person not found");
+		log_main.print(2,"person could not be added to object: person not found");
 		return -1;
 	}
 	if (person_pt->in_object)
 	{
-		log_main.print("person could not be added to object: person already in an object / not active");
+		log_main.print(2,"person could not be added to object: person already in an object / not active");
 		return -1;
 	}
 	if ((person_pt->position - obj->_position).magnitude_squared() > max_radius * max_radius)
 	{
-		log_main.print("person could not be added to object: person not within max radius of ", max_radius);
+		log_main.print(2,"person could not be added to object: person not within max radius of ", max_radius);
 		return -1;
 	}
 
@@ -612,7 +615,7 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 	int point_id = obj->attach_person_internal(*person_pt, add_wait);
 	if (point_id == -1)
 	{
-		log_main.print("person could not be added to object: free internal attach point not found");
+		log_main.print(2,"person could not be added to object: free internal attach point not found");
 		return -1;
 	}
 
@@ -621,7 +624,7 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 	person_pt->active = true;
 	move_occupation(person_pt->node_id, -1, person_id);
 	person_pt->enter_object(object_id);
-	log_main.print("object picked up person");
+	log_main.print(2,"object picked up person");
 	update_occupation_halo(object_id, 0.0f);
 
 	attached_people_store.push_back({ object_id , person_pt->id, point_id }); // for TCP message
@@ -630,24 +633,26 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 }
 void ObjectSpace::TCP_remove_person_from_object(int object_id, int person_id, int node_id)
 {
+	log_main.print("id %d: remove_person_from_object\n", object_id);
+
 	GenObject* obj = get_object(object_id);
 	if (!obj)
 	{
-		log_main.print("Person not removed from object: object not found");
+		log_main.print(2,"Person not removed from object: object not found");
 		return;
 	}
 
 	person* per = get_person(person_id);
 	if (!per)
 	{
-		log_main.print("Person not removed from object: person not found");
+		log_main.print(2,"Person not removed from object: person not found");
 		return;
 	}
 
 	node* tnode = TCP_get_node_from_id(node_id);
 	if (!tnode)
 	{
-		log_main.print("Person not removed from object: node not found");
+		log_main.print(2,"Person not removed from object: node not found");
 		return;
 	}
 
@@ -656,12 +661,13 @@ void ObjectSpace::TCP_remove_person_from_object(int object_id, int person_id, in
 	per->active = true;
 	move_occupation(node_id, node_id, person_id);
 
-	log_main.print("Person removed from object");
+	log_main.print(2,"Person removed from object");
 
 	update_occupation_halo(object_id, 0.0f);
 }
 void ObjectSpace::TCP_remove_object(int object_id)
 {
+	log_main.print("id %d: remove_object\n", object_id);
 	for (auto it = m_objects.begin(); it != m_objects.end(); ++it)
 	{
 		if (it->get_object_id() == object_id)
@@ -672,16 +678,16 @@ void ObjectSpace::TCP_remove_object(int object_id)
 				{
 					m_people.erase(p.occupant.id);
 					p.detatch();
-					log_main.print("person removed");
+					log_main.print(2,"person removed");
 				}
 			}
 			m_objects.erase(it);
 			remove_occupation_obj(object_id);
-			log_main.print("object removed");
+			log_main.print(2,"object removed");
 			return;
 		}
 	}
-	log_main.print("object not removed: object not found");
+	log_main.print(2,"object not removed: object not found");
 }
 void ObjectSpace::TCP_add_person(int id, person p)
 {
@@ -772,8 +778,6 @@ void ObjectSpace::GL_fill_objects_people(bool during_sim)
 				++next_id;
 			}
 		}
-		// drive test
-		drive += 1.0f;
 	}
 }
 void ObjectSpace::TCP_clear_object_vec()
@@ -876,6 +880,8 @@ void ObjectSpace::generate_cspace(bool auto_landings)
 	if (auto_landings)
 		s_object_space.auto_gen_landings();
 	set_all_arc_landing_ids();
+
+	log_main.print("Landings auto generated: %d\n", s_object_space.get_num_landings());
 
 	// populate first layer of cnodes
 	int vector_position = 0;
@@ -1080,7 +1086,7 @@ void ObjectSpace::generate_TSBS(std::vector<arc> &arcs)
 
 							m_cspace.push_back(
 								vec_pos, tnode_ids, intersect, 
-								min(min(it1->floor_num.start, it1->floor_num.end), min(it2->floor_num.start, it2->floor_num.end)), 
+								max(max(it1->floor_num.start, it1->floor_num.end), max(it2->floor_num.start, it2->floor_num.end)), 
 								true, false, 
 								min(min(it1->stair_ids.start, it1->stair_ids.end), min(it2->stair_ids.start, it2->stair_ids.end)),
 								max(it1->land_id, it2->land_id)
@@ -1112,7 +1118,7 @@ void ObjectSpace::generate_TSBS(std::vector<arc> &arcs)
 			tnode_ids.insert(it->tnode_ids.start);
 			tnode_ids.insert(it->tnode_ids.end);
 
-			m_cspace.push_back(vec_pos, tnode_ids, position, min(it->floor_num.start, it->floor_num.end), false, true, min(it->stair_ids.start, it->stair_ids.end), it->land_id);
+			m_cspace.push_back(vec_pos, tnode_ids, position, max(it->floor_num.start, it->floor_num.end), false, true, min(it->stair_ids.start, it->stair_ids.end), it->land_id);
 
 			// add 4 arcs
 			add_arcs(vec_pos, cnode_pos(it->cnode_ids.start,0), false);
@@ -4068,11 +4074,11 @@ std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<
 }
 void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool interpolate)
 {
-	log_main.print("move_obj\n");
+	log_main.print("id %d: move_obj\n", object_id);
 	GenObject* obj = get_object(object_id);
 	if (!obj)
 	{
-		log_main.print("!obj\n");
+		log_main.print(2,"!obj\n");
 		return;
 	}
 	task* t = &obj->current_task;
@@ -4082,7 +4088,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 	int prefab_id = obj->get_object_prefab_id();
 	
 	// if ready to move
-	log_main.print("obj->wait = %f\n", obj->wait);
+	log_main.print(2,"obj->wait = %f\n", obj->wait);
 	if (obj->wait <= 0.0f)
 	{
 		CSNode* current_cnode = get_node(obj->get_cnode_id());
@@ -4115,11 +4121,11 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 			}
 		}
 
-		log_main.print("neigh_no_pot has %d elements\n", (int)neigh_no_pot.size());
+		log_main.print(2,"neigh_no_pot has %d elements\n", (int)neigh_no_pot.size());
 
 		if (!t->started) // task not started -> generate potentials (with non empty targets vector)
 		{
-			log_main.print("!t->started\n");
+			log_main.print(2,"!t->started\n");
 			bool reachable = generate_potentials(object_id, neigh_no_pot, t->cnodes, h_mult);
 			t->started = true;
 
@@ -4127,19 +4133,19 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 			if (current_cnode->_potentials[object_id] < 0.0f || !reachable)
 			{
 				t->STOP = true;
-				log_main.print("task stopped: goal unreachable");
+				log_main.print(2,"task stopped: goal unreachable");
 			}
 		}
 		else if (!neigh_no_pot.empty()) // some neigh have no pot -> generate potentials
 		{
-			log_main.print("!neigh_no_pot.empty()\n");
+			log_main.print(2,"!neigh_no_pot.empty()\n");
 			bool reachable = generate_potentials(object_id, neigh_no_pot, std::vector<cnode_pos>(), h_mult);
 
 			// if goal is unreachable then stop task
 			if (current_cnode->_potentials[object_id] < 0.0f || !reachable)
 			{
 				t->STOP = true;
-				log_main.print("task stopped: goal unreachable");
+				log_main.print(2,"task stopped: goal unreachable");
 			}
 		}
 
@@ -4212,13 +4218,16 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		obj->moved = false;
 		obj->just_moved = false;
 	}
+	log_main.print(2,"floor: %d\n", obj->get_floor());
+	log_main.print(2,"stair: %d\n", obj->stair_id);
 }
 void ObjectSpace::delay_obj(int object_id)
 {
-	log_main.print("delay_obj");
+	log_main.print("id %d: delay_obj", object_id);
 	GenObject* obj = get_object(object_id);
 
 	obj->wait = obj->current_task.delay;
+	log_main.print(2,"added delay: %f", obj->wait);
 
 	obj->moved = false;
 	obj->not_move_cost = 0.0f;
@@ -4236,7 +4245,7 @@ void ObjectSpace::delay_obj(int object_id)
 }
 void ObjectSpace::idle_obj(int object_id)
 {
-	log_main.print("idle_obj\n");
+	log_main.print("id %d: idle_obj\n", object_id);
 	GenObject* obj = get_object(object_id);
 	if (obj)
 	{

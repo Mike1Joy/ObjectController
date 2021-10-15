@@ -571,7 +571,7 @@ void processNormalKeys(unsigned char key, int x, int y)
 		case 'O':
 			++cur_obj;
 			if (cur_obj >= s_object_space.get_next_object_id())
-				cur_obj = 1;
+				cur_obj = 0;
 			log_opengl.print("Current Object: %d", cur_obj);
 			break;
 		case 'o':

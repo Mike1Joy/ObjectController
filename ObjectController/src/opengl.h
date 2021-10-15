@@ -201,7 +201,7 @@ static float delay_mult = 1.0f;
 static Orient orientation = 0;
 static int arc_connection = 0;
 static int prefab = 1;
-static int cur_obj = 1;
+static int cur_obj = 0;
 
 // simulation
 static data_for_TCP::all_sim_data gl_sim_data;
