@@ -932,7 +932,7 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 		if (!data_ofs.is_open()) return false;
 
 		if (first)
-			data_ofs << "step,sub_step,comp_time_ms,sim_time,id,prefab_id,floor,cnode_orient,cnode_pos,x,y,orient,num_vert,num_attch_points,num_occ_nodes,length,width,max_width,drive,accel,ang_speed,max_lin_speed,vel_x,vel_y,vel_theta,num_vos,itinerary_size,active,stopped,just_stopped,moved,moved_back,not_move_cost,time_block_cor,time_not_block_cor,wait" << endl;
+			data_ofs << "step,sub_step,comp_time_ms,sim_time,id,prefab_id,floor,stair_id,stair_dir,cnode_orient,cnode_pos,x,y,orient,num_vert,num_attch_points,num_occ_nodes,length,width,max_width,drive,accel,ang_speed,max_lin_speed,vel_x,vel_y,vel_theta,num_vos,itinerary_size,active,stopped,just_stopped,moved,moved_back,not_move_cost,time_block_cor,time_not_block_cor,wait" << endl;
 
 		for (const auto& o : objs)
 		{
@@ -944,6 +944,8 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 				<< "," << o.get_object_prefab_id()
 				
 				<< "," << o.get_floor()
+				<< "," << o.stair_id
+				<< "," << stair_arc_dir_str(o.stair_dir)
 				<< "," << o.get_cnode_id().orientation
 				<< "," << o.get_cnode_id().vec_pos
 				<< "," << o._position.x
@@ -960,7 +962,7 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 				<< "," << o.get_drive()
 				<< "," << o.get_max_acceleration()
 				<< "," << o.get_max_angular_speed()
-				<< "," << o.get_max_linear_speed(NOT_STAIR_ARC,-1)
+				<< "," << o.get_max_linear_speed(o.stair_dir, o.stair_id)
 				<< "," << o.velocity_current.first.x
 				<< "," << o.velocity_current.first.y
 				<< "," << o.velocity_current.second

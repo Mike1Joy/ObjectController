@@ -3,7 +3,7 @@ Init prefabs:
 int prefab_id			3		5
 float max_linear_speed		1.48		1.125
 float max_angular_speed		128.245		98.2881
-float max_stair_dec_speed*	0.825 (0.684)	0.670 (0.556)
+float max_stair_dec_speed*	0.825		0.670
 float max_stair_acc_speed	0		0
 float max_acceleration		1		0.75
 float holo0			1		1
@@ -23,6 +23,5 @@ float landing_entrance		0.35		0.45
 bool landing_inside		1		0
 float integral_drive		5		5
 
-* stair dec speed scaled based on stair height and length due to not taking into account height in OC, actual value used in OC in brackets
 
 -----------------------------------------

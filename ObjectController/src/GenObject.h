@@ -60,6 +60,7 @@ public:
 	Angle _orientation;
 	Angle _next_orientation;
 	int stair_id;
+	unsigned char stair_dir;
 	bool moved;
 	bool stopped;
 	bool just_stopped;
@@ -76,7 +77,7 @@ public:
 
 	// action
 	bool can_move();
-	void move(cnode_pos, int, float _wait, float move_time, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds, vector2 new_des_vel); // wait is wait, move_time is time it would have taken if moving at current speed
+	void move(cnode_pos, int, float _wait, float move_time, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_); // wait is wait, move_time is time it would have taken if moving at current speed
 	void dont_move(float seconds);
 	void idle();
 	void match_cnodes();

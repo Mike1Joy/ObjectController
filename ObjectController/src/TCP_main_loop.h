@@ -675,7 +675,7 @@ void sim_loop(CNetworkMessage* start_msg)
 	log_TCP.print("Simulation started");
 
 	float sim_time = 0.0f;
-	float time_step = 0.083333f;
+	float time_step = 0.1666666f;
 	int step = 0;
 	bool first = true;
 	simulating = true;

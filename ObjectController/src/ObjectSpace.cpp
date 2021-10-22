@@ -4205,7 +4205,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		{
 			CSNode* new_node = get_node(move.node);
 			
-			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node));
+			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node), move.stair_dir);
 
 			set_occupation_halo_obj(occ, *obj, seconds);
 			

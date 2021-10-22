@@ -319,7 +319,7 @@ void GenObject::match_cnodes()
 {
 	m_last_cnode = m_current_cnode;
 }
-void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel)
+void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_)
 {
 	if (new_pos == m_current_cnode) // don't move
 	{
@@ -337,6 +337,7 @@ void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time,
 	m_tnode_id = tnode;
 	m_floor_num = floor;
 	stair_id = stair;
+	stair_dir = stair_dir_;
 	not_move_cost = 0.0f;
 	just_moved = true;
 	moved = true;
@@ -388,7 +389,7 @@ std::pair<std::pair<float,float>, vector2> GenObject::calc_waits_and_vel(vector2
 	float dist = displacement.magnitude();
 	vector2 direction = displacement / dist;
 
-	float cur_speed_sq = velocity_current.first.magnitude_squared();
+	float cur_speed_sq = velocity_current.first.magnitude_squared() / (stair_len_mult * stair_len_mult);
 	float new_speed = 0.0f;
 	float max_lin_speed = m_max_speeds.get_linear(stair_dir, stair_id) / stair_len_mult;
 	
@@ -534,7 +535,8 @@ GenObject::GenObject(std::vector<ObjectPrefab>::iterator prefab, ObjCont::object
 	time_blocking_cor(0.0f),
 	time_not_blocking_cor(0.0f),
 	just_moved(true),
-	m_integral_drive(prefab->integral_drive)
+	m_integral_drive(prefab->integral_drive),
+	stair_dir(NOT_STAIR_ARC)
 {
 	m_last_cnode = m_current_cnode;
 	for (int i = 0; i < iNUM_HOLO; ++i)
