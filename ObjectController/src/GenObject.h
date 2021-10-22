@@ -80,7 +80,7 @@ public:
 	void dont_move(float seconds);
 	void idle();
 	void match_cnodes();
-	std::pair<std::pair<float, float>, vector2> calc_waits_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, bool& oscillate, cnode_pos new_pos); // .first.first = wait, .first.first = move_time (wait if moved at current speed for whole move)
+	std::pair<std::pair<float, float>, vector2> calc_waits_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, float stair_len_mult, bool& oscillate, cnode_pos new_pos); // .first.first = wait, .first.first = move_time (wait if moved at current speed for whole move)
 	void set_position_orient(vector2, Angle);
 
 	//potential

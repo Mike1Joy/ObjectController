@@ -130,7 +130,7 @@ void GenObject::update_drive_fit()
 			if (it->occupant.active)
 			{
 				m_drive += it->occupant.drive;
-				speed_cost += it->occupant.fitness;
+				speed_cost += max(0.0f, min(it->occupant.fitness, 1.0f));
 				++num_occ;
 			}
 			else // one of the driver attachment points is empty
@@ -362,7 +362,7 @@ void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time,
 
 	moved = true;
 }
-std::pair<std::pair<float,float>, vector2> GenObject::calc_waits_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, bool& oscillate, cnode_pos new_pos)
+std::pair<std::pair<float,float>, vector2> GenObject::calc_waits_and_vel(vector2 from, vector2 to, float holo, bool rotated, bool translated, unsigned char stair_dir, float stair_len_mult, bool& oscillate, cnode_pos new_pos)
 {
 	std::pair<std::pair<float, float>, vector2> out_wait_vel({ not_move_cost,0.0f }, 0.0f);
 
@@ -386,14 +386,13 @@ std::pair<std::pair<float,float>, vector2> GenObject::calc_waits_and_vel(vector2
 	// translated
 	vector2 displacement = to - from;
 	float dist = displacement.magnitude();
-
 	vector2 direction = displacement / dist;
 
 	float cur_speed_sq = velocity_current.first.magnitude_squared();
 	float new_speed = 0.0f;
-	float max_lin_speed = m_max_speeds.get_linear(stair_dir, stair_id);
+	float max_lin_speed = m_max_speeds.get_linear(stair_dir, stair_id) / stair_len_mult;
 	
-	if (cur_speed_sq < 0.01f) //// stopped
+	if (cur_speed_sq < 0.05f) //// basically stopped
 	{
 		new_speed = sqrt(2.0f*get_max_acceleration()*dist);
 	}

@@ -971,6 +971,7 @@ namespace ObjCont
 		start_end<x_y<float>> right_wall;
 		bool all_info;
 		int node_ids_start;
+		float length_mult; // turn xy dist into xyz dist
 
 		// for adding stair_arcs in opengl
 		int next_lane_top;
@@ -1124,13 +1125,14 @@ namespace ObjCont
 			steps(riser_num_-1),
 			length(length_),
 			width(width_),
-			height(height_),
+			height(height_*riser_num_/(riser_num_-2)), // fix Exodus stair height
 			floor_num(floor_num_),
 			next_lane_bot(1),
 			next_lane_top(1),
 			all_info(true),
 			node_ids_start(-1)
 		{
+			// find walls
 			float c = cos(DEG2RAD * direction);
 			float s = sin(DEG2RAD * direction);
 
@@ -1139,6 +1141,10 @@ namespace ObjCont
 
 			left_wall = { position - hw + hl, position - hw - hl };
 			right_wall = { position + hw + hl, position + hw - hl };
+
+			// calc length_mult
+			length_mult = sqrt(height_ * height_ + length_ * length_) / length_;
+
 		}
 
 	};
@@ -2503,7 +2509,7 @@ namespace ObjCont
 
 		person(int id, float x_pos, float y_pos, float x_vel, float y_vel, int floor_id, float drive, float fitness, int tnode_id) :
 			active(true), id(id), position(x_pos, y_pos), velocity(x_vel, y_vel), floor_id(floor_id), moved(true), drive(drive),
-			fitness(MIN(1.0f, fitness / 5.0f)), // as default fitness in EXODUS is 5.0. Anything more than this will still move at max speed
+			fitness(MAX(0.0f, MIN(1.0f, fitness / 5.0f))), // as default fitness in EXODUS is 5.0. Anything more than this will still move at max speed
 			in_object(false), object_id(-1), node_id(tnode_id), stopped(true), default_speed(1.35f)
 		{
 			
@@ -2985,6 +2991,7 @@ namespace ObjCont
 		float holo;
 		bool valid; // does not collide and has valid variables for comparison
 		unsigned char stair_dir;
+		float stair_len_mult;
 		bool towards_goal; // new pot < old pot
 
 		//////////////////////////////
@@ -3082,11 +3089,29 @@ namespace ObjCont
 		}
 
 		// constructor
-		potential_move() : node(0,0), new_position(0.0f), displacement(0.0f), velocity(0.0f), trans(false), rot(false), potential(0.0f), weight(0.0f), holo(0.0f), stair_dir(NOT_STAIR_ARC), not_move(false), valid(false), move_time(0.0f) {}
+		potential_move() : node(0,0), new_position(0.0f), displacement(0.0f), velocity(0.0f), trans(false), rot(false), potential(0.0f), weight(0.0f), holo(0.0f), stair_dir(NOT_STAIR_ARC), stair_len_mult(1.0f), not_move(false), valid(false), move_time(0.0f) {}
 
-		potential_move(cnode_pos node, vector2 new_position, float displacement, vector2 old_position, bool trans, bool rot, bool not_move, float potential, float old_potential, float holo, unsigned char stair_dir, float max_lin_vel, float max_ang_vel, float max_acel, float seconds)
+		potential_move(cnode_pos node, vector2 new_position, float displacement, vector2 old_position, bool trans, bool rot, bool not_move, float potential, float old_potential, float holo, unsigned char stair_dir, float stair_len_mult_, float max_lin_vel, float max_ang_vel, float max_acel, float seconds)
 			: node(node), new_position(new_position), displacement(displacement), old_position(old_position), trans(trans), rot(rot), potential(potential), max_lin_vel(max_lin_vel), holo(holo), stair_dir(stair_dir), not_move(not_move), max_acel(max_acel), VO_cost(0.0f), add_cost(0.0f)
 		{
+			// set stair length multiplier
+			switch (stair_dir)
+			{
+			case NOT_STAIR_ARC:
+			case STAIR_ARC_SIDE:
+				stair_len_mult = 1.0f;
+				break;
+			case STAIR_ARC_UP:
+			case STAIR_ARC_DOWN:
+				stair_len_mult = stair_len_mult_;
+				break;
+			case STAIR_ARC_SIDEUP:
+			case STAIR_ARC_SIDEDOWN:
+				stair_len_mult = 0.5f * (1.0f + stair_len_mult_);
+				break;
+			}
+
+			// set weight
 			set_weight(max_lin_vel*holo, max_ang_vel, seconds);
 			wait = weight;
 			move_time = weight;

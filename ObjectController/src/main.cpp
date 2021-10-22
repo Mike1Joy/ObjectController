@@ -443,7 +443,7 @@ int main(int argc, char* argv[])
 		{
 			t_TCP_Loop->Abort();
 		}
-
+		
 		// OpenGL loop (this thread)
 		if (OpenGL_loop)
 		{
@@ -456,7 +456,7 @@ int main(int argc, char* argv[])
 				gl_title.append(CONFIGURATION_STR);
 				gl_title.append(" ");
 			}
-			gl_title.append(PLATFORM_STR);
+			gl_title.append(PLATFORM_STR); 
 			gl_title.append(")");
 
 			if (Initialize_GLUT(argc, argv, window_width, window_height, 3.0f / 4.0f, TCP_loop, gl_title) == 0)
@@ -474,8 +474,8 @@ int main(int argc, char* argv[])
 				log_opengl.print("Failed to init");
 			}
 			OpenGL_loop = false;
-		}
-		else // if only TCP with no OpenGL
+		} 
+		else // if only TCP with no OpenGL - run TCP on thi s thread 
 		{
 			log_main.print("setup complete");
 			TCP_main_loop();

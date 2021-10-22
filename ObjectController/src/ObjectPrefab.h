@@ -45,7 +45,10 @@ struct speeds
 	}
 
 	speeds(float speed_cost, float linear, float stair_dec, float stair_acc, float stair_side, float angular)
-		: speed_cost(speed_cost), linear(linear), stair_dec(stair_dec), stair_acc(stair_acc), stair_side(stair_side), angular(angular) {}
+		: speed_cost(speed_cost), linear(linear), stair_dec(stair_dec), stair_acc(stair_acc), stair_side(stair_side), angular(angular)
+	{
+		if (speed_cost > 1.0f) speed_cost = 1.0f;
+	}
 	speeds(const object_prefab& form)
 		:
 		speed_cost(1.0f),
