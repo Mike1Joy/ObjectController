@@ -34,6 +34,7 @@ static bool main_log = true;
 static bool CMD_log = true;
 static bool TCP_log = TCP_loop;
 static bool OpenGL_log = OpenGL_loop;
+static bool CMD_thread = false;
 
 bool get_answer(const char * question, const std::string& t, const std::string& f)
 {
@@ -413,64 +414,86 @@ int main(int argc, char* argv[])
 		}
 	}
 
-
 	// default objects
 	if (default_obj)
 	{
 		add_default_objects();
 	}
 
-	// TCP loop thread
-	Thread^ t_TCP_Loop = gcnew Thread(gcnew ThreadStart(TCP_main_loop));
-	if (TCP_loop)
-		t_TCP_Loop->Start();
-	else
-		t_TCP_Loop->Abort();
-
-	// CMD loop thread
-	Thread^ t_CMD_Loop = gcnew Thread(gcnew ThreadStart(cmd_loop));
-	t_CMD_Loop->Start();
-	
-
-	// OpenGL loop (this thread)
-	if (OpenGL_loop)
+	if (TCP_loop || OpenGL_loop)
 	{
-		int window_width = 200;
-		int window_height = 200;
-
-		std::string gl_title = "ObjectController - OpenGL (";
-		if (!CONFIGURATION_STR.empty())
+		// CMD loop thread
+		Thread^ t_CMD_Loop = gcnew Thread(gcnew ThreadStart(cmd_loop));
+		if (CMD_thread)
 		{
-			gl_title.append(CONFIGURATION_STR);
-			gl_title.append(" ");
-		}
-		gl_title.append(PLATFORM_STR);
-		gl_title.append(")");
-
-		if (Initialize_GLUT(argc, argv, window_width, window_height, 3.0f/4.0f, TCP_loop, gl_title) == 0)
-		{
-			// resize console
-			HWND wh = GetConsoleWindow();
-			MoveWindow(wh, -7, 0, window_width + 23, window_height + 39, TRUE);
-
-			log_main.print("setup complete");
-			glutMainLoop();
-			log_opengl.print("OpenGL window closed!");
+			t_CMD_Loop->Start();
 		}
 		else
 		{
-			log_opengl.print("Failed to init");
+			t_CMD_Loop->Abort();
 		}
-		OpenGL_loop = false;
+
+		// TCP loop thread
+		Thread^ t_TCP_Loop = gcnew Thread(gcnew ThreadStart(TCP_main_loop));
+		if (TCP_loop && OpenGL_loop)
+		{
+			t_TCP_Loop->Start();
+		}
+		else
+		{
+			t_TCP_Loop->Abort();
+		}
+		
+		// OpenGL loop (this thread)
+		if (OpenGL_loop)
+		{
+			int window_width = 200;
+			int window_height = 200;
+
+			std::string gl_title = "ObjectController - OpenGL (";
+			if (!CONFIGURATION_STR.empty())
+			{
+				gl_title.append(CONFIGURATION_STR);
+				gl_title.append(" ");
+			}
+			gl_title.append(PLATFORM_STR); 
+			gl_title.append(")");
+
+			if (Initialize_GLUT(argc, argv, window_width, window_height, 3.0f / 4.0f, TCP_loop, gl_title) == 0)
+			{
+				// resize console
+				HWND wh = GetConsoleWindow();
+				MoveWindow(wh, -7, 0, window_width + 23, window_height + 39, TRUE);
+
+				log_main.print("setup complete");
+				glutMainLoop();
+				log_opengl.print("OpenGL window closed!");
+			}
+			else
+			{
+				log_opengl.print("Failed to init");
+			}
+			OpenGL_loop = false;
+		} 
+		else // if only TCP with no OpenGL - run TCP on thi s thread 
+		{
+			log_main.print("setup complete");
+			TCP_main_loop();
+		}
+
+		// Join threads
+		if (TCP_loop && OpenGL_loop)
+		{
+			t_TCP_Loop->Join();
+			TCP_loop = false;
+		}
+		if (CMD_thread)
+		{
+			t_CMD_Loop->Join();
+		}
 	}
 	else
 	{
-		log_main.print("setup complete");
+		log_main.print("No way to interact with application. Ensure at least one of OpenGL and TCP are active");
 	}
-
-	// Join threads
-	t_TCP_Loop->Join();
-	TCP_loop = false;
-	t_CMD_Loop->Join();
-
 }

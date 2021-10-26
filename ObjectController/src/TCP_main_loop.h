@@ -590,7 +590,16 @@ bool EXODUS_run_loop(float& sim_time, float& time_step)
 	while (true)
 	{
 		last_msg_time = 0;
-		CClientMessageContainer* msg_cnt = CNetworkServerHandler::GetNewMessage();
+		CClientMessageContainer* msg_cnt;
+		try
+		{
+			msg_cnt = CNetworkServerHandler::GetNewMessage();
+		}
+		catch (...)
+		{
+			log_TCP.print("Failed to check for new messages");
+			msg_cnt = nullptr;
+		}
 		if (msg_cnt)
 		{
 			CNetworkMessage* msg = msg_cnt->GetMessage();
@@ -666,7 +675,7 @@ void sim_loop(CNetworkMessage* start_msg)
 	log_TCP.print("Simulation started");
 
 	float sim_time = 0.0f;
-	float time_step = 0.083333f;
+	float time_step = 0.1666666f;
 	int step = 0;
 	bool first = true;
 	simulating = true;

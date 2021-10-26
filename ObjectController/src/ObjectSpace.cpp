@@ -821,7 +821,7 @@ void ObjectSpace::TCP_move_person(int person_id, int new_node_id, float speed, f
 
 	per->active = true;
 	per->drive = drive;
-	per->fitness = fitness;
+	per->fitness = MAX(0.0f, MIN(1.0f, fitness / 5.0f));
 
 	int old_node_id = per->node_id;
 	if (new_node_id == old_node_id) // not moved, just update speed
@@ -3996,7 +3996,7 @@ std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<
 	for (potential_move& move : moves)
 	{
 		bool oscillate = false;
-		auto wait_vel = obj->calc_waits_and_vel(move.old_position, move.new_position, move.holo, move.rot, move.trans, move.stair_dir, oscillate, move.node);
+		auto wait_vel = obj->calc_waits_and_vel(move.old_position, move.new_position, move.holo, move.rot, move.trans, move.stair_dir, move.stair_len_mult, oscillate, move.node);
 		move.wait = wait_vel.first.first;
 		move.move_time = wait_vel.first.second;
 		move.velocity = wait_vel.second;
@@ -4155,7 +4155,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		std::vector<potential_move> moves;
 
 		// push back current node (don't move)
-		moves.push_back(potential_move(obj->get_cnode_id(), current_cnode->get_position(), 0.0f, current_cnode->get_position(), false, false, true, current_cnode->get_potential(object_id), old_pot, 1.0f, NOT_STAIR_ARC, obj->get_max_linear_speed(NOT_STAIR_ARC, current_cnode->_stair_ids[prefab_id]), obj->get_max_angular_speed(), obj->get_max_acceleration(), seconds));
+		moves.push_back(potential_move(obj->get_cnode_id(), current_cnode->get_position(), 0.0f, current_cnode->get_position(), false, false, true, current_cnode->get_potential(object_id), old_pot, 1.0f, NOT_STAIR_ARC, 1.0f, obj->get_max_linear_speed(NOT_STAIR_ARC, current_cnode->_stair_ids[prefab_id]), obj->get_max_angular_speed(), obj->get_max_acceleration(), seconds));
 
 		// find and push back all moves
 		for (CSArc& this_arc : current_cnode->_arcs)
@@ -4164,7 +4164,8 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 			if (obj->can_turn_on_spot() || !this_arc.turn_on_spot)
 			{
 				float holo = obj->get_holonomicity(this_arc.holo);
-				if (holo > 0.0f && obj->can_take_stair(this_arc.stair_dir, current_cnode->_stair_ids[prefab_id]))
+				int stair_id = current_cnode->_stair_ids[prefab_id];
+				if (holo > 0.0f && obj->can_take_stair(this_arc.stair_dir, stair_id))
 				{
 					// if node is valid:
 					cnode_pos new_pos = this_arc.cnode_to_vec_pos;
@@ -4174,7 +4175,11 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 						float pot = new_node->get_potential(object_id);
 						if (pot >= 0.0f)
 						{
-							potential_move move(new_pos, new_node->get_position(), this_arc.length, current_cnode->get_position(), !this_arc.turn_on_spot, !this_arc.same_layer, false, new_node->get_potential(object_id), old_pot, holo, this_arc.stair_dir, obj->get_max_linear_speed(this_arc.stair_dir,current_cnode->_stair_ids[prefab_id]),obj->get_max_angular_speed(), obj->get_max_acceleration(), seconds);
+							float slm = 1.0f;
+							stair* st = get_stairpt_from_id(stair_id);
+							if (st) slm = st->length_mult;
+							
+							potential_move move(new_pos, new_node->get_position(), this_arc.length, current_cnode->get_position(), !this_arc.turn_on_spot, !this_arc.same_layer, false, new_node->get_potential(object_id), old_pot, holo, this_arc.stair_dir, slm, obj->get_max_linear_speed(this_arc.stair_dir,current_cnode->_stair_ids[prefab_id]),obj->get_max_angular_speed(), obj->get_max_acceleration(), seconds);
 
 							if (move.valid)
 							{
@@ -4200,7 +4205,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		{
 			CSNode* new_node = get_node(move.node);
 			
-			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node));
+			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node), move.stair_dir);
 
 			set_occupation_halo_obj(occ, *obj, seconds);
 			
