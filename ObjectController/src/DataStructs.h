@@ -1916,6 +1916,7 @@ namespace ObjCont
 		float add_cost;
 		float drive_scale;
 		float ok_mag_sq;
+		bool within_crit_dist;
 		bool zero_in_vo;
 		bool reciprocal;
 		bool other_not_moving;
@@ -1973,7 +1974,7 @@ namespace ObjCont
 		}
 		bool velocity_in_vo(vector2 v) const
 		{
-			return v.x*v.x + v.y*v.y >= ok_mag_sq
+			return (within_crit_dist || v.x*v.x + v.y*v.y >= ok_mag_sq)
 				&& !point_left_of_line(left_line.start, left_line.end, v)
 				&& point_left_of_line(right_line.start, right_line.end, v);
 		}
@@ -1982,7 +1983,7 @@ namespace ObjCont
 		{
 			if // collision imminent
 			(
-				v.x*v.x + v.y*v.y >= ok_mag_sq
+				(within_crit_dist || v.x*v.x + v.y*v.y >= ok_mag_sq)
 				&& !point_left_of_line(left_line.start, left_line.end, v)
 				&& point_left_of_line(right_line.start, right_line.end, v)
 			)
@@ -2013,7 +2014,7 @@ namespace ObjCont
 			float mag_sq = v.x*v.x + v.y*v.y;
 			if // collision imminent
 				(
-					mag_sq >= ok_mag_sq
+					(within_crit_dist || mag_sq >= ok_mag_sq)
 					&& !point_left_of_line(left_line.start, left_line.end, v)
 					&& point_left_of_line(right_line.start, right_line.end, v)
 				)
@@ -2059,7 +2060,7 @@ namespace ObjCont
 			float d_r = 0.0f;
 			float mag_sq = v.x*v.x + v.y*v.y;
 			bool v_in_vo =
-				mag_sq >= ok_mag_sq
+				(within_crit_dist || mag_sq >= ok_mag_sq)
 				&& !point_left_of_line(left_line.start, left_line.end, v, d_l)
 				&& point_left_of_line(right_line.start, right_line.end, v, d_r);
 
@@ -2110,7 +2111,7 @@ namespace ObjCont
 			float this_time_blocking_cor, float other_time_blocking_cor,
 			float this_drive, float other_drive, // drives
 			velocity_obstacle& other_vo, // other vo reference (was instantiated with default)
-			float min_time_to_collision, // if collision will happen in more time than this, then velo not in vo 
+			float min_time_to_collision, float min_dist_to_collision, // if collision will happen in more time than this, then velo not in vo 
 			bool generalised, bool hybrid // type of VO 
 		)
 			: valid(true), other_ent_id(other_id), other_object(other_object)
@@ -2237,6 +2238,9 @@ namespace ObjCont
 			}
 
 			other_vo.dist_to_collision = dist_to_collision;
+
+			within_crit_dist = (dist_to_collision <= min_dist_to_collision);
+			other_vo.within_crit_dist = within_crit_dist;
 
 			if (vectors.size() < 2)
 			{

@@ -151,6 +151,7 @@ bool get_init()
 		s_object_space.vo_hybrid = init.options.vo_hybrid;
 		s_object_space.vo_generalised = init.options.vo_generalised;
 		s_object_space.vo_time_to_collision = init.options.time_to_collision;
+		s_object_space.vo_dist_to_collision = init.options.dist_to_collision;
 
 		s_object_space.num_runs_per_sim = init.options.num_runs_per_sim;
 		s_object_space.tcp_PortID = init.options.tcp_PortID;

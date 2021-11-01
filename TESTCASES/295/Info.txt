@@ -1,0 +1,6 @@
+Object is stretcher. Object drive = avg occ drives * intg drive = 10*2 = 20
+People are all default men. People drive = 1
+
+Test	Num people	Density of people (p/m^2)
+1	25		1
+2	46		2

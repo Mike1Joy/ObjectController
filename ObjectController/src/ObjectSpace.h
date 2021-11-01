@@ -963,9 +963,9 @@ public:
 	x_y<float> get_tnode_xypos(int id);
 	bool intersection(start_end<x_y<float>> l1, start_end<x_y<float>> l2);
 	bool intersection(start_end<x_y<float>> l1, start_end<x_y<float>> l2, x_y<float>& intersect);
-	velocity_obstacle generate_pvo(GenObject* obj, person* per, bool generalised, bool hybrid, float time_to_collision, float radius, float VO_dist_cost);
-	void generate_ovo(GenObject* this_obj, GenObject* other_obj, bool generalised, bool hybrid, float time_to_collision, float radius, float VO_dist_cost);
-	void update_all_vos(bool first, bool generalised, bool hybrid, float time_to_collision, float person_radius, float VO_dist_cost);
+	velocity_obstacle generate_pvo(GenObject* obj, person* per, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float radius, float VO_dist_cost);
+	void generate_ovo(GenObject* this_obj, GenObject* other_obj, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float radius, float VO_dist_cost);
+	void update_all_vos(bool first, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float person_radius, float VO_dist_cost);
 	bool check_visable(node* n1, node* n2);
 	bool check_visable(std::vector<int> n1s, int n2);
 	bool check_visable(std::vector<int> n1s, std::vector<int> n2s);
@@ -1011,6 +1011,7 @@ public:
 	bool vo_hybrid;
 	bool vo_generalised;
 	float vo_time_to_collision; // Objects do not try to avoid each other objects until a collision would occur in less than this time (moving at current velocities)
+	float vo_dist_to_collision;
 	float vo_add_dist_cost;
 	float vo_l_r_priority;
 	float min_time_scale_stopped_ped;

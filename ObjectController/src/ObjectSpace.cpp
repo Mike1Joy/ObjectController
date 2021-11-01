@@ -3296,7 +3296,7 @@ bool ObjectSpace::check_visable(std::vector<int> n1s, std::vector<int> n2s)
 	}
 	return false;
 }
-velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool generalised, bool hybrid, float time_to_collision, float radius, float VO_dist_cost)
+velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float radius, float VO_dist_cost)
 {
 	obj->remove_vo(per->id, false);
 
@@ -3322,7 +3322,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		obj->time_blocking_cor, 0.0f,
 		obj->get_drive(), per->drive,
 		pvo,
-		time_to_collision,
+		time_to_collision, dist_to_collision,
 		generalised, hybrid
 	);
 
@@ -3331,7 +3331,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 
 	return pvo;
 }
-void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool generalised, bool hybrid, float time_to_collision, float radius, float VO_dist_cost)
+void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float radius, float VO_dist_cost)
 {
 	this_obj->remove_vo(other_obj->get_object_id(), true);
 	other_obj->remove_vo(this_obj->get_object_id(), true);
@@ -3364,7 +3364,7 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		this_obj->time_blocking_cor, other_obj->time_blocking_cor,
 		this_obj->get_drive(), other_obj->get_drive(),
 		other_vo,
-		time_to_collision,
+		time_to_collision, dist_to_collision,
 		generalised, hybrid
 	);
 
@@ -3373,7 +3373,7 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 	if (other_vo.valid)
 		other_obj->add_vo(other_vo);
 }
-void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, float time_to_collision, float person_radius, float VO_dist_cost)
+void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, float time_to_collision, float dist_to_collision, float person_radius, float VO_dist_cost)
 {
 	if (first)
 	{
@@ -3447,7 +3447,7 @@ void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, floa
 			{
 				if (check_visable(other_obj->get_occupation_tnodes(), this_obj->get_occupation_tnodes()))
 				{
-					generate_ovo(&*this_obj, &*other_obj, generalised, hybrid, time_to_collision, person_radius, VO_dist_cost);
+					generate_ovo(&*this_obj, &*other_obj, generalised, hybrid, time_to_collision, dist_to_collision, person_radius, VO_dist_cost);
 				}
 			}
 		}
@@ -3458,7 +3458,7 @@ void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, floa
 			{
 				if (check_visable(this_obj->get_occupation_tnodes(), per->second.node_id))
 				{
-					per->second.add_vo(generate_pvo(&*this_obj, &per->second, generalised, hybrid, time_to_collision, person_radius, VO_dist_cost));
+					per->second.add_vo(generate_pvo(&*this_obj, &per->second, generalised, hybrid, time_to_collision, dist_to_collision, person_radius, VO_dist_cost));
 				}
 			}
 		}
@@ -3468,7 +3468,7 @@ void ObjectSpace::update_all_vos(bool first, bool generalised, bool hybrid, floa
 
 	for (auto per = m_people.begin(); per != m_people.end(); ++per)
 	{
-		per->second.moved = false;
+		per->second.moved = false; // This commented means vos will be recalculated for all people even if obj and person didn't move
 	}
 }
 
@@ -4512,6 +4512,7 @@ ObjectSpace::ObjectSpace()
 	vo_hybrid = true;
 	vo_generalised = true;
 	vo_time_to_collision = 4.0f;
+	vo_dist_to_collision = 3.0f;
 	vo_add_dist_cost = 0.36f;
 	vo_l_r_priority = 0.5f;
 	min_time_scale_stopped_ped = 0.25f;
@@ -4694,13 +4695,10 @@ std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_step_2()
 
 	for (GenObject& obj : m_objects)
 	{
-		if (obj.moved)
-		{
-			occ_nodes.push_back(occupied_nodes(
-				obj.get_object_id(),
-				obj.get_occupation_tnodes()
-			));
-		}
+		occ_nodes.push_back(occupied_nodes(
+			obj.get_object_id(),
+			obj.get_occupation_tnodes()
+		));
 	}
 
 	return occ_nodes;
@@ -4710,7 +4708,7 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 	// Calculate new VOs and PVOs for avoidance
 
 	log_main.print("main_sim_step_3");
-	update_all_vos(first, vo_generalised, vo_hybrid, vo_time_to_collision, 0.2f, vo_add_dist_cost);
+	update_all_vos(first, vo_generalised, vo_hybrid, vo_time_to_collision, vo_dist_to_collision, 0.2f, vo_add_dist_cost);
 
 	using namespace data_for_TCP;
 
@@ -4728,7 +4726,7 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 		if (speed < per.second.default_speed) speed = per.second.default_speed;
 		
 		std::vector<int> nodes = current_node->tnodes; // all nodes connected to current node
-		nodes.push_back(per.second.node_id);
+		nodes.push_back(per.second.node_id); // current node
 		REMOVE_DUPLICATES(nodes);
 
 
@@ -4741,11 +4739,11 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 
 				vector2 next_vel = (next_pos - current_pos);
 				next_vel.resize(speed);
-				float time_cost = 0.0f;
-				if (vo.velocity_in_vo_col_time(next_vel, time_cost))
+				float dist_cost = 0.0f;
+				if (vo.velocity_in_vo_dist_to_line(next_vel, dist_cost))
 				{
-					time_cost *= speed;
-					(node_obj_cost[next_id])[vo.other_ent_id] = time_cost;
+					dist_cost *= vo_time_to_collision;
+					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost + 0.5f;
 				}
 			}
 		}

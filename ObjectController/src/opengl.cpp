@@ -1360,8 +1360,11 @@ void drawVO(const velocity_obstacle& vo, x_y<float> pos, vector2 velocity, vecto
 		// vo right line (red)
 		drawLine(TOP_LAYER, vo.right_line.start.x, vo.right_line.start.y, vo.right_line.end.x, vo.right_line.end.y, 2.0f, 1.0f, 0.0f, 0.0f); 
 		drawRegPoly(vo.right_line.start.x, vo.right_line.start.y, TOP_LAYER, 0.1f, 8, 1.0f, 0.0f, 0.0f);
-		// min velocity to not care
-		drawRegPoly_nofill(0.0f, 0.0f, TOP_LAYER, sqrt(vo.ok_mag_sq), 16, 0.5f, 0.5f, 0.5f, 2.0f); 
+		// max velocity to not care
+		if (!vo.within_crit_dist)
+		{
+			drawRegPoly_nofill(0.0f, 0.0f, TOP_LAYER, sqrt(vo.ok_mag_sq), 16, 0.5f, 0.5f, 0.5f, 2.0f);
+		}
 		// velocity (red if in vo, black if not)
 		drawLine(TOP_LAYER, 0.0f, 0.0f, velocity.x, velocity.y, 2.0f, vo.velocity_in_vo(velocity) ? 1.0f : 0.0f, 0.0f, 0.0f);
 		// desired velocity (blue)

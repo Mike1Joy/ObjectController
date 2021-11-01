@@ -341,6 +341,7 @@ public:
 			BOOL,
 			BOOL,
 			FLOAT,
+			FLOAT,
 			INT,
 			INT,
 			FLOAT,
@@ -358,6 +359,7 @@ public:
 		bool vo_hybrid;
 		bool vo_generalised;
 		float time_to_collision;
+		float dist_to_collision;
 		int num_runs_per_sim;
 		int tcp_PortID;
 		float vo_add_dist_cost;
@@ -378,23 +380,25 @@ public:
 			if (fill_if<bool>(vo_hybrid, content[0])) return false;
 			if (fill_if<bool>(vo_generalised, content[1])) return false;
 			if (fill_if<float>(time_to_collision, content[2])) return false;
-			if (fill_if<int>(num_runs_per_sim, content[3])) return false;
-			if (fill_if<int>(tcp_PortID, content[4])) return false;
+			if (fill_if<float>(dist_to_collision, content[3])) return false;
+			if (fill_if<int>(num_runs_per_sim, content[4])) return false;
+			if (fill_if<int>(tcp_PortID, content[5])) return false;
 
-			if (fill_if<float>(vo_add_dist_cost, content[5])) return false;
-			if (fill_if<float>(vo_l_r_priority, content[6])) return false;
-			if (fill_if<float>(min_time_scale_stopped_ped, content[7])) return false;
+			if (fill_if<float>(vo_add_dist_cost, content[6])) return false;
+			if (fill_if<float>(vo_l_r_priority, content[7])) return false;
+			if (fill_if<float>(min_time_scale_stopped_ped, content[8])) return false;
 
-			if (fill_if<bool>(data_sim, content[8])) return false;
-			if (fill_if<bool>(data_adj_matrix, content[9])) return false;
-			if (fill_if<bool>(data_adj_list, content[10])) return false;
-			if (fill_if<bool>(data_cnode_arc_info, content[11])) return false;
-			if (fill_if<bool>(data_tnode_arc_info, content[12])) return false;
-			if (fill_if<bool>(data_object_info, content[13])) return false;
+			if (fill_if<bool>(data_sim, content[9])) return false;
+			if (fill_if<bool>(data_adj_matrix, content[10])) return false;
+			if (fill_if<bool>(data_adj_list, content[11])) return false;
+			if (fill_if<bool>(data_cnode_arc_info, content[12])) return false;
+			if (fill_if<bool>(data_tnode_arc_info, content[13])) return false;
+			if (fill_if<bool>(data_object_info, content[14])) return false;
 
-			if (fill_if<float>(vo_des_vel_f, content[14])) return false;
+			if (fill_if<float>(vo_des_vel_f, content[15])) return false;
 
 			cap<float>(0.0f, time_to_collision);
+			cap<float>(0.0f, dist_to_collision);
 			cap<int>(1, num_runs_per_sim);
 			cap<float>(0.0f, vo_des_vel_f, 1.0f);
 
