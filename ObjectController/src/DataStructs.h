@@ -1922,6 +1922,8 @@ namespace ObjCont
 		bool other_not_moving;
 		bool blocking_cor;
 
+		std::vector<int> rotation_occ;
+
 		// misc methods
 		float relative_width(vector2 displ, const std::vector<x_y<float>>& vertices)
 		{
@@ -2112,7 +2114,8 @@ namespace ObjCont
 			float this_drive, float other_drive, // drives
 			velocity_obstacle& other_vo, // other vo reference (was instantiated with default)
 			float min_time_to_collision, float min_dist_to_collision, // if collision will happen in more time than this, then velo not in vo 
-			bool generalised, bool hybrid // type of VO 
+			bool generalised, bool hybrid, // type of VO
+			std::vector<int> this_rotation_occ
 		)
 			: valid(true), other_ent_id(other_id), other_object(other_object)
 		{
@@ -2140,6 +2143,8 @@ namespace ObjCont
 
 			blocking_cor = this_blocking_cor;
 			other_vo.blocking_cor = other_blocking_cor;
+
+			other_vo.rotation_occ = this_rotation_occ; // set rotation occ for pvo
 
 			//// CREATE COLLISION CONES ////
 			/// vector of normalised vectors
@@ -3196,6 +3201,10 @@ namespace ObjCont
 	};
 }
 
+
+#include "NetworkServerHandler.h"
+#include "NetworkClientHandler.h"
+
 ///////////////////////////////////////////////
 // sim data
 ///////////////////////////////////////////////
@@ -3470,5 +3479,47 @@ namespace data_for_TCP
 			occ_nodes(occ_nodes),
 			vos(vos)
 		{}
+	};
+
+	struct msg_str
+	{
+		const char* s_code;
+		std::vector<bool> is_int;
+		std::vector<bool> rep_pattern;
+		bool add_pattern;
+		int num_el;
+
+		msg_str
+		(
+			const char* s_code,
+			std::vector<bool> is_int
+		) : s_code(s_code), is_int(is_int), num_el(is_int.size()), add_pattern(false)
+		{}
+		msg_str
+		(
+			const char* s_code,
+			std::vector<bool> is_int,
+			std::vector<bool> rep_pattern
+		) : s_code(s_code), is_int(is_int), num_el(is_int.size()), rep_pattern(rep_pattern), add_pattern(rep_pattern.size() > 0)
+		{}
+
+		const char* to_str(CNetworkMessage* msg, int index)
+		{
+			char buf[12];
+			if (index < is_int.size())
+			{
+				if (is_int[index])
+				{
+					sprintf(buf, "%d", msg->GetInt(index * 4));
+				}
+				else
+				{
+					sprintf(buf, "%f", msg->GetFloatLittle(index * 4));
+				}
+			}
+			return buf;
+		}
+
+	msg_str() : s_code("***NO_MESSAGE***"), num_el(0) {}
 	};
 }

@@ -3,7 +3,7 @@
 int Log::s_indent = 1;
 bool Log::s_printing = false;
 
-Log::Log(Log_colour colour, const char* label) : m_log_colour(colour), on(true), m_label(label)
+Log::Log(Log_colour colour, const char* label) : m_log_colour(colour), on(true), m_label(label), to_file(false)
 {
 	std::string s(label);
 	m_indent = s.size();
@@ -18,6 +18,7 @@ Log::Log(Log_colour colour, const char* label) : m_log_colour(colour), on(true),
 	wOldColorAttrs = csbiInfo.wAttributes;
 
 	clear_str_buff(0);
+
 }
 
 void Log::print_label(int indent)

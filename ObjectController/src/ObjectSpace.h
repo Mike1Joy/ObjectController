@@ -945,6 +945,8 @@ public:
 	// occupation + halo
 	std::pair<potential_move, occ_nodes> get_best_move_occ(std::vector<potential_move>& moves, GenObject* obj);
 	occ_nodes try_to_occupy(GenObject& obj, CSNode& node, float radius);
+	std::vector<int> get_rotation_occ(GenObject& obj, float radius);
+	occ_nodes get_occupation(polygon poly, std::vector<attachment_point> points, float radius, std::set<int> tnode_ids, bool stop_when_taken, bool create_halo);
 	bool collision(const polygon& this_poly, const std::vector<attachment_point>& this_attach, char other_object_id);
 	bool collision(const polygon& this_poly, const std::vector<attachment_point>& this_attach, const GenObject& other_object);
 	void remove_occupation_obj(int object_id);

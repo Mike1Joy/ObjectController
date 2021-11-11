@@ -927,7 +927,7 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 {
 	std::ofstream data_ofs;
 
-	data_ofs.open(filename,  first ? (std::ofstream::out | std::ofstream::trunc) : (std::ofstream::out | std::ofstream::app));
+	data_ofs.open(filename, first ? (std::ofstream::out | std::ofstream::trunc) : (std::ofstream::out | std::ofstream::app));
 	{
 		if (!data_ofs.is_open()) return false;
 
@@ -936,13 +936,13 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 
 		for (const auto& o : objs)
 		{
-			data_ofs   << step
+			data_ofs << step
 				<< "," << sub_step
 				<< "," << comp_time_ms
 				<< "," << sim_time
 				<< "," << o.get_object_id()
 				<< "," << o.get_object_prefab_id()
-				
+
 				<< "," << o.get_floor()
 				<< "," << o.stair_id
 				<< "," << stair_arc_dir_str(o.stair_dir)
@@ -951,14 +951,14 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 				<< "," << o._position.x
 				<< "," << o._position.y
 				<< "," << o._orientation
-				
+
 				<< "," << o.get_verticies_relative().size()
 				<< "," << o._attachment_points.size()
 				<< "," << o.get_occupation_tnodes().size()
 				<< "," << o.get_length()
 				<< "," << o.get_width()
 				<< "," << o.get_max_width()
-			
+
 				<< "," << o.get_drive()
 				<< "," << o.get_max_acceleration()
 				<< "," << o.get_max_angular_speed()
@@ -966,7 +966,7 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 				<< "," << o.velocity_current.first.x
 				<< "," << o.velocity_current.first.y
 				<< "," << o.velocity_current.second
-				
+
 				<< "," << o.get_vos().size()
 				<< "," << o.itinerary.size()
 				<< "," << o.active
@@ -974,7 +974,7 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 				<< "," << o.just_stopped
 				<< "," << o.moved
 				<< "," << o.moved_backwards
-				
+
 				<< "," << o.not_move_cost
 				<< "," << o.time_blocking_cor
 				<< "," << o.time_not_blocking_cor
@@ -982,6 +982,24 @@ bool FileIO::data_output_object_info(const char* filename, bool first, int step,
 
 				<< "," << endl;
 		}
+	}
+	data_ofs.close();
+
+	return true;
+}
+
+bool FileIO::output_tcp_log(const char* filename, bool first, const char* bytes)
+{
+	std::ofstream data_ofs;
+
+	data_ofs.open(filename, first ? (std::ofstream::out | std::ofstream::trunc) : (std::ofstream::out | std::ofstream::app));
+	{
+		if (!data_ofs.is_open()) return false;
+
+		if (first)
+			data_ofs << "ObjectController Log file TCP_log.txt" << endl << endl;
+
+		data_ofs << bytes << endl;
 	}
 	data_ofs.close();
 

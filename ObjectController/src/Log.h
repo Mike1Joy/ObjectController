@@ -26,6 +26,7 @@ class Log
 
 public:
 	bool on;
+	bool to_file;
 
 	Log(Log_colour colour, const char* label);
 

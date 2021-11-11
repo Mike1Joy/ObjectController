@@ -2562,10 +2562,16 @@ occ_nodes ObjectSpace::try_to_occupy(GenObject& obj, CSNode& cnode, float radius
 
 
 	//// PERSON COLLISIONS & OCCUPATION ////
+	return get_occupation(poly, points, radius, *cnode.get_tnode_ids(), true, true);
+}
+occ_nodes ObjectSpace::get_occupation(polygon poly, std::vector<attachment_point> points, float radius, std::set<int> tnode_ids, bool stop_when_taken, bool create_halo)
+{
+	occ_nodes out;
+
 	std::vector<int> open_nodes;
 	std::vector<int> closed_nodes;
 	std::vector<int> halo_nodes;
-	for (auto& i : *cnode.get_tnode_ids())
+	for (auto& i : tnode_ids)
 	{
 		open_nodes.push_back(i);
 	}
@@ -2586,7 +2592,7 @@ occ_nodes ObjectSpace::try_to_occupy(GenObject& obj, CSNode& cnode, float radius
 			if (tnode_pt->occupied_by_person) // node already occupied by person
 			{
 				out.valid = false;
-				return out;
+				if (stop_when_taken) return out;
 			}
 
 			if (!first_occ_found)
@@ -2610,7 +2616,8 @@ occ_nodes ObjectSpace::try_to_occupy(GenObject& obj, CSNode& cnode, float radius
 		}
 		else if (first_occ_found) // object does not intersect with node - halo
 		{
-			halo_nodes.push_back(tnode_id);
+			if (create_halo)
+				halo_nodes.push_back(tnode_id);
 		}
 		else // if not found an occupied node yet, add all neigh to open 
 		{
@@ -2634,31 +2641,83 @@ occ_nodes ObjectSpace::try_to_occupy(GenObject& obj, CSNode& cnode, float radius
 	}
 	out.valid = true;
 
-	// check if halo is connected
-	open_nodes.clear();
-	closed_nodes.clear();
-
-	if (!(halo_nodes.empty()))
+	if (create_halo)
 	{
-		open_nodes.push_back(halo_nodes.back());
-	}
+		// check if halo is connected
+		open_nodes.clear();
+		closed_nodes.clear();
 
-	while (!open_nodes.empty())
-	{
-		node* n = get_tnode_pnt(open_nodes.back());
-		closed_nodes.push_back(open_nodes.back());
-		open_nodes.pop_back();
-
-		for (int i : n->tnodes)
+		if (!(halo_nodes.empty()))
 		{
-			// if i not in closed and not in open and in halo then add to open
-			if (!in_vector(closed_nodes, i) && !in_vector(open_nodes, i) && in_vector(halo_nodes, i))
+			open_nodes.push_back(halo_nodes.back());
+		}
+
+		while (!open_nodes.empty())
+		{
+			node* n = get_tnode_pnt(open_nodes.back());
+			closed_nodes.push_back(open_nodes.back());
+			open_nodes.pop_back();
+
+			for (int i : n->tnodes)
 			{
-				open_nodes.push_back(i);
+				// if i not in closed and not in open and in halo then add to open
+				if (!in_vector(closed_nodes, i) && !in_vector(open_nodes, i) && in_vector(halo_nodes, i))
+				{
+					open_nodes.push_back(i);
+				}
 			}
 		}
+		out.connected_halo = (closed_nodes.size() == halo_nodes.size());
 	}
-	out.connected_halo = (closed_nodes.size() == halo_nodes.size());
+	
+	return out;
+}
+std::vector<int> ObjectSpace::get_rotation_occ(GenObject& obj, float radius)
+{
+	CSNode cnode = *get_node(obj.get_cnode_id());
+
+	polygon polyP = obj.get_polygon();
+	polygon polyM = polyP;
+	polyP.rotate(orient_to_angle(obj.get_cnode_id().orientation + 1));
+	polyM.rotate(orient_to_angle(obj.get_cnode_id().orientation - 1));
+	polyP.translate(obj._position);
+	polyM.translate(obj._position);
+
+	std::vector<attachment_point> pointsP = obj.get_occupying_attachment_points();
+	std::vector<attachment_point> pointsM = pointsP;
+
+	for (attachment_point& p : pointsP)
+	{
+		p.move_occ(cnode._attachment_point_validity[obj.get_object_prefab_id()][p.id], false);
+		p.rotate(orient_to_angle(obj.get_cnode_id().orientation + 1));
+		p.translate(obj._position);
+	}
+	for (attachment_point& p : pointsM)
+	{
+		p.move_occ(cnode._attachment_point_validity[obj.get_object_prefab_id()][p.id], false);
+		p.rotate(orient_to_angle(obj.get_cnode_id().orientation - 1));
+		p.translate(obj._position);
+	}
+
+	std::vector<int> nodesP = get_occupation(polyP, pointsP, radius, *cnode.get_tnode_ids(), false, false).occupied_nodes;
+	std::vector<int> nodesM = get_occupation(polyM, pointsM, radius, *cnode.get_tnode_ids(), false, false).occupied_nodes;
+
+	std::vector<int> out;
+
+	for (int& i : nodesP)
+	{
+		if (get_tnode_pnt(i)->stair_id != -1)
+		{
+			out.push_back(i);
+		}
+	}
+	for (int& i : nodesM)
+	{
+		if (!in_vector(nodesP, i) && get_tnode_pnt(i)->stair_id != -1)
+		{
+			out.push_back(i);
+		}
+	}
 
 	return out;
 }
@@ -3323,7 +3382,8 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		obj->get_drive(), per->drive,
 		pvo,
 		time_to_collision, dist_to_collision,
-		generalised, hybrid
+		generalised, hybrid,
+		obj->get_rotation_occ_tnodes()
 	);
 
 	if (ovo.valid)
@@ -3365,7 +3425,8 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		this_obj->get_drive(), other_obj->get_drive(),
 		other_vo,
 		time_to_collision, dist_to_collision,
-		generalised, hybrid
+		generalised, hybrid,
+		std::vector<int>()
 	);
 
 	if (this_vo.valid)
@@ -4200,6 +4261,7 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		if (!move.valid || !occ.valid || move.not_move) // no move is possible or not moving is preferred over moving
 		{
 			obj->dont_move(seconds);
+			obj->set_rotation_occ_tnodes(get_rotation_occ(*obj, 0.2f));
 		}
 		else // object can move
 		{
@@ -4208,8 +4270,8 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node), move.stair_dir);
 
 			set_occupation_halo_obj(occ, *obj, seconds);
-			
 			obj->set_blocking_width(calc_blocking_dist(move.velocity, obj->get_verticies_relative(), obj->get_floor(), obj->stair_id));
+			obj->set_rotation_occ_tnodes(get_rotation_occ(*obj, 0.2f));
 		}
 	}
 	else if (interpolate) // wait > 0
@@ -4743,7 +4805,11 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 				if (vo.velocity_in_vo_dist_to_line(next_vel, dist_cost))
 				{
 					dist_cost *= vo_time_to_collision;
-					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost + 0.5f;
+					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost + 0.75f;
+				}
+				else if (in_vector(vo.rotation_occ, next_id))
+				{
+					(node_obj_cost[next_id])[vo.other_ent_id] = 0.75f;
 				}
 			}
 		}

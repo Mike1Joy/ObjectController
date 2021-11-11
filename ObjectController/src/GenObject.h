@@ -26,7 +26,8 @@ class GenObject : public ObjectPrefab
 	int m_tnode_id;
 	int m_floor_num;
 
-	std::vector<int> m_occupied_tnodes;
+	std::vector<int> m_occupied_tnodes; // tnode occupied by object
+	std::vector<int> m_rotation_occ_tnodes; // tnodes that would be occupied by object if it were to rotate +-1 minus the ones it already occupies
 	bool m_connected_halo;
 
 	std::vector<cnode_pos> m_current_targets;
@@ -106,9 +107,12 @@ public:
 
 	// Occupation
 	void set_occupation_tnodes(std::vector<int>& tnodes);
+	void set_rotation_occ_tnodes(std::vector<int> tnodes);
 	std::vector<int> get_occupation_tnodes() const;
+	std::vector<int> get_rotation_occ_tnodes() const;
 	void set_connected_halo(bool connected, float seconds);
 	void clear_occ();
+	void clear_rotation_occ();
 	bool halo_is_connected();
 	occupation_seed generate_occupation_seed();
 	std::vector<attachment_point> get_occupying_attachment_points() const;

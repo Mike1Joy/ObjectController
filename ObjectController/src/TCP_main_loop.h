@@ -8,6 +8,7 @@
 #include "ObjectSpace.h"
 #include "Log.h"
 #include "opengl.h"
+#include "FileIO.h"
 
 using namespace data_for_TCP;
 
@@ -51,6 +52,51 @@ constexpr UINT EXMS_NODEOBJECT = 10524; // <uObjectID><uNodeCount>(<uNodeID1>,..
 //constexpr UINT EXMS_END_OF_OBJECT_RUN = 10553;
 //constexpr UINT EXMS_SEND_NODE_NAME = 10054; // < NodiD > <iNodeID><StrLen><String>
 
+// Type code map
+std::map<UINT, msg_str> type_code = { 
+//  {UNIT code, {char* code_name, {is_int, is_int, ...}}},
+	{EXMS_SIMULATION_PAUSED, {"EXMS_SIMULATION_PAUSED", {}}},
+	{EXMS_SIMULATION_RESET, {"EXMS_SIMULATION_RESET", {}}},
+	{EXMS_SIMULATION_STARTED, {"EXMS_SIMULATION_STARTED", {}}},
+	{EXMS_SIMULATION_COMPLETED, {"EXMS_SIMULATION_COMPLETED", {}}},
+	{EXMS_EXEC_SFE_COMPLETE, {"EXMS_EXEC_SFE_COMPLETE", {}}},
+	{EXMS_DISCONNECTED, {"EXMS_DISCONNECTED", {}}},
+	{EXMS_ADD_WALL, {"EXMS_ADD_WALL", {true, true, false, false, false, false, false, false, false}}},
+	{EXMS_SEND_NODE, {"EXMS_SEND_NODE", {true, true, true, true, false, false, false, false}}},
+	{EXMS_SEND_ARC, {"EXMS_SEND_ARC", {true, true, true, false, false, false, true, false, true}}},
+	{EXMS_SEND_TRANSIT, {"EXMS_SEND_TRANSIT", {true, true, false, false, false, true, true, false, false}}},
+	{EXMS_SEND_OBJECT, {"EXMS_SEND_OBJECT", {true, true, true, false, false, false, false}}},
+	{EXMS_ADD_HEPTAD, {"EXMS_ADD_HEPTAD", {true, false, true, false, false, true, true}}},
+	{EXMS_STAIR_NODE, {"EXMS_STAIR_NODE", {true, true, true, true}}},
+	{EXMS_TIME, {"EXMS_TIME", {false}}},
+	{EXMS_DELETE, {"EXMS_DELETE", {true}}},
+	{EXMS_MOVE_HEPTAD, {"EXMS_MOVE_HEPTAD", {true, false, true, false, false, false, true, true}}},
+	{EXMS_ADDOBJECT, {"EXMS_ADDOBJECT", {true, true, true, false, false, false, false, false}}},
+	{EXMS_REMOVEOBJECT, {"EXMS_REMOVEOBJECT", {true}}},
+	{EXMS_TARGETOBJECT, {"EXMS_TARGETOBJECT", {true, true, true, false, false, false, false, true}}},
+	{EXMS_ATTACHOBJECTPERSON, {"EXMS_ATTACHOBJECTPERSON", {true, true, true}}},
+	{EXMS_RELEASEOBJECTPERSON, {"EXMS_RELEASEOBJECTPERSON", {true, true, true}}},
+	{EXMS_WAITING_FOR_OBJECT_DATA, {"EXMS_WAITING_FOR_OBJECT_DATA", {}}},
+	{EXMS_UNDEREXTERNALCONTROL, {"EXMS_UNDEREXTERNALCONTROL", {true, true}}},
+	{EXMS_MOVEOBJECT, {"EXMS_MOVEOBJECT", {true, true, true, false, false, false, false, false, true}}},
+	{EXMS_VELOCITYOBSTACLE, {"EXMS_VELOCITYOBSTACLE", {true, true}, {true, false}}},
+	{EXMS_END_OF_OBJECT_DATA, {"EXMS_END_OF_OBJECT_DATA", {}}},
+	{EXMS_NODEOBJECT, {"EXMS_NODEOBJECT", {true, true}, {true}}}
+};
+msg_str unrecognised_msg_code;
+msg_str* get_type_code(UINT code)
+{
+	auto it = type_code.find(code);
+	if (it != type_code.end())
+	{
+		return &(it->second);
+	}
+	else
+	{
+		return &unrecognised_msg_code;
+	}
+}
+
 //// Constants
 /// node types
 #define EX_NODE_FREESPACE 0
@@ -65,6 +111,10 @@ constexpr bool TCP_print_only = false;
 static int client_id = 0;
 static bool accept_con = false;
 static bool simulating = false;
+static bool Log_to_file = false;
+static bool first_print_to_file = true;
+static int msg_counter_sent = 0;
+static int msg_counter_recv = 0;
 
 //// TCP Functions
 bool StaticAddconnection(int anID)
@@ -266,6 +316,65 @@ void print_test(CNetworkMessage* msg)
 		log_TCP.print(10, "floatL: %f", msg->GetFloatLittle(i));
 	}
 }
+void print_to_file(CNetworkMessage* msg, bool sent)
+{
+	msg_str* message_str = get_type_code(msg->GetType());
+	char buf[300];
+	sprintf(buf, sent ? "sent " : "recv ");
+	sprintf(buf + 5, "Seq %d Connx 0 :size %d code %d (%s) ", sent ? msg_counter_sent : msg_counter_recv, msg->Length(), msg->GetType(), message_str->s_code);
+	
+	int i = 0;
+	for (; i < message_str->num_el; i++)
+	{
+		if (message_str->is_int[i])
+		{
+			sprintf(buf + strlen(buf), ", %d", msg->GetInt(i * 4 + 4));
+		}
+		else
+		{
+			sprintf(buf + strlen(buf), ", %f", msg->GetFloatLittle(i * 4 + 4));
+		}
+	}
+
+	int p = 0;
+	if (message_str->add_pattern) // when the length of msg is variable
+	{
+		for (; i * 4 + 4 < msg->Length(); i++)
+		{
+			if (message_str->rep_pattern[p])
+			{
+				sprintf(buf + strlen(buf), ", %d", msg->GetInt(i * 4 + 4));
+			}
+			else
+			{
+				sprintf(buf + strlen(buf), ", %f", msg->GetFloatLittle(i * 4 + 4));
+			}
+
+			p = (p + 1) % message_str->rep_pattern.size();
+		}
+	}
+
+	if (FileIO::output_tcp_log("TCP_log.txt", first_print_to_file, buf))
+	{
+		first_print_to_file = false;
+	}
+	else
+	{
+		log_main.print("TCP data could not be saved to file");
+	}
+}
+void print_error_to_file(const char* message)
+{
+	if (FileIO::output_tcp_log("TCP_log.txt", first_print_to_file, message))
+	{
+		first_print_to_file = false;
+	}
+	else
+	{
+		log_main.print("TCP data could not be saved to file");
+	}
+}
+
 /// do
 void add_bound(CNetworkMessage* msg)
 {
@@ -457,7 +566,7 @@ CNetworkMessage* create_empty_message(int type)
 	msg->Set(type, 0);
 	return msg;
 }
-static int msg_counter = 0;
+
 void create_and_send_message(int type, const std::vector<msg_element>& content)
 {
 	CNetworkMessage* msg = create_message(type, content);
@@ -466,13 +575,18 @@ void create_and_send_message(int type, const std::vector<msg_element>& content)
 
 	if (CNetworkServerHandler::SendMessage(client_id, msg))
 	{
-		msg_counter++;
-		log_TCP.print("message sent: %d", msg_counter);
-		log_TCP.print(2, "code: %d", type);
+		msg_counter_sent++;
+		if (Log_to_file)
+			print_to_file(msg, true);
+		else
+		{
+			log_TCP.print("message sent: %d", msg_counter_sent);
+			log_TCP.print(2, "code: %d", type);
+		}
 	}
 	else
 	{
-		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter + 1);
+		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter_sent + 1);
 		log_TCP.print(2, "code: %d", type);
 	}
 	
@@ -485,13 +599,18 @@ void create_and_send_empty_message(int type)
 
 	if (CNetworkServerHandler::SendMessage(client_id, msg))
 	{
-		msg_counter++;
-		log_TCP.print("message sent: %d", msg_counter);
-		log_TCP.print(2, "code: %d", type);
+		msg_counter_sent++;
+		if (Log_to_file)
+			print_to_file(msg, true);
+		else
+		{
+			log_TCP.print("message sent: %d", msg_counter_sent);
+			log_TCP.print(2, "code: %d", type);
+		}
 	}
 	else
 	{
-		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter + 1);
+		log_TCP.print("MESSAGE FAILED TO SEND: %d", msg_counter_sent + 1);
 		log_TCP.print(2, "code: %d", type);
 	}
 }
@@ -595,14 +714,18 @@ bool EXODUS_run_loop(float& sim_time, float& time_step)
 		{
 			msg_cnt = CNetworkServerHandler::GetNewMessage();
 		}
-		catch (...)
+		catch (const std::exception& e)
 		{
+			print_error_to_file(e.what());
 			log_TCP.print("Failed to check for new messages");
-			msg_cnt = nullptr;
+			continue;
 		}
+
 		if (msg_cnt)
 		{
+			msg_counter_recv++;
 			CNetworkMessage* msg = msg_cnt->GetMessage();
+			if (Log_to_file) print_to_file(msg, false);
 			switch (msg->GetType())
 			{
 			// people
@@ -803,6 +926,12 @@ void sim_loop(CNetworkMessage* start_msg)
 /// main
 void TCP_main_loop()
 {
+	Log_to_file = log_TCP.to_file;
+	if (Log_to_file)
+	{
+		log_TCP.print("TCP log to file enabled");
+	}
+
 	log_TCP.print("TCP loop started");
 	UINT PortID = s_object_space.tcp_PortID;
 	
@@ -817,10 +946,23 @@ void TCP_main_loop()
 
 	while (accept_con)
 	{
-		CClientMessageContainer* msg_cnt = CNetworkServerHandler::GetNewMessage();
+		CClientMessageContainer* msg_cnt;
+		try
+		{
+			msg_cnt = CNetworkServerHandler::GetNewMessage();
+		}
+		catch (const std::exception& e)
+		{
+			print_error_to_file(e.what());
+			log_TCP.print("Failed to check for new messages");
+			continue;
+		}
+
 		if (msg_cnt)
 		{
+			msg_counter_recv++;
 			CNetworkMessage* msg = msg_cnt->GetMessage();
+			if (Log_to_file) print_to_file(msg, false);
 			switch (msg->GetType())
 			{
 			// Setup

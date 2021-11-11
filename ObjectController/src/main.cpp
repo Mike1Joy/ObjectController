@@ -181,6 +181,7 @@ bool get_init()
 
 		log_main.on = init.mode.main_log;
 		log_TCP.on = init.mode.tcp_log;
+		log_TCP.to_file = init.mode.tcp_log_file;
 		log_opengl.on = init.mode.opengl_log;
 	}
 	else
@@ -497,4 +498,8 @@ int main(int argc, char* argv[])
 	{
 		log_main.print("No way to interact with application. Ensure at least one of OpenGL and TCP are active");
 	}
+
+	log_main.print("Close window to end application");
+	while (true) {}
+	// end of application
 }

@@ -417,6 +417,7 @@ public:
 			BOOL,
 			BOOL,
 			BOOL,
+			BOOL,
 			BOOL
 		};
 
@@ -425,6 +426,8 @@ public:
 		bool main_log;
 		bool opengl_log;
 		bool tcp_log;
+
+		bool tcp_log_file;
 
 		bool fill_values()
 		{
@@ -435,6 +438,7 @@ public:
 			if (fill_if<bool>(main_log, content[2])) return false;
 			if (fill_if<bool>(opengl_log, content[3])) return false;
 			if (fill_if<bool>(tcp_log, content[4])) return false;
+			if (fill_if<bool>(tcp_log_file, content[5])) return false;
 
 			return true;
 		}
@@ -492,5 +496,6 @@ public:
 	static bool data_output_cnode_carc_info(const char* filename, const std::vector<CSNode>(&csnodes)[iNUM_ORIENT]);
 	static bool data_output_tnode_tarc_info(const char* filename, const std::vector<node>& tnodes, const std::vector<arc>& tarcs);
 	static bool data_output_object_info(const char* filename, bool first, int step, int sub_step, int comp_time_ms, float time, const std::vector<GenObject>& objs);
+	static bool output_tcp_log(const char* filename, bool first, const char* bytes);
 };
 

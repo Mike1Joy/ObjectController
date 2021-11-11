@@ -152,9 +152,24 @@ void GenObject::set_occupation_tnodes(std::vector<int>& tnodes)
 {
 	m_occupied_tnodes = tnodes;
 }
+void GenObject::set_rotation_occ_tnodes(std::vector<int> tnodes)
+{
+	m_rotation_occ_tnodes.clear();
+	for (int& i : tnodes)
+	{
+		if (!in_vector(m_occupied_tnodes, i))
+		{
+			m_rotation_occ_tnodes.push_back(i);
+		}
+	}
+}
 std::vector<int> GenObject::get_occupation_tnodes() const
 {
 	return m_occupied_tnodes;
+}
+std::vector<int> GenObject::get_rotation_occ_tnodes() const
+{
+	return m_rotation_occ_tnodes;
 }
 void GenObject::set_connected_halo(bool connected, float seconds)
 {
@@ -202,6 +217,11 @@ void GenObject::set_connected_halo(bool connected, float seconds)
 void GenObject::clear_occ()
 {
 	m_occupied_tnodes.clear();
+	clear_rotation_occ();
+}
+void GenObject::clear_rotation_occ()
+{
+	m_rotation_occ_tnodes.clear();
 }
 bool GenObject::halo_is_connected()
 {
@@ -304,6 +324,7 @@ void GenObject::idle()
 	m_last_cnode = m_current_cnode;
 	just_moved = false;
 	velocity_desired = 0.0f;
+	clear_rotation_occ();
 
 	if (!stopped)
 	{
