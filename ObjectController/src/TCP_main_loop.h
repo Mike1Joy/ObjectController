@@ -321,7 +321,7 @@ void print_to_file(CNetworkMessage* msg, bool sent)
 	msg_str* message_str = get_type_code(msg->GetType());
 	char buf[300];
 	sprintf(buf, sent ? "sent " : "recv ");
-	sprintf(buf + 5, "Seq %d Connx 0 :size %d code %d (%s) ", sent ? msg_counter_sent : msg_counter_recv, msg->Length(), msg->GetType(), message_str->s_code);
+	sprintf(buf + 5, "Seq %d Connx 0 :size %d code %d (%s) ", sent ? msg_counter_sent : msg_counter_recv, msg->Length() + 4, msg->GetType(), message_str->s_code);
 	
 	int i = 0;
 	for (; i < message_str->num_el; i++)
