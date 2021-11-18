@@ -20,6 +20,9 @@ constexpr UINT EXMS_SIMULATION_STARTED = 4500;
 constexpr UINT EXMS_SIMULATION_COMPLETED = 4502;
 constexpr UINT EXMS_EXEC_SFE_COMPLETE = 5504; // sends when all commands from sfe file have finished - use this to generate freespace
 constexpr UINT EXMS_DISCONNECTED = 8004;
+constexpr UINT EXMS_EXODUSERROR = 7000;
+constexpr UINT EXMS_PARSING_SFE_FILE = 5502;
+constexpr UINT EXMS_SIMULATION_PROGRESS = 4503;
 /// setup
 constexpr UINT EXMS_ADD_WALL = 10050;
 constexpr UINT EXMS_SEND_NODE = 10051; // <NodeID><iNodeType><iObstacle><iLevel><sX><sY><sZ><floorHeight>
@@ -81,7 +84,10 @@ std::map<UINT, msg_str> type_code = {
 	{EXMS_MOVEOBJECT, {"EXMS_MOVEOBJECT", {true, true, true, false, false, false, false, false, true}}},
 	{EXMS_VELOCITYOBSTACLE, {"EXMS_VELOCITYOBSTACLE", {true, true}, {true, false}}},
 	{EXMS_END_OF_OBJECT_DATA, {"EXMS_END_OF_OBJECT_DATA", {}}},
-	{EXMS_NODEOBJECT, {"EXMS_NODEOBJECT", {true, true}, {true}}}
+	{EXMS_NODEOBJECT, {"EXMS_NODEOBJECT", {true, true}, {true}}},
+	{EXMS_EXODUSERROR, {"EXMS_EXODUSERROR", {true, true}}},
+	{EXMS_PARSING_SFE_FILE, {"EXMS_PARSING_SFE_FILE", {true}}},
+	{EXMS_SIMULATION_PROGRESS, {"EXMS_SIMULATION_PROGRESS", {true}}}
 };
 msg_str unrecognised_msg_code;
 msg_str* get_type_code(UINT code)
@@ -114,7 +120,8 @@ static bool simulating = false;
 static bool Log_to_file = false;
 static bool first_print_to_file = true;
 static int msg_counter_sent = 0;
-static int msg_counter_recv = 0;
+static int msg_counter_recv = -1; // Exodus double sends the first message, so -1 to keep Seq in sync
+static int tcp_con_time = 0;
 
 //// TCP Functions
 bool StaticAddconnection(int anID)
@@ -321,7 +328,7 @@ void print_to_file(CNetworkMessage* msg, bool sent)
 	msg_str* message_str = get_type_code(msg->GetType());
 	char buf[300];
 	sprintf(buf, sent ? "sent " : "recv ");
-	sprintf(buf + 5, "Seq %d Connx 0 :size %d code %d (%s) ", sent ? msg_counter_sent : msg_counter_recv, msg->Length() + 4, msg->GetType(), message_str->s_code);
+	sprintf(buf + strlen(buf), "Time %.3f Seq %d Connx 0 :size %d code %d (%s) ", (((int)timeGetTime()) - tcp_con_time)*0.001f, sent ? msg_counter_sent : msg_counter_recv, msg->Length() + 4, msg->GetType(), message_str->s_code);
 	
 	int i = 0;
 	for (; i < message_str->num_el; i++)
@@ -943,6 +950,8 @@ void TCP_main_loop()
 
 	if (accept_con)
 		log_TCP.print("Accepting connections from PortID %d", (int)PortID);
+
+	tcp_con_time = timeGetTime();
 
 	while (accept_con)
 	{
