@@ -1026,6 +1026,10 @@ public:
 	bool data_tnode_arc_info;
 	bool data_object_info;
 	float vo_des_vel_f;
+	float vo_scale_add;
+	float vo_scale_mult;
+	float pvo_scale_add;
+	float pvo_scale_mult;
 };
 
 // singleton

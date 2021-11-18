@@ -4072,6 +4072,12 @@ std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<
 		{
 			move.add_cost += move.wait;
 		}
+
+		if (move.in_VO)
+		{
+			move.add_cost *= vo_scale_mult;
+			move.add_cost += vo_scale_add;
+		}
 	}
 	if (not_move_cost > 0.0f)
 	{
@@ -4079,7 +4085,7 @@ std::pair<potential_move, occ_nodes> ObjectSpace::get_best_move_occ(std::vector<
 		{
 			if (!move.trans && !move.towards_goal)
 			{
-				move.add_cost += not_move_cost;
+				move.add_cost += not_move_cost*vo_scale_mult;
 			}
 		}
 	}
@@ -4587,6 +4593,10 @@ ObjectSpace::ObjectSpace()
 	data_tnode_arc_info = true;
 	data_object_info = true;
 	vo_des_vel_f = 0.5f;
+	vo_scale_add = 100;
+	vo_scale_mult = 100;
+	pvo_scale_add = 100;
+	pvo_scale_mult = 100;
 }
 ObjectSpace::~ObjectSpace(){}
 
@@ -4804,12 +4814,12 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 				float dist_cost = 0.0f;
 				if (vo.velocity_in_vo_dist_to_line(next_vel, dist_cost))
 				{
-					dist_cost *= vo_time_to_collision;
-					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost + 0.75f;
+					dist_cost *= vo_time_to_collision; // multiply by constant set in init to make correct dimension (length)
+					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost*pvo_scale_mult + pvo_scale_add;
 				}
 				else if (in_vector(vo.rotation_occ, next_id))
 				{
-					(node_obj_cost[next_id])[vo.other_ent_id] = 0.75f;
+					(node_obj_cost[next_id])[vo.other_ent_id] = pvo_scale_add;
 				}
 			}
 		}

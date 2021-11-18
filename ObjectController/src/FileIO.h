@@ -353,6 +353,10 @@ public:
 			BOOL,
 			BOOL,
 			BOOL,
+			FLOAT,
+			FLOAT,
+			FLOAT,
+			FLOAT,
 			FLOAT
 		};
 
@@ -372,6 +376,10 @@ public:
 		bool data_tnode_arc_info;
 		bool data_object_info;
 		float vo_des_vel_f;
+		float vo_scale_add;
+		float vo_scale_mult;
+		float pvo_scale_add;
+		float pvo_scale_mult;
 
 		bool fill_values()
 		{
@@ -397,10 +405,21 @@ public:
 
 			if (fill_if<float>(vo_des_vel_f, content[15])) return false;
 
+			if (fill_if<float>(vo_scale_add, content[16])) return false;
+			if (fill_if<float>(vo_scale_mult, content[17])) return false;
+			if (fill_if<float>(pvo_scale_add, content[18])) return false;
+			if (fill_if<float>(pvo_scale_mult, content[19])) return false;
+
+
 			cap<float>(0.0f, time_to_collision);
 			cap<float>(0.0f, dist_to_collision);
 			cap<int>(1, num_runs_per_sim);
 			cap<float>(0.0f, vo_des_vel_f, 1.0f);
+
+			cap<float>(0.0f, vo_scale_add);
+			cap<float>(1.0f, vo_scale_mult);
+			cap<float>(0.0f, pvo_scale_add);
+			cap<float>(1.0f, pvo_scale_mult);
 
 			return true;
 		}

@@ -166,7 +166,13 @@ bool get_init()
 		s_object_space.data_cnode_arc_info = init.options.data_cnode_arc_info;
 		s_object_space.data_tnode_arc_info = init.options.data_tnode_arc_info;
 		s_object_space.data_object_info = init.options.data_object_info;
+
 		s_object_space.vo_des_vel_f = init.options.vo_des_vel_f;
+
+		s_object_space.vo_scale_add = init.options.vo_scale_add;
+		s_object_space.vo_scale_mult = init.options.vo_scale_mult;
+		s_object_space.pvo_scale_add = init.options.pvo_scale_add;
+		s_object_space.pvo_scale_mult = init.options.pvo_scale_mult;
 	}
 	else
 	{
