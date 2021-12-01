@@ -880,6 +880,7 @@ void ObjectSpace::generate_cspace(bool auto_landings)
 	if (auto_landings)
 		s_object_space.auto_gen_landings();
 	set_all_arc_landing_ids();
+	set_landing_nodes();
 
 	log_main.print("Landings auto generated: %d\n", s_object_space.get_num_landings());
 
@@ -1992,8 +1993,13 @@ bool ObjectSpace::is_node_in_landing_area(int node_id, int landing_id)
 }
 void ObjectSpace::set_landing_id(node& n, int land_id)
 {
+	landing* l = get_landing_pt(land_id);
+	if (!l)
+		return;
+
 	n.landing_id = land_id;
 	int node_id = n.id;
+	l->tnode_ids.push_back(node_id);
 
 	for (arc& a : m_EX_arcs)
 	{
@@ -2201,6 +2207,20 @@ std::vector<node*> ObjectSpace::get_landing_nodes(const stair& this_stair, bool 
 	}
 
 	return closed_nodes;
+}
+void ObjectSpace::set_landing_nodes()
+{
+	for (auto& l : m_EX_landings)
+	{
+		l.tnode_ids.clear();
+		for (auto& n : m_EX_nodes)
+		{
+			if (n.landing_id == l.id)
+			{
+				l.tnode_ids.push_back(n.id);
+			}
+		}
+	}
 }
 
 // File IO
@@ -2706,16 +2726,37 @@ std::vector<int> ObjectSpace::get_rotation_occ(GenObject& obj, float radius)
 
 	for (int& i : nodesP)
 	{
-		if (get_tnode_pnt(i)->stair_id != -1)
+		if (get_tnode_pnt(i)->stair_id == -1)
 		{
 			out.push_back(i);
 		}
 	}
 	for (int& i : nodesM)
 	{
-		if (!in_vector(nodesP, i) && get_tnode_pnt(i)->stair_id != -1)
+		if (!in_vector(nodesP, i) && get_tnode_pnt(i)->stair_id == -1)
 		{
 			out.push_back(i);
+		}
+	}
+
+	return out;
+}
+std::map<int, float> ObjectSpace::get_landing_bez_dist(int landing_id, float max_dist, int prefab_id)
+{
+	landing* land = get_landing_pt(landing_id);
+	if (!land)
+	{
+		return std::map<int, float>();
+	}
+
+	std::map<int, float> out;
+	float max_dist_sq = max_dist * max_dist;
+	for (int& id : land->tnode_ids)
+	{
+		float dist_sq = land->get_distance_to_curve(prefab_id,get_tnode_pnt(id)->position);
+		if (dist_sq >= 0.0f && dist_sq <= max_dist_sq)
+		{
+			out[id] = max_dist - sqrtf(dist_sq);
 		}
 	}
 
@@ -3383,7 +3424,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		pvo,
 		time_to_collision, dist_to_collision,
 		generalised, hybrid,
-		obj->get_rotation_occ_tnodes()
+		obj->get_additional_pvo_nodes()
 	);
 
 	if (ovo.valid)
@@ -3426,7 +3467,7 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		other_vo,
 		time_to_collision, dist_to_collision,
 		generalised, hybrid,
-		std::vector<int>()
+		std::map<int,float>()
 	);
 
 	if (this_vo.valid)
@@ -4267,18 +4308,24 @@ void ObjectSpace::move_obj(int object_id, float h_mult, float seconds, bool inte
 		if (!move.valid || !occ.valid || move.not_move) // no move is possible or not moving is preferred over moving
 		{
 			obj->dont_move(seconds);
-			obj->set_rotation_occ_tnodes(get_rotation_occ(*obj, 0.2f));
 		}
 		else // object can move
 		{
 			CSNode* new_node = get_node(move.node);
 			
-			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node), move.stair_dir);
+			obj->move(move.node, *new_node->get_tnode_ids()->begin(), move.wait, move.move_time, move.velocity, move.new_position, new_node->_attachment_point_validity[prefab_id], interpolate, new_node->get_floor_num(), new_node->_stair_ids[prefab_id], old_pot < move.potential, seconds, get_desired_vel(obj, new_node), move.stair_dir, new_node->landing_id);
 
 			set_occupation_halo_obj(occ, *obj, seconds);
 			obj->set_blocking_width(calc_blocking_dist(move.velocity, obj->get_verticies_relative(), obj->get_floor(), obj->stair_id));
-			obj->set_rotation_occ_tnodes(get_rotation_occ(*obj, 0.2f));
+			obj->add_additional_pvo_nodes(get_rotation_occ(*obj, 0.2f));
+
+			if (new_node->landing_id != -1)
+			{
+				float max_width = 0.5f * (obj->get_width() + obj->get_length()) + 0.2f;
+				obj->add_additional_pvo_nodes(get_landing_bez_dist(new_node->landing_id, max_width, obj->get_object_prefab_id()));
+			}
 		}
+		
 	}
 	else if (interpolate) // wait > 0
 	{
@@ -4801,6 +4848,14 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 		nodes.push_back(per.second.node_id); // current node
 		REMOVE_DUPLICATES(nodes);
 
+#define TC165_ADD_ADDITIONAL_PVOS
+#ifdef TC165_ADD_ADDITIONAL_PVOS
+		std::vector<int> extra_nodes;
+		for (int i = 0; i < ((int)m_EX_nodes.size())/2; i ++)
+		{
+			extra_nodes.push_back(m_EX_nodes[i].id);
+		}
+#endif
 
 		for (int& next_id : nodes)
 		{
@@ -4815,18 +4870,24 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 				if (vo.velocity_in_vo_dist_to_line(next_vel, dist_cost))
 				{
 					dist_cost *= vo_time_to_collision; // multiply by constant set in init to make correct dimension (length)
-					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost*pvo_scale_mult + pvo_scale_add;
+					(node_obj_cost[next_id])[vo.other_ent_id] = dist_cost * pvo_scale_mult;
 				}
-				else if (in_vector(vo.rotation_occ, next_id))
+				if (vo.additional_pvo_nodes.find(next_id) != vo.additional_pvo_nodes.end()) // if it is in additional pvo nodes
 				{
-					(node_obj_cost[next_id])[vo.other_ent_id] = pvo_scale_add;
+					(node_obj_cost[next_id])[vo.other_ent_id] += vo.additional_pvo_nodes[next_id] * pvo_scale_mult;
 				}
+#ifdef TC165_ADD_ADDITIONAL_PVOS
+				if (in_vector(extra_nodes,next_id))
+				{
+					(node_obj_cost[next_id])[1] += vo.additional_pvo_nodes[next_id] * pvo_scale_mult;
+				}
+#endif
 			}
 		}
 
 		if (!node_obj_cost.empty())
 		{
-			pvos.push_back(pvo(per.first, node_obj_cost));
+			pvos.push_back(pvo(per.first, node_obj_cost, pvo_scale_add));
 		}
 	}
 

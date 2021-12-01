@@ -1829,9 +1829,9 @@ void drawConfig(GenObject& obj)
 		{
 			drawVO(vo, obj._position, obj.velocity_current.first, obj.velocity_desired);
 		}
-		for (const int id : obj.get_rotation_occ_tnodes())
+		for (auto id : obj.get_additional_pvo_nodes())
 		{
-			x_y<float> pos = s_object_space.get_tnode_xypos(id);
+			x_y<float> pos = s_object_space.get_tnode_xypos(id.first);
 
 			drawRegPoly(pos.x, pos.y, TOP_LAYER - 0.1, 0.1f, 8, 1.0f, 1.0f, 0.0f, 1.0f);
 		}

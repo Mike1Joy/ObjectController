@@ -1668,6 +1668,33 @@ namespace ObjCont
 
 			return sqrt(min_dist_sq);
 		}
+		float distance_from_curve(x_y<float> xy) // time distance from curve (-1 means no curve)
+		{
+			if (curve_up.empty() || curve_down.empty()) return -1.0f;
+
+			float min_dist_sq = 9999.0f;
+
+			for (config& c : curve_up)
+			{
+				float new_dist_sq = distsq_x_y(xy, c.xy());
+				if (min_dist_sq > new_dist_sq)
+				{
+					min_dist_sq = new_dist_sq;
+				}
+			}
+			for (config& c : curve_down)
+			{
+				float new_dist_sq = distsq_x_y(xy, c.xy());
+				if (min_dist_sq > new_dist_sq)
+				{
+					min_dist_sq = new_dist_sq;
+				}
+			}
+
+			if (min_dist_sq == 9999.0f) return -1.0f;
+
+			return sqrt(min_dist_sq);
+		}
 	};
 
 	struct landing
@@ -1680,6 +1707,7 @@ namespace ObjCont
 		start_end<x_y<float>> down_stair_entrance; // from inside to outside
 		start_end<x_y<float>> opposite_wall; // from up to down
 		bool all_info;
+		std::vector<int> tnode_ids;
 
 		x_y<float> up_normal;
 		x_y<float> down_normal;
@@ -1791,6 +1819,12 @@ namespace ObjCont
 			//float tolarence = sqrt(0.125f / (l_speed*l_speed) + fLAYER_GAP * fLAYER_GAP / (a_speed*a_speed));
 			float tolarence = 0.25f / l_speed;
 			return get_distance_to_curve(prefab_id, xy, theta, l_speed, a_speed, tolarence);
+		}
+		float get_distance_to_curve(int prefab_id, x_y<float> xy) // (-1 -> no curve)
+		{
+			if (prefab_bezier.find(prefab_id) == prefab_bezier.end()) return -1.0f; // if no curve, then negative
+
+			return prefab_bezier[prefab_id].distance_from_curve(xy);
 		}
 
 		// constructors
@@ -1922,7 +1956,7 @@ namespace ObjCont
 		bool other_not_moving;
 		bool blocking_cor;
 
-		std::vector<int> rotation_occ;
+		std::map<int,float> additional_pvo_nodes;
 
 		// misc methods
 		float relative_width(vector2 displ, const std::vector<x_y<float>>& vertices)
@@ -2082,7 +2116,7 @@ namespace ObjCont
 					}
 				}
 
-				if (zero_in_vo && v.is_zero()) // and if other is stopped (add_cost is 0 unless other is stopped)
+				if (zero_in_vo && v.is_zero()) // and if other is stopped (add_cost is 0 unless other is stopped
 					dist_to_line += add_cost;
 
 				return true;
@@ -2115,7 +2149,7 @@ namespace ObjCont
 			velocity_obstacle& other_vo, // other vo reference (was instantiated with default)
 			float min_time_to_collision, float min_dist_to_collision, // if collision will happen in more time than this, then velo not in vo 
 			bool generalised, bool hybrid, // type of VO
-			std::vector<int> this_rotation_occ
+			std::map<int,float> additional_pvo_nodes
 		)
 			: valid(true), other_ent_id(other_id), other_object(other_object)
 		{
@@ -2144,7 +2178,7 @@ namespace ObjCont
 			blocking_cor = this_blocking_cor;
 			other_vo.blocking_cor = other_blocking_cor;
 
-			other_vo.rotation_occ = this_rotation_occ; // set rotation occ for pvo
+			other_vo.additional_pvo_nodes = additional_pvo_nodes; // set rotation occ for pvo
 
 			//// CREATE COLLISION CONES ////
 			/// vector of normalised vectors
@@ -2320,7 +2354,7 @@ namespace ObjCont
 			{
 				if (this_stopped || other_stopped)
 				{
-					if (this_stopped)
+					if (this_stopped && other_object)
 					{
 						other_drive = tiny_drive;
 						other_vo.zero_in_vo = true;
@@ -3339,6 +3373,7 @@ namespace data_for_TCP
 	public:
 		int person_id;
 		std::map<int, std::map<int, float>> node_obj_cost; // node_obj_cost.at(node).at(obj) = cost
+		float additional_cost;
 
 		std::vector<msg_element> get_content() const
 		{
@@ -3352,7 +3387,7 @@ namespace data_for_TCP
 				{
 					cost += oc.second;
 				}
-				content.push_back(cost);
+				content.push_back(cost + additional_cost);
 			}
 			return content;
 		}
@@ -3379,10 +3414,12 @@ namespace data_for_TCP
 		pvo
 		(
 			int person_id,
-			std::map<int, std::map<int, float>> node_obj_cost
+			std::map<int, std::map<int, float>> node_obj_cost,
+			float additional_cost
 		) :
 			person_id(person_id),
-			node_obj_cost(node_obj_cost)
+			node_obj_cost(node_obj_cost),
+			additional_cost(additional_cost)
 		{}
 		
 	};

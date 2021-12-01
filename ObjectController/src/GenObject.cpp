@@ -152,24 +152,29 @@ void GenObject::set_occupation_tnodes(std::vector<int>& tnodes)
 {
 	m_occupied_tnodes = tnodes;
 }
-void GenObject::set_rotation_occ_tnodes(std::vector<int> tnodes)
+void GenObject::add_additional_pvo_nodes(std::map<int,float> tnodes)
 {
-	m_rotation_occ_tnodes.clear();
-	for (int& i : tnodes)
+	for (auto& i : tnodes)
 	{
-		if (!in_vector(m_occupied_tnodes, i))
-		{
-			m_rotation_occ_tnodes.push_back(i);
-		}
+		if (std::find(m_occupied_tnodes.begin(), m_occupied_tnodes.end(), i.first) == m_occupied_tnodes.end())
+			m_additional_pvo_nodes[i.first] += i.second;
+	}
+}
+void GenObject::add_additional_pvo_nodes(std::vector<int> tnodes)
+{
+	for (auto& i : tnodes)
+	{
+		if (std::find(m_occupied_tnodes.begin(), m_occupied_tnodes.end(), i) == m_occupied_tnodes.end())
+			m_additional_pvo_nodes[i] += 0;
 	}
 }
 std::vector<int> GenObject::get_occupation_tnodes() const
 {
 	return m_occupied_tnodes;
 }
-std::vector<int> GenObject::get_rotation_occ_tnodes() const
+std::map<int, float> GenObject::get_additional_pvo_nodes() const
 {
-	return m_rotation_occ_tnodes;
+	return m_additional_pvo_nodes;
 }
 void GenObject::set_connected_halo(bool connected, float seconds)
 {
@@ -217,11 +222,11 @@ void GenObject::set_connected_halo(bool connected, float seconds)
 void GenObject::clear_occ()
 {
 	m_occupied_tnodes.clear();
-	clear_rotation_occ();
+	clear_additional_pvo_nodes();
 }
-void GenObject::clear_rotation_occ()
+void GenObject::clear_additional_pvo_nodes()
 {
-	m_rotation_occ_tnodes.clear();
+	m_additional_pvo_nodes.clear();
 }
 bool GenObject::halo_is_connected()
 {
@@ -324,7 +329,7 @@ void GenObject::idle()
 	m_last_cnode = m_current_cnode;
 	just_moved = false;
 	velocity_desired = 0.0f;
-	clear_rotation_occ();
+	clear_additional_pvo_nodes();
 
 	if (!stopped)
 	{
@@ -340,7 +345,7 @@ void GenObject::match_cnodes()
 {
 	m_last_cnode = m_current_cnode;
 }
-void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_)
+void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time, vector2 vel, vector2 pos, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool interpolate, int floor, int stair, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_, int landing)
 {
 	if (new_pos == m_current_cnode) // don't move
 	{
@@ -358,6 +363,7 @@ void GenObject::move(cnode_pos new_pos, int tnode, float _wait, float move_time,
 	m_tnode_id = tnode;
 	m_floor_num = floor;
 	stair_id = stair;
+	landing_id = landing;
 	stair_dir = stair_dir_;
 	not_move_cost = 0.0f;
 	just_moved = true;
@@ -537,6 +543,7 @@ GenObject::GenObject(std::vector<ObjectPrefab>::iterator prefab, ObjCont::object
 	m_current_cnode(cnode_pos(start_cnode_pos, instance.start_orientation)),
 	m_tnode_id(instance.start_node_id),
 	stair_id(-1),
+	landing_id(-1),
 	m_floor_num(instance.start_floor_num),
 	_attachment_points(prefab->get_attachment_points()),
 	m_connected_halo(true),

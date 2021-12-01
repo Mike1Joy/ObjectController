@@ -27,7 +27,7 @@ class GenObject : public ObjectPrefab
 	int m_floor_num;
 
 	std::vector<int> m_occupied_tnodes; // tnode occupied by object
-	std::vector<int> m_rotation_occ_tnodes; // tnodes that would be occupied by object if it were to rotate +-1 minus the ones it already occupies
+	std::map<int,float> m_additional_pvo_nodes; // tnodes that would be occupied by object if it were to rotate +-1 minus the ones it already occupies
 	bool m_connected_halo;
 
 	std::vector<cnode_pos> m_current_targets;
@@ -61,6 +61,7 @@ public:
 	Angle _orientation;
 	Angle _next_orientation;
 	int stair_id;
+	int landing_id;
 	unsigned char stair_dir;
 	bool moved;
 	bool stopped;
@@ -78,7 +79,7 @@ public:
 
 	// action
 	bool can_move();
-	void move(cnode_pos, int, float _wait, float move_time, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_); // wait is wait, move_time is time it would have taken if moving at current speed
+	void move(cnode_pos, int, float _wait, float move_time, vector2, vector2, std::map<unsigned char, std::set<unsigned char>> valid_attach, bool, int floor, int stair_id, bool backwards, float seconds, vector2 new_des_vel, unsigned char stair_dir_, int landing); // wait is wait, move_time is time it would have taken if moving at current speed
 	void dont_move(float seconds);
 	void idle();
 	void match_cnodes();
@@ -107,12 +108,13 @@ public:
 
 	// Occupation
 	void set_occupation_tnodes(std::vector<int>& tnodes);
-	void set_rotation_occ_tnodes(std::vector<int> tnodes);
+	void add_additional_pvo_nodes(std::map<int, float> tnodes);
+	void add_additional_pvo_nodes(std::vector<int> tnodes);
 	std::vector<int> get_occupation_tnodes() const;
-	std::vector<int> get_rotation_occ_tnodes() const;
+	std::map<int, float> get_additional_pvo_nodes() const;
 	void set_connected_halo(bool connected, float seconds);
 	void clear_occ();
-	void clear_rotation_occ();
+	void clear_additional_pvo_nodes();
 	bool halo_is_connected();
 	occupation_seed generate_occupation_seed();
 	std::vector<attachment_point> get_occupying_attachment_points() const;

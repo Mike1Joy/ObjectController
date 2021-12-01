@@ -862,6 +862,7 @@ public:
 	// Landings
 	void auto_gen_landings();
 	std::vector<node*> get_landing_nodes(const stair& this_stair, bool top, int& other_stair);
+	void set_landing_nodes();
 
 	// TCP simulation
 	void TCP_move_person(int person_id, int new_node_id, float speed, float drive, float fitness, int object_id, int point_id);
@@ -946,6 +947,7 @@ public:
 	std::pair<potential_move, occ_nodes> get_best_move_occ(std::vector<potential_move>& moves, GenObject* obj);
 	occ_nodes try_to_occupy(GenObject& obj, CSNode& node, float radius);
 	std::vector<int> get_rotation_occ(GenObject& obj, float radius);
+	std::map<int,float> get_landing_bez_dist(int landing_id, float max_dist, int prefab_id);
 	occ_nodes get_occupation(polygon poly, std::vector<attachment_point> points, float radius, std::set<int> tnode_ids, bool stop_when_taken, bool create_halo);
 	bool collision(const polygon& this_poly, const std::vector<attachment_point>& this_attach, char other_object_id);
 	bool collision(const polygon& this_poly, const std::vector<attachment_point>& this_attach, const GenObject& other_object);
