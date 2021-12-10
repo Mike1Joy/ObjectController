@@ -3414,7 +3414,7 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		obj_vel, (x_y<float>)per->velocity,
 		obj->moved_backwards, false,
 		obj->get_max_acceleration(),1.0f,
-		obj->get_max_linear_speed(NOT_STAIR_ARC,-1),per->default_speed,
+		obj->get_max_linear_speed(obj->stair_dir, obj->stair_id),per->default_speed,
 		VO_dist_cost,
 		vo_l_r_priority, min_time_scale_stopped_ped,
 		obj->stopped, per->stopped,
@@ -3424,7 +3424,8 @@ velocity_obstacle ObjectSpace::generate_pvo(GenObject* obj, person* per, bool ge
 		pvo,
 		time_to_collision, dist_to_collision,
 		generalised, hybrid,
-		obj->get_additional_pvo_nodes()
+		obj->get_additional_pvo_nodes(),
+		obj->landing_id == -1 && obj->stair_id == -1 && obj->velocity_current.first.magnitude_squared() > 0.1f // only add this vo to the object if it is not on a stair and not on a landing and not (almost) stopped
 	);
 
 	if (ovo.valid)
@@ -3457,7 +3458,7 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		this_obj_vel, other_obj_vel,
 		this_obj->moved_backwards, other_obj->moved_backwards,
 		this_obj->get_max_acceleration(), other_obj->get_max_acceleration(),
-		this_obj->get_max_linear_speed(NOT_STAIR_ARC, -1), other_obj->get_max_linear_speed(NOT_STAIR_ARC, -1),
+		this_obj->get_max_linear_speed(this_obj->stair_dir, this_obj->stair_id), other_obj->get_max_linear_speed(other_obj->stair_dir, other_obj->stair_id),
 		VO_dist_cost,
 		vo_l_r_priority, min_time_scale_stopped_ped,
 		this_obj->stopped, other_obj->stopped,
@@ -3467,7 +3468,8 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 		other_vo,
 		time_to_collision, dist_to_collision,
 		generalised, hybrid,
-		std::map<int,float>()
+		std::map<int,float>(),
+		true
 	);
 
 	if (this_vo.valid)
@@ -4848,10 +4850,10 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 		nodes.push_back(per.second.node_id); // current node
 		REMOVE_DUPLICATES(nodes);
 
-#define TC165_ADD_ADDITIONAL_PVOS
+//#define TC165_ADD_ADDITIONAL_PVOS
 #ifdef TC165_ADD_ADDITIONAL_PVOS
 		std::vector<int> extra_nodes;
-		for (int i = 0; i < ((int)m_EX_nodes.size())/2; i ++)
+		for (int i = 0; i < ((int)m_EX_nodes.size())/2 + 1; i ++)
 		{
 			extra_nodes.push_back(m_EX_nodes[i].id);
 		}
@@ -4877,7 +4879,7 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 					(node_obj_cost[next_id])[vo.other_ent_id] += vo.additional_pvo_nodes[next_id] * pvo_scale_mult;
 				}
 #ifdef TC165_ADD_ADDITIONAL_PVOS
-				if (in_vector(extra_nodes,next_id))
+				if (in_vector(extra_nodes,next_id) && next_id != per.second.node_id)
 				{
 					(node_obj_cost[next_id])[1] += vo.additional_pvo_nodes[next_id] * pvo_scale_mult;
 				}

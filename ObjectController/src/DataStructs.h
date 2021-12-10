@@ -2010,6 +2010,8 @@ namespace ObjCont
 		}
 		bool velocity_in_vo(vector2 v) const
 		{
+			if (!valid) return false;
+
 			return (within_crit_dist || v.x*v.x + v.y*v.y >= ok_mag_sq)
 				&& !point_left_of_line(left_line.start, left_line.end, v)
 				&& point_left_of_line(right_line.start, right_line.end, v);
@@ -2017,6 +2019,8 @@ namespace ObjCont
 
 		bool velocity_in_vo_col_time(vector2 v, float& time_to_collision) const  
 		{
+			if (!valid) return false;
+
 			if // collision imminent
 			(
 				(within_crit_dist || v.x*v.x + v.y*v.y >= ok_mag_sq)
@@ -2036,6 +2040,8 @@ namespace ObjCont
 		}
 		bool velocity_in_vo_rescale(vector2 v, float current_scale, float& rescale_factor, float min_scale) const  
 		{
+			if (!valid) return false;
+			
 			if (min_scale < drive_scale)
 			{
 				min_scale = drive_scale;
@@ -2092,6 +2098,8 @@ namespace ObjCont
 		}
 		bool velocity_in_vo_dist_to_line(vector2 v, float& dist_to_line) const
 		{
+			if (!valid) return false;
+
 			float d_l = 0.0f;
 			float d_r = 0.0f;
 			float mag_sq = v.x*v.x + v.y*v.y;
@@ -2149,14 +2157,25 @@ namespace ObjCont
 			velocity_obstacle& other_vo, // other vo reference (was instantiated with default)
 			float min_time_to_collision, float min_dist_to_collision, // if collision will happen in more time than this, then velo not in vo 
 			bool generalised, bool hybrid, // type of VO
-			std::map<int,float> additional_pvo_nodes
+			std::map<int,float> additional_pvo_nodes,
+			bool this_valid
 		)
-			: valid(true), other_ent_id(other_id), other_object(other_object)
+			: valid(this_valid), other_ent_id(other_id), other_object(other_object)
 		{
 			//// SETUP ////
-			float tiny_drive = 0.0001f;
+			// sort out drives
+			float tiny_drive = 0.001f;
 			if (this_drive <= 0.0f) this_drive = tiny_drive;
 			if (other_drive <= 0.0f) other_drive = tiny_drive;
+
+			if (this_drive / other_drive < 0.1f) // if other drive is at least 10 times bigger, then treat as non-reciprical
+			{
+				this_drive = tiny_drive;
+			}
+			else if (other_drive / this_drive < 0.1f)
+			{
+				other_drive = tiny_drive;
+			}
 
 			if (this_vertices.size()*other_vertices.size() + this_vertices.size()*other_people.size()*2 + this_people.size()*other_vertices.size()*2 + this_people.size()*other_people.size()*3 < 2 ||
 				(this_stopped && other_stopped)
@@ -2383,8 +2402,10 @@ namespace ObjCont
 			other_vo.drive_scale = other_drive / (this_drive + other_drive);
 
 			/// set validities and reciprocal
-			valid = other_drive != tiny_drive;
-			other_vo.valid = this_drive != tiny_drive;
+			if (this_valid)
+				valid = other_drive > tiny_drive;
+
+			other_vo.valid = this_drive > tiny_drive;
 
 			reciprocal = other_vo.valid;
 			other_vo.reciprocal = valid;
