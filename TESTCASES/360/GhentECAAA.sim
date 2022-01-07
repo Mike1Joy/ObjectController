@@ -1,0 +1,406 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+         Simulation of GhentEC.exo, with 49 People.
+              Started Fri Jan  7 14:42:42 2022 
+        Initialisation time 0 (s). Run time 264 (s).
+                Current Memory Usage 124136K
+           File Generated Fri Jan  7 14:47:09 2022
+                    SimSeed: 1641591170
+
+       buildingEXODUS  V7.0.0.3681  (Shared Maps) x64
+                       LEVEL: Academic
+                    Licence No: 702083747
+                   Expires on: 28 Sep 2022
+                        Windows User
+                              
+
+
+               buildingEXODUS is a product of
+           GUEL Copyright 2016 : In House Version
+        Contact the developer P.J.Lawrence@gre.ac.uk
+             regarding the use of this Software
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Simulation Options Default
++++++++++++++++++++++++++++++++++++++++++++++++++
+Population Parameter Summary
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Attribute            | Average|     Min|     Max|
++++++++++++++++++++++++++++++++++++++++++++++++++
+Males                |      26|      26|      26|
+Female               |      23|      23|      23|
+Age                  |   22.20|   17.00|   29.00|
+Agility              |    4.05|    2.01|    6.91|
+Drive                |    7.49|    1.17|   20.00|
+FWalk (m/s)          |    1.38|    1.21|    1.50|
+Walk (m/s)           |    1.24|    1.09|    1.35|
+Crawl (m/s)          |    0.28|    0.24|    0.30|
+Leap (m/s)           |    1.10|    0.97|    1.20|
+Mobility             |    1.00|    1.00|    1.00|
+Patience (s)         |   23.20|    1.20| 1000.00|
+Response (s)         |    0.98|    0.00|    1.00|
+Weight (kg)          |   64.10|   40.12|   89.71|
+Height (m)           |    1.73|    1.51|    1.99|
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++
+Occupant Switches
++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Switch               |Value       |
++++++++++++++++++++++++++++++++++++
+Local Familiarity    |OFF         |
+All Main Exits       |OFF         |
+Floor Potential Map  |OFF         |
+Local Potential      |ON          |
+Maintain Target Exit |OFF         |
+Maintain Itinerary   |OFF         |
+Transit Node Grouping|ON          |
+Look Ahead           |OFF         |
+Milling              |OFF         |
+Specified Response   |OFF         |
+Zone Events          |OFF         |
+Natural Movement     |OFF         |
+Extreme Behaviour    |OFF         |
+Impatient            |OFF         |
+Seat Jumping         |OFF         |
+Wall Proximity       |OFF         |
+Avoid Congestion     |OFF         |
+Social Response      |OFF         |
+Social Movement      |OFF         |
+Crowd Follow         |OFF         |
+Adopt Travel Speed   |OFF         |
+Stair Spacing        |Staggered   |
+Stair Edge Pref.     |ON          |
+Urgency              |OFF         |
+Crawling             |ON          |
+Smoke Stagger        |OFF         |
+Smoke Redirection    |OFF         |
+Smoke Visual Coef.   |        2.00|
+Signage System       |None        |
+Lift Evacuation      |OFF         |
+Evenly Use Stairs    |0           |
+Max Sim.             |OFF         |
+Physical Dst Factor  |        0.00|
+Isochrone Road Range |        0.00|
+Iso Time Shift Range |        0.00|
+Isochrone Time Buffer|        0.00|
+Isochrone Expd Factor|        0.00|
+No More Ammunition   |OFF         |
+Discount No Itins.   |OFF         |
+Flee Dist (m)        |        5.00|
+Flee Prob            |        0.00|
+Urgency Factor       |        2.00|
+Inform Agents        |ON          |
+Inform Radius (m)    |        2.00|
+Wall Height (m)      |        1.70|
+Knowledge Duration(s)|      300.00|
+Seek Safety Behaviour|OFF         |
+Serious (FGD/min)    |        0.01|
+V Serious (FGD/min)  |        0.00|
++++++++++++++++++++++++++++++++++++
+
+
+
+
+Number of People out 49, first out (secs) 1.59   last 265.09
+
+Final Simulation time 265.09 (s)
+
+Number of People Starting on floor 0 (Floor_0) was 0, last exit (secs) 265.09
+Number of People Starting on floor 1 (Floor_1) was 0, last exit (secs) 257.31
+Number of People Starting on floor 2 (Floor_2) was 0, last exit (secs) 251.07
+Number of People Starting on floor 3 (Floor_3) was 0, last exit (secs) 244.19
+Number of People Starting on floor 4 (Floor_4) was 0, last exit (secs) 235.45
+Number of People Starting on floor 5 (Floor_5) was 0, last exit (secs) 223.25
+Number of People Starting on floor 6 (Floor_6) was 0, last exit (secs) 210.75
+Number of People Starting on floor 7 (Floor_7) was 0, last exit (secs) 199.25
+Number of People Starting on floor 8 (Floor_8) was 0, last exit (secs) 186.75
+Number of People Starting on floor 9 (Floor_9) was 0, last exit (secs) 176.92
+Number of People Starting on floor 10 (Floor_10) was 0, last exit (secs) 162.09
+Number of People Starting on floor 11 (Floor_11) was 0, last exit (secs) 149.75
+Number of People Starting on floor 12 (Floor_12) was 0, last exit (secs) 139.92
+Number of People Starting on floor 13 (Floor_13) was 0, last exit (secs) 126.59
+Number of People Starting on floor 14 (Floor_14) was 0, last exit (secs) 115.05
+Number of People Starting on floor 15 (Floor_15) was 0, last exit (secs) 105.42
+Number of People Starting on floor 16 (Floor_16) was 0, last exit (secs) 93.42 
+Number of People Starting on floor 17 (Floor_17) was 0, last exit (secs) 81.29 
+Number of People Starting on floor 18 (Floor_18) was 0, last exit (secs) 73.42 
+Number of People Starting on floor 19 (Floor_19) was 0, last exit (secs) 53.75 
+Number of People Starting on floor 20 (Floor_20) was 49, last exit (secs) 42.75 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+Egress Results:-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Pos|Gender      |Start Node  |Level|Floor       |  Age|      Weight (kg)|Mobility|Response (s)|     FGD|Injury      |End Node    | CWT (s)|Distance (m)| PET (s)|Jumps|XRisktaker  |XUrgency    |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    1|Male        |3740        |   20|Floor_20    |   25|            80.00|    1.00|        0.00|    0.00|None        |Door_1      |    0.00|        0.50|    1.59|    0|No          |No          |
+    2|Male        |3567        |   20|Floor_20    |   18|            81.16|    1.00|        1.00|    0.00|None        |Door_1      |    7.38|      136.73|  133.51|    0|No          |No          |
+    3|Female      |3541        |   20|Floor_20    |   18|            45.00|    1.00|        1.00|    0.00|None        |Door_1      |    0.10|      110.80|  133.54|    0|No          |No          |
+    4|Male        |3557        |   20|Floor_20    |   23|            48.69|    1.00|        1.00|    0.00|None        |Door_1      |    6.06|      135.70|  134.85|    0|No          |No          |
+    5|Male        |3542        |   20|Floor_20    |   19|            63.93|    1.00|        1.00|    0.00|None        |Door_1      |    6.62|      138.09|  135.24|    0|No          |No          |
+    6|Male        |3539        |   20|Floor_20    |   27|            57.89|    1.00|        1.00|    0.00|None        |Door_1      |   11.37|      135.38|  135.42|    0|No          |No          |
+    7|Male        |3611        |   20|Floor_20    |   18|            68.88|    1.00|        1.00|    0.00|None        |Door_1      |   12.81|      139.23|  141.57|    0|No          |No          |
+    8|Female      |3550        |   20|Floor_20    |   28|            71.99|    1.00|        1.00|    0.00|None        |Door_1      |    5.35|      114.82|  141.64|    0|No          |No          |
+    9|Male        |3623        |   20|Floor_20    |   26|            67.26|    1.00|        1.00|    0.00|None        |Door_1      |   13.84|      140.79|  141.96|    0|No          |No          |
+   10|Male        |3602        |   20|Floor_20    |   26|            82.94|    1.00|        1.00|    0.00|None        |Door_1      |   16.45|      136.88|  143.11|    0|No          |No          |
+   11|Male        |3574        |   20|Floor_20    |   26|            79.10|    1.00|        1.00|    0.00|None        |Door_1      |   12.83|      132.48|  143.57|    0|No          |No          |
+   12|Male        |3556        |   20|Floor_20    |   18|            58.65|    1.00|        1.00|    0.00|None        |Door_1      |   18.88|      137.06|  144.05|    0|No          |No          |
+   13|Male        |3579        |   20|Floor_20    |   23|            82.72|    1.00|        1.00|    0.00|None        |Door_1      |   23.50|      132.31|  145.73|    0|No          |No          |
+   14|Male        |3604        |   20|Floor_20    |   23|            84.57|    1.00|        1.00|    0.00|None        |Door_1      |   18.24|      132.21|  145.80|    0|No          |No          |
+   15|Female      |3605        |   20|Floor_20    |   18|            40.28|    1.00|        1.00|    0.00|None        |Door_1      |   13.02|      128.03|  163.24|    0|No          |No          |
+   16|Male        |3586        |   20|Floor_20    |   21|            63.77|    1.00|        1.00|    0.00|None        |Door_1      |   29.56|      139.47|  163.46|    0|No          |No          |
+   17|Male        |3675        |   20|Floor_20    |   23|            68.75|    1.00|        1.00|    0.00|None        |Door_1      |   19.44|      150.76|  164.45|    0|No          |No          |
+   18|Female      |3582        |   20|Floor_20    |   17|            88.56|    1.00|        1.00|    0.00|None        |Door_1      |   21.69|      124.74|  168.75|    0|No          |No          |
+   19|Female      |3589        |   20|Floor_20    |   22|            40.49|    1.00|        1.00|    0.00|None        |Door_1      |   26.08|      125.12|  173.59|    0|No          |No          |
+   20|Male        |3661        |   20|Floor_20    |   24|            80.81|    1.00|        1.00|    0.00|None        |Door_1      |   36.03|      148.25|  173.67|    0|No          |No          |
+   21|Male        |3660        |   20|Floor_20    |   20|            80.61|    1.00|        1.00|    0.00|None        |Door_1      |   31.25|      159.07|  175.09|    0|No          |No          |
+   22|Male        |3630        |   20|Floor_20    |   20|            58.73|    1.00|        1.00|    0.00|None        |Door_1      |   42.36|      141.77|  175.16|    0|No          |No          |
+   23|Male        |3678        |   20|Floor_20    |   23|            66.63|    1.00|        1.00|    0.00|None        |Door_1      |   35.80|      143.78|  175.72|    0|No          |No          |
+   24|Male        |3620        |   20|Floor_20    |   24|            56.02|    1.00|        1.00|    0.00|None        |Door_1      |   44.17|      140.49|  176.86|    0|No          |No          |
+   25|Male        |3645        |   20|Floor_20    |   18|            58.27|    1.00|        1.00|    0.00|None        |Door_1      |   41.31|      144.89|  176.93|    0|No          |No          |
+   26|Male        |3662        |   20|Floor_20    |   20|            46.84|    1.00|        1.00|    0.00|None        |Door_1      |   42.05|      151.70|  177.27|    0|No          |No          |
+   27|Male        |3594        |   20|Floor_20    |   25|            40.12|    1.00|        1.00|    0.00|None        |Door_1      |   53.20|      138.11|  178.75|    0|No          |No          |
+   28|Male        |3619        |   20|Floor_20    |   19|            62.96|    1.00|        1.00|    0.00|None        |Door_1      |   53.74|      152.78|  194.69|    0|No          |No          |
+   29|Female      |3566        |   20|Floor_20    |   22|            58.75|    1.00|        1.00|    0.00|None        |Door_1      |   34.36|      137.80|  194.83|    0|No          |No          |
+   30|Female      |3610        |   20|Floor_20    |   25|            52.46|    1.00|        1.00|    0.00|None        |Door_1      |   42.12|      145.27|  201.83|    0|No          |No          |
+   31|Female      |3546        |   20|Floor_20    |   26|            40.97|    1.00|        1.00|    0.00|None        |Door_1      |   46.40|      142.95|  205.14|    0|No          |No          |
+   32|Male        |3631        |   20|Floor_20    |   18|            47.07|    1.00|        1.00|    0.00|None        |Door_1      |   65.89|      146.91|  205.33|    0|No          |No          |
+   33|Male        |3613        |   20|Floor_20    |   24|            64.76|    1.00|        1.00|    0.00|None        |Door_1      |   67.46|      147.42|  205.64|    0|No          |No          |
+   34|Female      |3674        |   20|Floor_20    |   22|            58.33|    1.00|        1.00|    0.00|None        |Door_1      |   57.49|      139.96|  212.49|    0|No          |No          |
+   35|Female      |3618        |   20|Floor_20    |   18|            85.43|    1.00|        1.00|    0.00|None        |Door_1      |   56.93|      141.52|  214.81|    0|No          |No          |
+   36|Female      |3638        |   20|Floor_20    |   23|            61.29|    1.00|        1.00|    0.00|None        |Door_1      |   55.27|      144.64|  218.91|    0|No          |No          |
+   37|Female      |3629        |   20|Floor_20    |   27|            60.47|    1.00|        1.00|    0.00|None        |Door_1      |   56.81|      147.09|  220.67|    0|No          |No          |
+   38|Male        |3639        |   20|Floor_20    |   20|            89.71|    1.00|        1.00|    0.00|None        |Door_1      |   72.33|      154.85|  220.80|    0|No          |No          |
+   39|Female      |3668        |   20|Floor_20    |   18|            50.89|    1.00|        1.00|    0.00|None        |Door_1      |   59.85|      154.35|  227.34|    0|No          |No          |
+   40|Female      |3651        |   20|Floor_20    |   22|            50.37|    1.00|        1.00|    0.00|None        |Door_1      |   68.50|      147.74|  233.48|    0|No          |No          |
+   41|Female      |3646        |   20|Floor_20    |   24|            62.18|    1.00|        1.00|    0.00|None        |Door_1      |   64.62|      150.43|  236.50|    0|No          |No          |
+   42|Female      |3564        |   20|Floor_20    |   29|            84.12|    1.00|        1.00|    0.00|None        |Door_1      |   75.95|      146.03|  238.26|    0|No          |No          |
+   43|Female      |3607        |   20|Floor_20    |   21|            45.60|    1.00|        1.00|    0.00|None        |Door_1      |   77.71|      150.68|  240.82|    0|No          |No          |
+   44|Female      |3637        |   20|Floor_20    |   24|            73.82|    1.00|        1.00|    0.00|None        |Door_1      |   82.72|      148.43|  245.68|    0|No          |No          |
+   45|Female      |3676        |   20|Floor_20    |   24|            63.02|    1.00|        1.00|    0.00|None        |Door_1      |   71.71|      158.50|  249.93|    0|No          |No          |
+   46|Female      |3571        |   20|Floor_20    |   23|            63.82|    1.00|        1.00|    0.00|None        |Door_1      |   75.01|      156.75|  252.39|    0|No          |No          |
+   47|Female      |3635        |   20|Floor_20    |   20|            81.07|    1.00|        1.00|    0.00|None        |Door_1      |   86.78|      154.45|  253.94|    0|No          |No          |
+   48|Female      |3667        |   20|Floor_20    |   22|            56.35|    1.00|        1.00|    0.00|None        |Door_1      |   73.00|      166.37|  260.40|    0|No          |No          |
+   49|Female      |3587        |   20|Floor_20    |   24|            64.72|    1.00|        1.00|    0.00|None        |Door_1      |   79.10|      160.58|  265.09|    0|No          |No          |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  Avg|            |            |     |            | 22.2|            64.10|    1.00|        0.98|    0.00|            |            |   41.08|      139.89|  184.97|  0.0|            |            |
+
+
+Transit Nodes performances :-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Stair:  Staircase_1     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On: 125.85 (s) Last On: 257.31 (s) Avg PPM :  21.45 Flow Time: 131.46 (s)
+Stair:  Staircase_1     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_1     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On: 113.50 (s) Last On: 244.19 (s) Avg PPM :  21.58 Flow Time: 130.69 (s)
+Stair:  Staircase_1     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_9     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On: 119.67 (s) Last On: 251.07 (s) Avg PPM :  21.46 Flow Time: 131.40 (s)
+Stair:  Staircase_11    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_7     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On: 107.32 (s) Last On: 235.45 (s) Avg PPM :  22.01 Flow Time: 128.13 (s)
+Stair:  Staircase_8     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_9     MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  94.98 (s) Last On: 210.75 (s) Avg PPM :  24.36 Flow Time: 115.78 (s)
+Stair:  Staircase_10    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_11    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  45.59 (s) Last On: 115.05 (s) Avg PPM :  40.60 Flow Time:  69.46 (s)
+Stair:  Staircase_12    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_13    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  82.63 (s) Last On: 186.75 (s) Avg PPM :  27.08 Flow Time: 104.12 (s)
+Stair:  Staircase_14    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_15    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  33.24 (s) Last On:  93.42 (s) Avg PPM :  46.86 Flow Time:  60.18 (s)
+Stair:  Staircase_16    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_17    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  70.28 (s) Last On: 162.09 (s) Avg PPM :  30.72 Flow Time:  91.81 (s)
+Stair:  Staircase_18    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_19    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  20.89 (s) Last On:  73.42 (s) Avg PPM :  53.68 Flow Time:  52.53 (s)
+Stair:  Staircase_20    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_21    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  57.93 (s) Last On: 139.92 (s) Avg PPM :  34.40 Flow Time:  81.99 (s)
+Stair:  Staircase_22    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_23    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:   7.94 (s) Last On:  42.75 (s) Avg PPM :  81.00 Flow Time:  34.82 (s)
+Stair:  Staircase_24    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_25    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On: 101.15 (s) Last On: 223.25 (s) Avg PPM :  23.10 Flow Time: 122.10 (s)
+Stair:  Staircase_26    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_27    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  88.80 (s) Last On: 199.25 (s) Avg PPM :  25.53 Flow Time: 110.45 (s)
+Stair:  Staircase_28    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_29    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  76.45 (s) Last On: 176.92 (s) Avg PPM :  28.07 Flow Time: 100.46 (s)
+Stair:  Staircase_30    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_31    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  64.11 (s) Last On: 149.75 (s) Avg PPM :  32.93 Flow Time:  85.65 (s)
+Stair:  Staircase_32    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_33    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  51.76 (s) Last On: 126.59 (s) Avg PPM :  37.69 Flow Time:  74.83 (s)
+Stair:  Staircase_34    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_35    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  39.41 (s) Last On: 105.42 (s) Avg PPM :  42.72 Flow Time:  66.01 (s)
+Stair:  Staircase_36    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_37    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  27.06 (s) Last On:  81.29 (s) Avg PPM :  52.01 Flow Time:  54.22 (s)
+Stair:  Staircase_38    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+Stair:  Staircase_39    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:   48  First On:  14.72 (s) Last On:  53.75 (s) Avg PPM :  72.24 Flow Time:  39.04 (s)
+Stair:  Staircase_40    MaxCapacity 22  Length 3.12 (m) Width 1.52 (m) Lanes  2 
+ Number Through:    0  First On:   0.00 (s) Last On:   0.00 (s) Avg PPM :   0.00 Flow Time:   0.00 (s)
+End of Transit Nodes Data
+
+
+
+Internal Doors and Census Points performances :-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+Int. Exit: (null)          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Potential: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+ 
+End of Internal Doors and Census Points data
+
+
+
+Door performances :-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Ext. Exit Door_1          Number Used:   49  First Entry:   1.59 (s) Last : 265.09 (s) Avg PPM :  10.93
+ Flow Time: 263.50 (s) No Flow Time: 186.75 (s) MNS :  70.87 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Type: General  Potential: 100.00 Attractiveness: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+Ext. Exit Door_2          Number Used:    0  First Entry:   0.00 (s) Last :   0.00 (s) Avg PPM :   0.00
+ Flow Time:   0.00 (s) No Flow Time:   0.00 (s) MNS :   0.00 (%) Opened:  0 Closed:  0
+ Event Times (Secs) None
+ Type: General  Potential: 100.00 Attractiveness: 100.00 Unit Flow Rate (occ/m/s):   1.33   1.33
+
+
+OPS = 0.000
+
+End of Door data
+
+object performances:-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Title            | Type            | Label  | Floor   | Start  X (m)  | Start  Y (s) | Distance(m)   | Start Moving | PET (s)      | CWT (s)      | Vert Dst(m)  | Vert Time(s) | Prep Time (s)| Prep (s)     |First Staff(s)| All Staff(s) |FED           | Time Mov(s)  | Stopped      | Stop Time(s) | X            | Y            |
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ExoObj1         | EvacuationChair |      1 |Floor_20 |          5.16 |        18.79 |          0.00 |         0.08 |         0.08 |         0.00 |         0.00 |         0.00 |         0.00 |         0.00 |         0.08 |         0.08 |         0.00 |         0.00 |            0 |         0.00 |         3.59 |        18.44 | Main Target
+               1 | Type            | Label  | Floor   | Start  X (m)  | Start  Y (s) |         0.00  |         0.08 |         0.08 | CWT (s)      | Vert Dst(m)  | Vert Time(s) | Prep Time (s)| Prep (s)     |First Staff(s)| All Staff(s) |FED           |         0.00 | Stopped      | Stop Time(s) | X            | Y            |
++++++++++++++++++++++++++++++++++++++Exit List+++++++++++++++++++++++++++++++++++++++++
+End of object performance data
+

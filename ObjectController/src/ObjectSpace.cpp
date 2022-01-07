@@ -3447,7 +3447,6 @@ void ObjectSpace::generate_ovo(GenObject* this_obj, GenObject* other_obj, bool g
 	x_y<float> this_obj_vel = this_obj->velocity_desired * vo_des_vel_f + this_obj->velocity_current.first * (1.0f - vo_des_vel_f);
 	x_y<float> other_obj_vel = other_obj->velocity_desired * vo_des_vel_f + other_obj->velocity_current.first * (1.0f - vo_des_vel_f);
 
-	// TODO: change velocity_current.first to velocity_desired
 	velocity_obstacle other_vo;
 	velocity_obstacle this_vo(
 		this_obj->get_object_id(), other_obj->get_object_id(), true,
