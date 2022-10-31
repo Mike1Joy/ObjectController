@@ -6,5 +6,4 @@ Test 1: Object - Object
 Test 2: Object - Person
 - Object same as test 1
 - Person is default (tried with lots of drives but got the same result)
-- Person does  not seem to move out of the way of the object the same as test 1. Instead the person enters the thin section while the object is still there, blovking its path.
-- This is not the desired outcome. There may be an issue with the way the person is reacting to the PVO
+- Person moves out of the way the instant the object enters the thin part. Person waits for object to pass, then enters the thin part
