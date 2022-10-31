@@ -1,6 +1,8 @@
 Object is stretcher. Object drive = avg occ drives * intg drive = 10*2 = 20
 People are all default men. People drive = 1
+Each test was done 3 times
 
-Test	Num people	Density of people (p/m^2)
-1	25		1
-2	46		2
+Test 1 - 25 people (1 p/m^2)
+Test 2 - 46 people (2 p/m^2)
+
+In both tests, people part ways to allow the object through. Sometimes, the object can pass through the crowd as if it wasn't there. Sometimes the people move too slowly so the object still has to deviate slightly.
