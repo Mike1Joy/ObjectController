@@ -1,1 +1,5 @@
+Geometry 1: 1m wide corridor with 90deg turn
+- Stationary and moveable could go around, although they took different routes and moveable was faster
 
+Geometry 2: 1m wide corridor with 90deg turn and outside of corner cut off
+- Only moveable could take this corner, stationary could not
