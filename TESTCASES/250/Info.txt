@@ -7,3 +7,11 @@ Test 2: Object - Person
 - Object same as test 1
 - Person is default (tried with lots of drives but got the same result)
 - Person moves out of the way the instant the object enters the thin part. Person waits for object to pass, then enters the thin part
+
+Screenshot Stages:
+0. Initial state
+1. Both entities move towards their goals (equal drive)
+2. Device enters corridor, other entity moves to one side (device high drive)
+3. Device travels down corridor, other entity waits (device high drive)
+4. Device exits corridor, other entity begins to move towards goal (equal drive)
+5. Device is clear of corridor, other entity enters corridor, device makes way for other entity (equal drive)
