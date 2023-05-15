@@ -1,3 +1,10 @@
+Thin corridor:
+W: 0.8m
+L: 2.6m
+
+Wide part:
+W: 2.0m
+
 Test 1: Object - Object
 - Both objects identical (default stretcher)
 - Left object starts closer to thin gap so it gets there first
