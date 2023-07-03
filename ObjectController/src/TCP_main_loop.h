@@ -619,8 +619,11 @@ void create_and_send_empty_message(int type)
 			print_to_file(msg, true);
 		else
 		{
-			log_TCP.print("message sent: %d", msg_counter_sent);
-			log_TCP.print(2, "code: %d", type);
+			if (!simulating || !tcp_log_min)
+			{
+				log_TCP.print("message sent: %d", msg_counter_sent);
+				log_TCP.print(2, "code: %d", type);
+			}
 		}
 	}
 	else
