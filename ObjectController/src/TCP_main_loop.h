@@ -12,6 +12,8 @@
 
 using namespace data_for_TCP;
 
+static bool tcp_log_min = false;
+
 //// Message Types
 /// meta
 constexpr UINT EXMS_SIMULATION_PAUSED = 4001;
@@ -513,8 +515,11 @@ void update_sim_time(CNetworkMessage* msg, float& sim_time, float& time_step)
 	float new_time = msg->GetFloatLittle(4);
 	time_step = new_time - sim_time;
 	sim_time = new_time;
-	log_TCP.print("sim time:  %f", sim_time);
-	log_TCP.print("time step: %f", time_step);
+	if (!tcp_log_min)
+	{
+		log_TCP.print("sim time:  %f", sim_time);
+		log_TCP.print("time step: %f", time_step);
+	}
 }
 
 //// Send Message
@@ -587,8 +592,11 @@ void create_and_send_message(int type, const std::vector<msg_element>& content)
 			print_to_file(msg, true);
 		else
 		{
-			log_TCP.print("message sent: %d", msg_counter_sent);
-			log_TCP.print(2, "code: %d", type);
+			if (!simulating || !tcp_log_min)
+			{
+				log_TCP.print("message sent: %d", msg_counter_sent);
+				log_TCP.print(2, "code: %d", type);
+			}
 		}
 	}
 	else
@@ -812,7 +820,7 @@ void sim_loop(CNetworkMessage* start_msg)
 
 	while (EXODUS_run_loop(sim_time, time_step))
 	{
-		log_TCP.print("OC_run_started");
+		if (!tcp_log_min) log_TCP.print("OC_run_started");
 
 		auto start_timer = timeGetTime();
 
@@ -923,7 +931,7 @@ void sim_loop(CNetworkMessage* start_msg)
 
 		first = false;
 
-		log_TCP.print("OC_run_complete");
+		if (!tcp_log_min) log_TCP.print("OC_run_complete");
 	}
 
 	simulating = false;

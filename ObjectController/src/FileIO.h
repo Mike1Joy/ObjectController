@@ -441,6 +441,7 @@ public:
 			BOOL,
 			BOOL,
 			BOOL,
+			BOOL,
 			BOOL
 		};
 
@@ -451,6 +452,7 @@ public:
 		bool tcp_log;
 
 		bool tcp_log_file;
+		bool tcp_log_min;
 
 		bool fill_values()
 		{
@@ -462,6 +464,7 @@ public:
 			if (fill_if<bool>(opengl_log, content[3])) return false;
 			if (fill_if<bool>(tcp_log, content[4])) return false;
 			if (fill_if<bool>(tcp_log_file, content[5])) return false;
+			if (fill_if<bool>(tcp_log_min, content[6])) return false;
 
 			return true;
 		}

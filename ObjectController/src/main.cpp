@@ -191,6 +191,7 @@ bool get_init()
 		log_TCP.on = init.mode.tcp_log;
 		log_TCP.to_file = init.mode.tcp_log_file;
 		log_opengl.on = init.mode.opengl_log;
+		tcp_log_min = init.mode.tcp_log_min;
 	}
 	else
 	{
