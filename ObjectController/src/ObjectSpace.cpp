@@ -4816,7 +4816,7 @@ std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_step_2()
 
 	for (GenObject& obj : m_objects)
 	{
-		if (occnode_when_inactive || (obj.stopped && !obj.just_stopped))
+		if (occnode_when_inactive || ((!obj.stopped || obj.just_stopped) && obj.active))
 		{
 			occ_nodes.push_back(occupied_nodes(
 				obj.get_object_id(),
