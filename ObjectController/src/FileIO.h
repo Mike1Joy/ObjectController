@@ -357,7 +357,8 @@ public:
 			FLOAT,
 			FLOAT,
 			FLOAT,
-			FLOAT
+			FLOAT,
+			BOOL
 		};
 
 		bool vo_hybrid;
@@ -380,6 +381,7 @@ public:
 		float vo_scale_mult;
 		float pvo_scale_add;
 		float pvo_scale_mult;
+		bool occnode_when_inactive;
 
 		bool fill_values()
 		{
@@ -409,6 +411,8 @@ public:
 			if (fill_if<float>(vo_scale_mult, content[17])) return false;
 			if (fill_if<float>(pvo_scale_add, content[18])) return false;
 			if (fill_if<float>(pvo_scale_mult, content[19])) return false;
+
+			if (fill_if<bool>(occnode_when_inactive, content[20])) return false;
 
 
 			cap<float>(0.0f, time_to_collision);

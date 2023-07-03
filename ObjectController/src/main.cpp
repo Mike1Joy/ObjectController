@@ -173,6 +173,8 @@ bool get_init()
 		s_object_space.vo_scale_mult = init.options.vo_scale_mult;
 		s_object_space.pvo_scale_add = init.options.pvo_scale_add;
 		s_object_space.pvo_scale_mult = init.options.pvo_scale_mult;
+
+		s_object_space.occnode_when_inactive = init.options.occnode_when_inactive;
 	}
 	else
 	{

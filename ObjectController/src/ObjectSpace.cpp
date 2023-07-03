@@ -4645,6 +4645,7 @@ ObjectSpace::ObjectSpace()
 	vo_scale_mult = 100;
 	pvo_scale_add = 100;
 	pvo_scale_mult = 100;
+	occnode_when_inactive = true;
 }
 ObjectSpace::~ObjectSpace(){}
 
@@ -4815,10 +4816,13 @@ std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_step_2()
 
 	for (GenObject& obj : m_objects)
 	{
-		occ_nodes.push_back(occupied_nodes(
-			obj.get_object_id(),
-			obj.get_occupation_tnodes()
-		));
+		if (occnode_when_inactive || (obj.stopped && !obj.just_stopped))
+		{
+			occ_nodes.push_back(occupied_nodes(
+				obj.get_object_id(),
+				obj.get_occupation_tnodes()
+			));
+		}
 	}
 
 	return occ_nodes;
