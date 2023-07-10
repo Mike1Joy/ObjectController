@@ -3938,31 +3938,6 @@ void ObjectSpace::remove_object_task(int object_id)
 		obj->itinerary.insert(task(obj->itinerary.size() + 99, 1.0f)); // wait on remove set to 1s
 	}
 	obj->itinerary.insert(task(obj->itinerary.size() + 99));
-
-    // TEMP for DEBUG
-	for (auto &t : obj->itinerary)
-	{
-		switch (t.type)
-		{
-		case EMPTY:
-			log_TCP.print(4, "EMPTY");
-			break;
-		case GO_TO:
-			log_TCP.print(4, "GO_TO");
-			break;
-		case WAIT:
-			log_TCP.print(4, "WAIT");
-			break;
-		case REMOVE:
-			log_TCP.print(4, "REMOVE");
-			break;
-		case PICKUP:
-			log_TCP.print(4, "PICKUP");
-			break;
-		default:
-			log_TCP.print(4, "UNKNOWN");
-		}
-	}
 }
 void ObjectSpace::pick_up_person(int object_id, int person_id)
 {
@@ -3982,7 +3957,7 @@ std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
 
 	log_main.print("action_task");
 	GenObject* obj = get_object(object_id);
-	if (!obj || !obj->active) return { false,false };
+	if (!obj) return { false,false };
 
 	obj->wait -= seconds;
 
@@ -3995,8 +3970,15 @@ std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
 	switch (t->type)
 	{
 	case GO_TO:
-		move_obj(object_id, 1.0f, seconds, interpolate);
-		break;
+		if (obj->active)
+		{
+			move_obj(object_id, 1.0f, seconds, interpolate);
+			break;
+		}
+		else
+		{
+			return { false,false };
+		}
 	case WAIT:
 		if (t->started)
 		{
