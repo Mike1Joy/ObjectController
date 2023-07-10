@@ -633,37 +633,34 @@ int ObjectSpace::TCP_pickup_person(int object_id, int person_id, float max_radiu
 }
 void ObjectSpace::TCP_remove_person_from_object(int object_id, int person_id, int node_id)
 {
-	log_main.print("id %d: remove_person_from_object\n", object_id);
-
-	GenObject* obj = get_object(object_id);
-	if (!obj)
-	{
-		log_main.print(2,"Person not removed from object: object not found");
-		return;
-	}
+	log_main.print("obj_id %d: remove_person_from_object\n", object_id);
 
 	person* per = get_person(person_id);
 	if (!per)
 	{
-		log_main.print(2,"Person not removed from object: person not found");
+		log_main.print(2, "Person not removed from object: person not found");
 		return;
 	}
 
 	node* tnode = TCP_get_node_from_id(node_id);
 	if (!tnode)
 	{
-		log_main.print(2,"Person not removed from object: node not found");
+		log_main.print(2, "Person not removed from object: node not found");
 		return;
 	}
 
-	obj->remove_person(person_id);
+	GenObject* obj = get_object(object_id);
+	if (obj)
+	{
+		obj->remove_person(person_id);
+		update_occupation_halo(object_id, 0.0f);
+	}
+
 	per->leave_object(tnode->position.x, tnode->position.y, 0.0f, 0.0f, node_id);
 	per->active = true;
 	move_occupation(node_id, node_id, person_id);
 
 	log_main.print(2,"Person removed from object");
-
-	update_occupation_halo(object_id, 0.0f);
 }
 void ObjectSpace::TCP_remove_object(int object_id)
 {
@@ -676,7 +673,7 @@ void ObjectSpace::TCP_remove_object(int object_id)
 			{
 				if (p.occupant.active)
 				{
-					m_people.erase(p.occupant.id);
+					//m_people.erase(p.occupant.id); // tag
 					p.detatch();
 					log_main.print(2,"person removed");
 				}
