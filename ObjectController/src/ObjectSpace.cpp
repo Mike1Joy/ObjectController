@@ -673,7 +673,7 @@ void ObjectSpace::TCP_remove_object(int object_id)
 			{
 				if (p.occupant.active)
 				{
-					//m_people.erase(p.occupant.id); // tag
+					//m_people.erase(p.occupant.id); // BUG: could cause issues if Exodus does not delete person manually. Keep commented for workaround
 					p.detatch();
 					log_main.print(2,"person removed");
 				}
@@ -4654,6 +4654,7 @@ ObjectSpace::ObjectSpace()
 	pvo_scale_mult = 100;
 	occnode_when_inactive = true;
 	wait_on_remove = false;
+	delete_after_target = false;
 }
 ObjectSpace::~ObjectSpace(){}
 

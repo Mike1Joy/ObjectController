@@ -177,6 +177,8 @@ bool get_init()
 		s_object_space.occnode_when_inactive = init.options.occnode_when_inactive;
 
 		s_object_space.wait_on_remove = init.options.wait_on_remove;
+		s_object_space.delete_after_target = init.options.delete_after_target;
+
 	}
 	else
 	{

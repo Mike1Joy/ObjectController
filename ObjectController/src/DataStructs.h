@@ -2719,7 +2719,7 @@ namespace ObjCont
 
 		void detatch()
 		{
-			occupant = person();
+			occupant = person(); // may need to remove this 
 			occupied_circle = -1;
 		}
 

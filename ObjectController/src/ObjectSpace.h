@@ -1034,6 +1034,7 @@ public:
 	float pvo_scale_mult;
 	bool occnode_when_inactive;
 	bool wait_on_remove;
+	bool delete_after_target;
 };
 
 // singleton

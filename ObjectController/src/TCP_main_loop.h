@@ -470,6 +470,10 @@ void add_target_to_obj(CNetworkMessage* msg)
 	{
 		s_object_space.pick_up_person(msg->GetInt(4), msg->GetInt(32));
 	}
+	if (s_object_space.delete_after_target)
+	{
+		remove_object(msg);
+	}
 }
 void attach_to_obj(CNetworkMessage* msg)
 {
