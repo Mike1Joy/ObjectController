@@ -358,6 +358,7 @@ public:
 			FLOAT,
 			FLOAT,
 			FLOAT,
+			BOOL,
 			BOOL
 		};
 
@@ -382,6 +383,7 @@ public:
 		float pvo_scale_add;
 		float pvo_scale_mult;
 		bool occnode_when_inactive;
+		bool remove_on_target;
 
 		bool fill_values()
 		{
@@ -413,6 +415,8 @@ public:
 			if (fill_if<float>(pvo_scale_mult, content[19])) return false;
 
 			if (fill_if<bool>(occnode_when_inactive, content[20])) return false;
+
+			if (fill_if<bool>(remove_on_target, content[21])) return false;
 
 
 			cap<float>(0.0f, time_to_collision);

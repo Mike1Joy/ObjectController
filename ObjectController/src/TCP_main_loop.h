@@ -454,6 +454,12 @@ void move_person(CNetworkMessage* msg)
 {
 	s_object_space.TCP_move_person(msg->GetInt(4), msg->GetInt(12), msg->GetFloatLittle(16), msg->GetFloatLittle(20), msg->GetFloatLittle(24), msg->GetInt(28), msg->GetInt(32));
 }
+void remove_object(CNetworkMessage* msg)
+{
+	log_TCP.print("remove_object");
+	//s_object_space.TCP_remove_object(msg->GetInt(4)); // removes object now
+	s_object_space.remove_object_task(msg->GetInt(4)); // sets task to remove object
+}
 void add_target_to_obj(CNetworkMessage* msg)
 {
 	log_TCP.print("add_target_to_obj");
@@ -462,6 +468,11 @@ void add_target_to_obj(CNetworkMessage* msg)
 	if (msg->GetInt(32) != -1)
 	{
 		s_object_space.pick_up_person(msg->GetInt(4), msg->GetInt(32));
+	}
+
+	if (s_object_space.remove_on_target)
+	{
+		remove_object(msg);
 	}
 }
 void attach_to_obj(CNetworkMessage* msg)
@@ -474,12 +485,6 @@ void release_from_obj(CNetworkMessage* msg)
 	// < iObjectId > <iPersonId><iNodeID>
 	log_TCP.print("release_from_obj");
 	s_object_space.TCP_remove_person_from_object(msg->GetInt(4), msg->GetInt(8), msg->GetInt(12));
-}
-void remove_object(CNetworkMessage* msg)
-{
-	log_TCP.print("remove_object");
-	//s_object_space.TCP_remove_object(msg->GetInt(4)); // removes object now
-	s_object_space.remove_object_task(msg->GetInt(4)); // sets task to remove object
 }
 void add_obj_sim(CNetworkMessage* msg)
 {

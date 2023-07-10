@@ -1033,6 +1033,7 @@ public:
 	float pvo_scale_add;
 	float pvo_scale_mult;
 	bool occnode_when_inactive;
+	bool remove_on_target;
 };
 
 // singleton

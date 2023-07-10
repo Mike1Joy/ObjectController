@@ -4646,6 +4646,7 @@ ObjectSpace::ObjectSpace()
 	pvo_scale_add = 100;
 	pvo_scale_mult = 100;
 	occnode_when_inactive = true;
+	remove_on_target = false;
 }
 ObjectSpace::~ObjectSpace(){}
 

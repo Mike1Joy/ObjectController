@@ -175,6 +175,8 @@ bool get_init()
 		s_object_space.pvo_scale_mult = init.options.pvo_scale_mult;
 
 		s_object_space.occnode_when_inactive = init.options.occnode_when_inactive;
+
+		s_object_space.remove_on_target = init.options.remove_on_target;
 	}
 	else
 	{
