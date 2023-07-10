@@ -457,6 +457,7 @@ void move_person(CNetworkMessage* msg)
 void remove_object(CNetworkMessage* msg)
 {
 	log_TCP.print("remove_object");
+
 	//s_object_space.TCP_remove_object(msg->GetInt(4)); // removes object now
 	s_object_space.remove_object_task(msg->GetInt(4)); // sets task to remove object
 }
@@ -468,11 +469,6 @@ void add_target_to_obj(CNetworkMessage* msg)
 	if (msg->GetInt(32) != -1)
 	{
 		s_object_space.pick_up_person(msg->GetInt(4), msg->GetInt(32));
-	}
-
-	if (s_object_space.remove_on_target)
-	{
-		remove_object(msg);
 	}
 }
 void attach_to_obj(CNetworkMessage* msg)

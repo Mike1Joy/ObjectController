@@ -3936,6 +3936,10 @@ void ObjectSpace::remove_object_task(int object_id)
 		log_main.print("Object remove failed: object id %d not found", object_id);
 		return;
 	}
+	if (wait_on_remove)
+	{
+		obj->itinerary.insert(task(obj->itinerary.size() + 99, 1.0f)); // wait on remove set to 1s
+	}
 	obj->itinerary.insert(task(obj->itinerary.size() + 99));
 }
 void ObjectSpace::pick_up_person(int object_id, int person_id)
@@ -3960,7 +3964,9 @@ std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
 
 	obj->wait -= seconds;
 
-	bool task_changed = manage_tasks(object_id);
+	bool task_changed = false;
+
+	task_changed = manage_tasks(object_id);
 
 	task* t = &obj->current_task;
 
@@ -3986,8 +3992,12 @@ std::pair<bool, bool> ObjectSpace::action_task(int object_id, float seconds)
 		idle_obj(object_id);
 		break;
 	case REMOVE:
-		TCP_remove_object(object_id);
-		return { true,true };
+		if (obj->wait <= 0)
+		{
+			TCP_remove_object(object_id);
+			return { true,true };
+		}
+		break;
 	case PICKUP:
 		TCP_pickup_person(object_id, t->person_id, 2.0f);
 		break;
@@ -4646,7 +4656,7 @@ ObjectSpace::ObjectSpace()
 	pvo_scale_add = 100;
 	pvo_scale_mult = 100;
 	occnode_when_inactive = true;
-	remove_on_target = false;
+	wait_on_remove = false;
 }
 ObjectSpace::~ObjectSpace(){}
 
