@@ -4883,6 +4883,18 @@ std::vector<data_for_TCP::pvo> ObjectSpace::main_sim_step_3(bool first)
 			for (velocity_obstacle& vo : per.second.pvos)
 			{
 				if (!vo.valid) continue;
+				if (vo.other_object)
+				{
+					GenObject* obj = get_object(vo.other_ent_id);
+					if (!obj)
+					{
+						continue;
+					}
+					if (!obj->active && !occnode_when_inactive)
+					{
+						continue;
+					}
+				}
 
 				vector2 next_vel = (next_pos - current_pos);
 				next_vel.resize(speed);
