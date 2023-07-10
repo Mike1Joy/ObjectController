@@ -4746,10 +4746,13 @@ std::vector<data_for_TCP::occupied_nodes> ObjectSpace::main_sim_init_2()
 
 	for (GenObject& obj : m_objects)
 	{
-		occ_nodes.push_back(occupied_nodes(
-			obj.get_object_id(),
-			obj.get_occupation_tnodes()
-		));
+		if (occnode_when_inactive || obj.active)
+		{
+			occ_nodes.push_back(occupied_nodes(
+				obj.get_object_id(),
+				obj.get_occupation_tnodes()
+			));
+		}
 	}
 
 	return occ_nodes;
