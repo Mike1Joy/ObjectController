@@ -310,8 +310,11 @@ void print_all(CNetworkMessage* msg)
 }
 void print_default(CNetworkMessage* msg, int type)
 {
-	log_TCP.print(4, "Message with type %d not recognised!", type);
-	//print_all(msg, false);
+	if (!tcp_log_min)
+	{
+		log_TCP.print(4, "Message with type %d not recognised!", type);
+		//print_all(msg, false);
+	}
 }
 void print_test(CNetworkMessage* msg)
 {
@@ -798,7 +801,8 @@ bool EXODUS_run_loop(float& sim_time, float& time_step)
 				return false;
 			// unknown
 			default:
-				log_TCP.print("unrecognised message %d", msg->GetType());
+				if (!tcp_log_min)
+					log_TCP.print("unrecognised message %d", msg->GetType());
 				break;
 			}
 		}

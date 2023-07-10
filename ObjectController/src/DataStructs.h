@@ -2975,6 +2975,8 @@ namespace ObjCont
 
 		task() : type(EMPTY), STOP(false) {}
 
+		
+
 		void make_empty()
 		{
 			priority = -1;
