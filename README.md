@@ -1,6 +1,6 @@
 # ObjectController (OC)
 ## About
-The ObjectController (OC) has been developed as part of Michael Joyce’s PhD with the Fire Safety Engineering Group at the University of Greenwich. Michael’s thesis is entitled *Representing the Movement of Objects within Evacuation Simulation Models*. Details on the theoretical model used in this software can be found in his thesis (currently in the write-up stage).
+The ObjectController (OC) has been developed as part of Michael Joyce-Badea’s PhD with the Fire Safety Engineering Group at the University of Greenwich. Michael’s thesis is entitled *Representing the Movement of Objects within Evacuation Simulation Models*. Details on the theoretical model used in this software can be found in his thesis (currently in the write-up stage).
 
 This application was built on top of the HEPTAD software developed by Michael Joyce and presented in the paper *Hospital Evacuation Planning Tool for Assistance Devices (HEPTAD)* - DOI: https://doi.org/10.1002/fam.2856
 
